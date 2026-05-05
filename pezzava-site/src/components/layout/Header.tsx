@@ -46,6 +46,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(true)}
+          aria-label="Open Menu"
           className={`md:hidden hover:opacity-100 transition-opacity drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}
         >
           <Menu size={24} />
@@ -83,7 +84,11 @@ const Header = () => {
 
         {/* Action Buttons */}
         <div className="flex items-center gap-6">
-          <Link href="/shop" className={`hover:opacity-100 opacity-90 transition-opacity hidden md:block drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}>
+          <Link 
+            href="/shop" 
+            aria-label="View Shopping Bag"
+            className={`hover:opacity-100 opacity-90 transition-opacity hidden md:block drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}
+          >
             <ShoppingBag size={22} />
           </Link>
           <Link
@@ -96,7 +101,11 @@ const Header = () => {
           >
             Explore Shop
           </Link>
-          <Link href="/shop" className={`md:hidden drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}>
+          <Link 
+            href="/shop" 
+            aria-label="View Shopping Bag"
+            className={`md:hidden drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}
+          >
             <ShoppingBag size={22} />
           </Link>
         </div>
@@ -116,7 +125,11 @@ const Header = () => {
               <div className="relative w-32 h-16">
                 <Image src="/logo.png" alt="Pezzava" fill className="object-contain" />
               </div>
-              <button onClick={() => setIsOpen(false)} className="text-primary">
+              <button 
+                onClick={() => setIsOpen(false)} 
+                aria-label="Close Menu"
+                className="text-primary"
+              >
                 <X size={32} />
               </button>
             </div>

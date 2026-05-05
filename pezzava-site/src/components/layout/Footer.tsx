@@ -45,8 +45,13 @@ const Footer = () => {
           <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Facebook</a>
           <a href="https://www.linkedin.com/in/pezzava-jaipur-1850415b" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">LinkedIn</a>
         </div>
-        <div className="text-[10px] font-body text-stone-400 uppercase tracking-widest">
-            Handcrafted with love in the Pink City
+        <div className="flex flex-col items-center md:items-end gap-2">
+          <div className="text-[10px] font-body text-stone-400 uppercase tracking-widest">
+              Handcrafted with love in the Pink City
+          </div>
+          <div className="text-[10px] font-body text-primary/60 uppercase tracking-widest font-bold">
+              GSTIN: 08AWIPK5231H1ZJ
+          </div>
         </div>
       </div>
     </footer>

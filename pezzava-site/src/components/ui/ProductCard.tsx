@@ -41,7 +41,10 @@ export default function ProductCard({ product, index }: ProductCardProps) {
              <div className="bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg">
                 <span className="text-xs font-bold font-manrope text-black uppercase tracking-widest">View Details</span>
              </div>
-             <div className="bg-primary text-on-primary p-3 rounded-full shadow-lg">
+             <div 
+               className="bg-primary text-on-primary p-3 rounded-full shadow-lg"
+               aria-label={`Add ${product.displayName} to bag`}
+             >
                 <ShoppingBag size={18} />
              </div>
           </div>

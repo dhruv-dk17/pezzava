@@ -9,7 +9,7 @@ interface MarketplaceToggleProps {
 
 export default function MarketplaceToggle({ activeStore, setActiveStore }: MarketplaceToggleProps) {
   const options = [
-    { id: 'all', label: 'All Products', color: 'bg-gold' },
+    { id: 'all', label: 'All Products', color: 'bg-primary' },
     { id: 'amazon', label: 'Amazon', color: 'bg-[#FF9900]' },
     { id: 'flipkart', label: 'Flipkart', color: 'bg-[#2874F0]' }
   ];
