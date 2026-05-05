@@ -57,7 +57,7 @@ export default function ContactPage() {
           >
             <p className="font-manrope text-xs font-bold tracking-[0.5em] text-white/80 uppercase mb-4">Get in Touch</p>
             <h1 className="font-noto-serif text-5xl md:text-7xl text-white leading-tight">
-              Let&apos;s <span className="italic text-primary">Connect</span>
+              Contact <span className="italic text-primary">Us</span>
             </h1>
           </motion.div>
         </div>
@@ -119,35 +119,38 @@ export default function ContactPage() {
             className="lg:col-span-2 space-y-8"
           >
             <div>
-              <h2 className="font-noto-serif text-3xl md:text-4xl font-bold mb-2">Visit Us</h2>
+              <h2 className="font-noto-serif text-3xl md:text-4xl font-bold mb-2">Reach Us</h2>
               <div className="w-16 h-[2px] bg-primary" />
             </div>
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <MapPin size={18} className="text-primary" />
+
+            {/* Registered Address */}
+            <div className="bg-stone-50 border border-stone-100 rounded-2xl p-6 space-y-3">
+              <div className="flex items-center gap-3 mb-1">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <MapPin size={15} className="text-primary" />
+                </div>
+                <span className="font-manrope text-[10px] font-bold uppercase tracking-widest text-primary">Registered Address</span>
               </div>
-              <div>
-                <p className="font-manrope text-base font-semibold leading-relaxed text-on-surface">
-                  P.N. 7-b Brij Vihar,<br />
-                  Badarama Kalwar Road,<br />
-                  Govindpura, Jaipur,<br />
-                  Rajasthan, 302012
-                </p>
-              </div>
+              <p className="font-manrope text-sm font-semibold leading-relaxed text-on-surface pl-11">
+                F-222B, Near Ram Nagar Extension,<br />
+                New Sanganer Road, Sodala,<br />
+                Jaipur, Rajasthan
+              </p>
             </div>
 
-            {/* Embedded Map */}
-            <div className="rounded-2xl overflow-hidden border border-stone-200 shadow-md h-[280px]">
-              <iframe
-                src="https://maps.google.com/maps?q=P.N.+7-b+Brij+Vihar,+Badarama+Kalwar+Road,+Govindpura,+Jaipur,+Rajasthan,+302012&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Pezzava Location"
-              />
+            {/* Office Address */}
+            <div className="bg-stone-50 border border-stone-100 rounded-2xl p-6 space-y-3">
+              <div className="flex items-center gap-3 mb-1">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <MapPin size={15} className="text-primary" />
+                </div>
+                <span className="font-manrope text-[10px] font-bold uppercase tracking-widest text-primary">Office Address</span>
+              </div>
+              <p className="font-manrope text-sm font-semibold leading-relaxed text-on-surface pl-11">
+                P.N. 7-b Brij Vihar,<br />
+                Badarama Kalwar Road, Govindpura,<br />
+                Jaipur, Rajasthan, 302012
+              </p>
             </div>
 
             <div className="bg-stone-50 border border-stone-100 rounded-2xl p-6 space-y-2">

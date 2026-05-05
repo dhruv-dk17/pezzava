@@ -16,7 +16,7 @@ export default function AboutPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
-              <span className="font-manrope text-xs font-bold tracking-[0.5em] text-primary uppercase mb-8 block">Est. 2024 • Jaipur</span>
+              <span className="font-manrope text-xs font-bold tracking-[0.5em] text-primary uppercase mb-8 block">Est. 2012 • Jaipur</span>
               <h1 className="font-noto-serif text-6xl md:text-8xl lg:text-[10rem] text-on-surface leading-[0.85] mb-12 -ml-1">
                 The <br />
                 <span className="italic text-primary">Soul</span> <br />

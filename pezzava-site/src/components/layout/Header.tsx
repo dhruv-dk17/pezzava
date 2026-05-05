@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "glass-morphism py-4 shadow-sm" : "bg-transparent py-6"
+        scrolled ? "glass-morphism py-4 shadow-sm" : "bg-white/80 backdrop-blur-sm py-6 md:bg-transparent md:backdrop-blur-none"
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-8 flex justify-between items-center">
@@ -45,7 +45,7 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="relative w-32 h-20 md:w-40 md:h-24 hover:scale-105 transition-transform duration-500"
+          className="relative w-32 h-20 md:w-40 md:h-24 hover:scale-105 transition-transform duration-500 drop-shadow-md"
         >
           <Image 
             src="/logo.png" 
@@ -72,18 +72,18 @@ const Header = () => {
 
         {/* Action Buttons */}
         <div className="flex items-center gap-6">
-          <button className="text-primary hover:opacity-100 opacity-80 transition-opacity hidden md:block">
+          <Link href="/shop" className="text-primary hover:opacity-100 opacity-80 transition-opacity hidden md:block">
             <ShoppingBag size={22} />
-          </button>
+          </Link>
           <Link
             href="/shop"
             className="hidden lg:flex items-center gap-3 bg-on-surface text-white px-8 py-3 text-[10px] uppercase tracking-[0.3em] font-bold rounded-sm hover:bg-primary transition-all duration-500 hover:shadow-2xl"
           >
             Explore Shop
           </Link>
-          <button className="md:hidden text-primary">
+          <Link href="/shop" className="md:hidden text-primary">
             <ShoppingBag size={22} />
-          </button>
+          </Link>
         </div>
       </div>
 

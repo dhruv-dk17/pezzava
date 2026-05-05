@@ -1,9 +1,33 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Calendar, User, Briefcase, Award, ArrowLeft, Download } from "lucide-react";
+import { ShieldCheck, Calendar, User, Briefcase, Award, ArrowLeft, Download, GraduationCap, Building2, UserCheck } from "lucide-react";
 
 const VerificationPage = () => {
+  const internDetails = [
+    { icon: "user", label: "Intern's Name", value: "Simran Kumawat" },
+    { icon: "user", label: "Father's Name", value: "Hansraj Kumawat" },
+    { icon: "grad", label: "University Roll No.", value: "116223" },
+    { icon: "building", label: "College Name", value: "St. Wilfred's PG College" },
+    { icon: "briefcase", label: "Company", value: "Pezzava" },
+    { icon: "briefcase", label: "Role", value: "E-Commerce Operations Intern" },
+    { icon: "calendar", label: "Duration", value: "01-04-2026 to 30-04-2026" },
+    { icon: "authority", label: "HR Issuing Authority", value: "Khushi Sharma" },
+  ];
+
+  const getIcon = (type: string) => {
+    const cls = "text-primary";
+    const sz = 20;
+    switch(type) {
+      case "grad": return <GraduationCap size={sz} className={cls} />;
+      case "building": return <Building2 size={sz} className={cls} />;
+      case "briefcase": return <Briefcase size={sz} className={cls} />;
+      case "calendar": return <Calendar size={sz} className={cls} />;
+      case "authority": return <UserCheck size={sz} className={cls} />;
+      default: return <User size={sz} className={cls} />;
+    }
+  };
+
   return (
     <main className="min-h-screen bg-surface pt-32 pb-20 px-6">
       <div className="max-w-[1440px] mx-auto">
@@ -30,63 +54,38 @@ const VerificationPage = () => {
         {/* Verification Card */}
         <div className="max-w-4xl mx-auto mb-20">
           <div className="bg-white border border-stone-200 rounded-[2rem] shadow-2xl overflow-hidden">
+            {/* Card Header */}
             <div className="bg-on-surface p-8 text-white flex justify-between items-center border-b border-white/10">
               <div className="relative w-32 h-16">
                 <Image src="/logo.png" alt="Pezzava" fill className="object-contain brightness-0 invert" />
               </div>
               <div className="text-right">
                 <span className="block font-body text-[10px] uppercase tracking-[0.3em] opacity-60 mb-1">Official Verification</span>
-                <span className="font-body font-bold text-warm-gold tracking-widest text-sm">REF: PZV-INT-2025-01</span>
+                <span className="font-body font-bold text-warm-gold tracking-widest text-sm">REF: PZV-INT-2026-01</span>
               </div>
             </div>
+
+            {/* Status Badge */}
+            <div className="px-10 md:px-16 pt-10 flex items-center gap-3">
+              <span className="inline-flex items-center gap-2 font-display text-base font-bold text-green-700 bg-green-50 px-5 py-2 rounded-full border border-green-200">
+                <Award size={18} className="text-green-600" />
+                Internship Completed Successfully
+              </span>
+            </div>
             
-            <div className="p-10 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className="space-y-10">
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center text-primary border border-stone-100">
-                    <User size={20} />
+            {/* Details Grid */}
+            <div className="p-10 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+              {internDetails.map((item, i) => (
+                <div key={i} className="flex items-start gap-5">
+                  <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center border border-stone-100 flex-shrink-0">
+                    {getIcon(item.icon)}
                   </div>
                   <div>
-                    <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Intern&apos;s Name</span>
-                    <span className="font-display text-2xl font-bold text-on-surface">Simran Kumawat</span>
+                    <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant/60 mb-1">{item.label}</span>
+                    <span className="font-display text-lg font-bold text-on-surface leading-snug">{item.value}</span>
                   </div>
                 </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center text-primary border border-stone-100">
-                    <Briefcase size={20} />
-                  </div>
-                  <div>
-                    <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Role & Department</span>
-                    <span className="font-display text-xl font-bold text-on-surface">Graphic Design Intern</span>
-                    <span className="block font-body text-sm text-on-surface-variant mt-1">Creative & Branding</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-10">
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center text-primary border border-stone-100">
-                    <Award size={20} />
-                  </div>
-                  <div>
-                    <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Status</span>
-                    <span className="inline-flex items-center gap-2 font-display text-xl font-bold text-green-700 bg-green-50 px-4 py-1 rounded-full border border-green-100">
-                      Completed Successfully
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center text-primary border border-stone-100">
-                    <Calendar size={20} />
-                  </div>
-                  <div>
-                    <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Issue Date</span>
-                    <span className="font-display text-xl font-bold text-on-surface">May 5, 2025</span>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="bg-stone-50 p-8 text-center border-t border-stone-200">

@@ -16,7 +16,7 @@ const Footer = () => {
             Purveyors of fine 100% cotton wrap-around skirts.
           </p>
           <p className="font-body text-[12px] uppercase tracking-widest text-primary font-bold">
-            © 2024 PEZZAVA. Crafted in Jaipur.
+            Est. 2012 · © 2026 PEZZAVA. Crafted in Jaipur.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
         {/* Links Column 2 */}
         <div className="flex flex-col gap-4">
           <h4 className="font-display text-sm font-bold uppercase tracking-[0.2em] mb-4">About Us</h4>
-          <Link href="/about" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Our Story</Link>
+          <Link href="/about" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">About Us</Link>
           <Link href="/contact" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Contact Us</Link>
           <Link href="/careers" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Careers</Link>
           <Link href="/careers/verification" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Internship Verification</Link>
@@ -43,7 +43,6 @@ const Footer = () => {
         <div className="flex gap-10">
           <a href="https://www.instagram.com/pezzava6828?igsh=NWc5cGp5aHhkbmF2" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Instagram</a>
           <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Facebook</a>
-          <a href="#" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Pinterest</a>
         </div>
         <div className="text-[10px] font-body text-stone-400 uppercase tracking-widest">
             Handcrafted with love in the Pink City
