@@ -1,0 +1,52 @@
+/* Modern CSS Additions for Pezzava */
+
+.hero-image-overlay {
+  background: linear-gradient(to top, rgba(250, 249, 246, 0.8), transparent);
+}
+.reveal-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.reveal-fade.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Cursor */
+body { cursor: none; }
+.cursor-dot,
+.cursor-outline {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10000;
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #8F974A;
+}
+.cursor-outline {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #8F974A;
+  transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+@media (max-width: 1024px) {
+  body { cursor: auto; }
+  .cursor-dot, .cursor-outline { display: none; }
+}
+
+/* Glassmorphism */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

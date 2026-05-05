@@ -15,171 +15,131 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    "colors": {
-                        "error-container": "#ffdad6",
-                        "tertiary-fixed-dim": "#cac6b9",
-                        "surface-container-high": "#e9e8e5",
-                        "on-secondary-fixed-variant": "#574500",
-                        "inverse-primary": "#c4cd79",
-                        "on-tertiary": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "secondary-fixed": "#ffe088",
-                        "on-surface": "#1a1c1a",
-                        "surface-container-highest": "#e3e2e0",
-                        "outline-variant": "#c8c7b6",
-                        "inverse-on-surface": "#f2f1ee",
-                        "surface-container-low": "#f4f3f1",
-                        "surface-container": "#efeeeb",
-                        "on-error": "#ffffff",
-                        "primary-fixed": "#e0e992",
-                        "secondary-fixed-dim": "#e9c349",
-                        "on-secondary-fixed": "#241a00",
-                        "on-primary-fixed": "#1a1e00",
-                        "primary-fixed-dim": "#c4cd79",
-                        "on-background": "#1a1c1a",
-                        "outline": "#787869",
-                        "inverse-surface": "#2f312f",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary": "#605f54",
-                        "on-tertiary-fixed-variant": "#48473d",
-                        "surface-bright": "#faf9f6",
-                        "on-tertiary-fixed": "#1d1c13",
-                        "on-tertiary-container": "#2c2b22",
-                        "secondary-container": "#fed65b",
-                        "secondary": "#735c00",
-                        "on-primary-container": "#292d00",
-                        "primary": "#5c631c",
-                        "on-secondary-container": "#745c00",
-                        "surface": "#faf9f6",
-                        "background": "#faf9f6",
-                        "primary-container": "#8f974a",
-                        "on-primary": "#ffffff",
-                        "on-primary-fixed-variant": "#444b03",
-                        "error": "#ba1a1a",
-                        "on-surface-variant": "#47483a",
-                        "on-secondary": "#ffffff",
-                        "tertiary-fixed": "#e6e2d4",
-                        "surface-dim": "#dbdad7",
-                        "tertiary-container": "#959285",
-                        "surface-tint": "#5c631c",
-                        "surface-variant": "#e3e2e0"
+                    colors: {
+                        primary: '#5c631c',
+                        secondary: '#735c00',
+                        tertiary: '#605f54',
+                        background: '#faf9f6',
+                        surface: '#faf9f6',
+                        'on-surface': '#1a1c1a',
+                        'on-surface-variant': '#47483a',
+                        'primary-container': '#8f974a',
+                        'on-primary': '#ffffff',
+                        'warm-gold': '#C9A84C',
+                        'olive-gold': '#8B9B3E',
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
+                    spacing: {
+                        gutter: '24px',
+                        'container-max': '1280px',
+                        'margin-mobile': '20px',
+                        'margin-desktop': '64px',
+                        'section-gap': '120px'
                     },
-                    "spacing": {
-                        "gutter": "24px",
-                        "container-max": "1280px",
-                        "margin-mobile": "20px",
-                        "margin-desktop": "64px",
-                        "unit": "8px",
-                        "section-gap": "120px"
-                    },
-                    "fontFamily": {
-                        "headline-md": ["Noto Serif", "serif"],
-                        "label-caps": ["Manrope", "sans-serif"],
-                        "headline-lg": ["Noto Serif", "serif"],
-                        "body-lg": ["Manrope", "sans-serif"],
-                        "body-md": ["Manrope", "sans-serif"],
-                        "display-xl": ["Noto Serif", "serif"],
-                        "noto-serif": ["Noto Serif", "serif"],
-                        "manrope": ["Manrope", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
-                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
-                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+                    fontFamily: {
+                        display: ['Noto Serif', 'serif'],
+                        body: ['Manrope', 'sans-serif'],
+                        'noto-serif': ['Noto Serif', 'serif'],
+                        'manrope': ['Manrope', 'sans-serif']
                     }
                 }
             }
         }
   </script>
-  <style>
-    .hero-image-overlay {
-      background: linear-gradient(to top, rgba(250, 249, 246, 0.8), transparent);
-    }
-    .reveal-fade {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s ease-out;
-    }
-    .reveal-fade.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    /* Custom Cursor */
-    body { cursor: none; }
-    .cursor-dot,
-    .cursor-outline {
-      pointer-events: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      z-index: 10000;
-    }
-    .cursor-dot {
-      width: 6px;
-      height: 6px;
-      background-color: #8F974A;
-    }
-    .cursor-outline {
-      width: 24px;
-      height: 24px;
-      border: 1px solid #8F974A;
-      transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
-    }
-    @media (max-width: 1024px) {
-      body { cursor: auto; }
-      .cursor-dot, .cursor-outline { display: none; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/modern.css">
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary">
 
   <!-- HEADER -->
-  <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-100">
-    <div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
-      <a href="index.html" class="flex items-center hover:scale-105 transition-transform duration-500">
-        <img src="images/logo.png" alt="Pezzava" class="h-16 w-auto object-contain">
-      </a>
-      
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex gap-8 items-center">
-        <a href="index.html" class="font-label-caps text-label-caps uppercase tracking-widest text-primary border-b border-primary pb-1">Home</a>
-        <a href="products.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Shop</a>
-        <a href="about.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Heritage</a>
-        <a href="contact.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Contact</a>
-        <a href="career.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Careers</a>
-      </nav>
-
+  <header class="fixed top-0 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-sm py-6 md:bg-transparent md:backdrop-blur-none">
+    <div class="max-w-[1440px] mx-auto px-8 flex justify-between items-center">
       <!-- Mobile Menu Button -->
-      <button class="md:hidden text-[#8F974A] hover:text-[#8F974A] transition-colors duration-300 opacity-70 hover:opacity-100 focus:outline-none" id="mobile-menu-btn">
+      <button id="mobile-menu-btn" class="md:hidden text-primary hover:opacity-100 opacity-80 transition-opacity focus:outline-none">
         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
       </button>
-    </div>
-    
-    <!-- Mobile Navigation Dropdown -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-100 px-8 py-4">
-      <div class="mb-6 flex justify-center">
-        <img src="images/logo.png" alt="Pezzava" class="h-12 w-auto object-contain">
+
+      <!-- Logo -->
+      <a href="index.html" class="relative w-32 h-20 md:w-40 md:h-24 hover:scale-105 transition-transform duration-500 drop-shadow-md flex items-center justify-center">
+        <img src="images/logo.png" alt="Pezzava" class="w-full h-full object-contain">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
+          Home
+          <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="products.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
+          Shop
+          <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="about.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
+          About Us
+          <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="contact.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
+          Contact
+          <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="career.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
+          Careers
+          <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-6">
+        <a href="products.html" class="text-primary hover:opacity-100 opacity-80 transition-opacity hidden md:block">
+          <span class="material-symbols-outlined">shopping_bag</span>
+        </a>
+        <a href="products.html" class="hidden lg:flex items-center gap-3 bg-on-surface text-white px-8 py-3 text-[10px] uppercase tracking-[0.3em] font-bold rounded-sm hover:bg-primary transition-all duration-500 hover:shadow-2xl">
+          Explore Shop
+        </a>
+        <a href="products.html" class="md:hidden text-primary">
+          <span class="material-symbols-outlined">shopping_bag</span>
+        </a>
       </div>
-      <div class="flex flex-col gap-4">
-        <a href="index.html" class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Home</a>
-        <a href="products.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Shop</a>
-        <a href="about.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Heritage</a>
-        <a href="contact.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Contact</a>
-        <a href="career.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Careers</a>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-[60] bg-white flex flex-col p-8 hidden -translate-x-full transition-transform duration-500 ease-in-out">
+      <div class="flex justify-between items-center mb-16">
+        <div class="relative w-32 h-16">
+          <img src="images/logo.png" alt="Pezzava" class="w-full h-full object-contain">
+        </div>
+        <button id="mobile-menu-close" class="text-primary focus:outline-none">
+          <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-8">
+        <a href="index.html" class="font-display text-4xl text-on-surface hover:text-primary transition-colors flex items-center justify-between group">
+          Home
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all">arrow_right_alt</span>
+        </a>
+        <a href="products.html" class="font-display text-4xl text-on-surface hover:text-primary transition-colors flex items-center justify-between group">
+          Shop
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all">arrow_right_alt</span>
+        </a>
+        <a href="about.html" class="font-display text-4xl text-on-surface hover:text-primary transition-colors flex items-center justify-between group">
+          About Us
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all">arrow_right_alt</span>
+        </a>
+        <a href="contact.html" class="font-display text-4xl text-on-surface hover:text-primary transition-colors flex items-center justify-between group">
+          Contact
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all">arrow_right_alt</span>
+        </a>
+        <a href="career.html" class="font-display text-4xl text-on-surface hover:text-primary transition-colors flex items-center justify-between group">
+          Careers
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all">arrow_right_alt</span>
+        </a>
+      </nav>
+
+      <div class="mt-auto pt-12 border-t border-stone-100">
+        <p class="font-body text-sm text-on-surface-variant mb-4">Crafted in Jaipur, Rajasthan</p>
+        <div class="flex gap-6">
+          <a href="https://www.instagram.com/pezzava6828" target="_blank" rel="noopener noreferrer" class="text-primary font-bold uppercase tracking-widest text-[10px]">Instagram</a>
+          <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" class="text-primary font-bold uppercase tracking-widest text-[10px]">Facebook</a>
+        </div>
       </div>
     </div>
   </header>
@@ -257,23 +217,48 @@
   </main>
 
   <!-- Footer -->
-  <footer class="w-full border-t border-stone-200 bg-stone-50">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 md:px-16 py-20 max-w-[1440px] mx-auto">
-      <div class="col-span-1 md:col-span-2">
-        <p class="font-noto-serif text-sm tracking-tight text-[#8F974A] mb-4">© 2025 PEZZAVA. Crafted in Jaipur.</p>
-        <a href="index.html" class="block w-40 h-24 hover:scale-105 transition-transform duration-500">
+  <footer class="w-full bg-stone-50 border-t border-stone-200 py-20 px-8 md:px-16 mt-20">
+    <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+      <!-- Brand Column -->
+      <div class="lg:col-span-2">
+        <a href="index.html" class="relative w-40 h-24 mb-6 block hover:scale-105 transition-transform duration-500">
           <img src="images/logo.png" alt="Pezzava" class="w-full h-full object-contain">
         </a>
+        <p class="font-body text-on-surface-variant max-w-md leading-relaxed mb-8">
+          Bridging the ornate architectural history of Rajasthan with the restrained clarity of modern editorial fashion. 
+          Purveyors of fine 100% cotton wrap-around skirts.
+        </p>
+        <p class="font-body text-[12px] uppercase tracking-widest text-primary font-bold">
+          Est. 2012 · © 2026 PEZZAVA. Crafted in Jaipur.
+        </p>
       </div>
-      <div class="col-span-1 flex flex-col gap-4">
-        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="products.html">Shop All</a>
-        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="about.html">Heritage</a>
+
+      <!-- Links Column 1 -->
+      <div class="flex flex-col gap-4">
+        <h4 class="font-display text-sm font-bold uppercase tracking-[0.2em] mb-4">Collection</h4>
+        <a href="products.html" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Shop All</a>
+        <a href="products.html" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">New Arrivals</a>
+        <a href="products.html" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Bestsellers</a>
       </div>
-      <div class="col-span-1 flex flex-col gap-4">
-        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="contact.html">Contact Us</a>
-        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="career.html">Careers</a>
-        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="https://www.instagram.com/pezzava6828" target="_blank">Instagram</a>
-        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="https://www.facebook.com/pezzava/" target="_blank">Facebook</a>
+
+      <!-- Links Column 2 -->
+      <div class="flex flex-col gap-4">
+        <h4 class="font-display text-sm font-bold uppercase tracking-[0.2em] mb-4">About Us</h4>
+        <a href="about.html" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">About Us</a>
+        <a href="contact.html" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Contact Us</a>
+        <a href="career.html" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Careers</a>
+        <a href="verification.html" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Internship Verification</a>
+        <a href="#" class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Terms of Service</a>
+      </div>
+    </div>
+
+    <div class="max-w-[1440px] mx-auto mt-20 pt-12 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex gap-10">
+        <a href="https://www.instagram.com/pezzava6828" target="_blank" rel="noopener noreferrer" class="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Instagram</a>
+        <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" class="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Facebook</a>
+      </div>
+      <div class="text-[10px] font-body text-stone-400 uppercase tracking-widest">
+          Handcrafted with love in the Pink City
       </div>
     </div>
   </footer>
@@ -292,32 +277,11 @@
 
   <script src="js/products.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/modern.js"></script>
   <script>
-    // Reveal Animations
-    function initReveals() {
-      const reveals = document.querySelectorAll('.reveal-fade');
-      const windowHeight = window.innerHeight;
-      
-      reveals.forEach(reveal => {
-        const revealTop = reveal.getBoundingClientRect().top;
-        if (revealTop < windowHeight - 50) {
-          reveal.classList.add('active');
-        }
-      });
-    }
-
-    window.addEventListener('scroll', initReveals);
-    
-    // Mobile Menu Toggle
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    });
 
     // Populate Featured Products
     document.addEventListener('DOMContentLoaded', () => {
-      initReveals();
-
       const grid = document.getElementById('featured-editorial-grid');
       if (grid && typeof products !== 'undefined') {
         const featured = products.slice(0, 4); 
