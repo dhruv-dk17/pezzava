@@ -21,16 +21,16 @@ export default function Hero() {
       {/* Parallax Background Image */}
       <motion.div 
         style={{ y, scale }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-black"
       >
         <Image
           src="/images/hero-heritage.png"
           alt="Pezzava Collection"
           fill
           priority
-          className="object-cover object-center"
+          className="object-contain object-center"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/40" />
       </motion.div>
 
       {/* Content Overlay */}

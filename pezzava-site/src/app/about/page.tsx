@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col w-full bg-background min-h-screen">
       {/* Hero Section - Editorial Style */}
-      <section className="relative min-h-[90vh] flex items-center pt-24 pb-12 px-6 md:px-12 lg:px-24">
+      <section className="relative min-h-[90vh] flex items-center pt-40 pb-12 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <div className="lg:col-span-5 z-10 relative">

@@ -37,7 +37,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(true)}
-          className="md:hidden text-primary hover:opacity-100 opacity-80 transition-opacity"
+          className={`md:hidden hover:opacity-100 transition-opacity drop-shadow-md ${scrolled ? "text-primary" : "text-white"}`}
         >
           <Menu size={24} />
         </button>
@@ -62,26 +62,30 @@ const Header = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group"
+              className={`font-body text-[12px] font-medium uppercase tracking-widest transition-colors relative group drop-shadow-md ${
+                scrolled ? "text-on-surface-variant" : "text-white"
+              } hover:text-primary`}
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+              <span className={`absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full`}></span>
             </Link>
           ))}
         </nav>
 
         {/* Action Buttons */}
         <div className="flex items-center gap-6">
-          <Link href="/shop" className="text-primary hover:opacity-100 opacity-80 transition-opacity hidden md:block">
+          <Link href="/shop" className={`hover:opacity-100 opacity-90 transition-opacity hidden md:block drop-shadow-md ${scrolled ? "text-primary" : "text-white"}`}>
             <ShoppingBag size={22} />
           </Link>
           <Link
             href="/shop"
-            className="hidden lg:flex items-center gap-3 bg-on-surface text-white px-8 py-3 text-[10px] uppercase tracking-[0.3em] font-bold rounded-sm hover:bg-primary transition-all duration-500 hover:shadow-2xl"
+            className={`hidden lg:flex items-center gap-3 px-8 py-3 text-[10px] uppercase tracking-[0.3em] font-bold rounded-sm transition-all duration-500 hover:shadow-2xl ${
+              scrolled ? "bg-on-surface text-white hover:bg-primary" : "bg-white text-on-surface hover:bg-primary hover:text-white"
+            }`}
           >
             Explore Shop
           </Link>
-          <Link href="/shop" className="md:hidden text-primary">
+          <Link href="/shop" className={`md:hidden drop-shadow-md ${scrolled ? "text-primary" : "text-white"}`}>
             <ShoppingBag size={22} />
           </Link>
         </div>
