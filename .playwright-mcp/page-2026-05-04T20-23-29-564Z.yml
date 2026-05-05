@@ -1,0 +1,740 @@
+- generic [ref=e2]:
+  - navigation "Shortcuts menu" [ref=e3]:
+    - heading "Skip to" [level=2] [ref=e4]
+    - list "Skip to" [ref=e5]:
+      - listitem [ref=e6]:
+        - link "main content" [ref=e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+      - listitem [ref=e8]:
+        - link "About this item" [ref=e9] [cursor=pointer]:
+          - /url: "#productFactsDesktopExpander"
+      - listitem [ref=e10]:
+        - link "Skip to buying options" [ref=e11] [cursor=pointer]:
+          - /url: "#buybox"
+          - text: Buying options
+    - separator [ref=e12]
+    - heading "Keyboard shortcuts" [level=2] [ref=e13]
+    - list "Keyboard shortcuts" [ref=e14]:
+      - listitem [ref=e15]:
+        - link "Search, alt, forward slash" [ref=e16] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e17]:
+            - generic [ref=e18]: Search
+            - generic [ref=e19]:
+              - generic [ref=e20]: alt
+              - generic [ref=e21]: +
+              - generic [ref=e22]: /
+      - listitem [ref=e23]:
+        - link "Cart, shift, alt, c" [ref=e24] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e25]:
+            - generic [ref=e26]: Cart
+            - generic [ref=e27]:
+              - generic [ref=e28]: shift
+              - generic [ref=e29]: +
+              - generic [ref=e30]: alt
+              - generic [ref=e31]: +
+              - generic [ref=e32]: C
+      - listitem [ref=e33]:
+        - link "Home, shift, alt, h" [ref=e34] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e35]:
+            - generic [ref=e36]: Home
+            - generic [ref=e37]:
+              - generic [ref=e38]: shift
+              - generic [ref=e39]: +
+              - generic [ref=e40]: alt
+              - generic [ref=e41]: +
+              - generic [ref=e42]: H
+      - listitem [ref=e43]:
+        - link "Your orders, shift, alt, o" [ref=e44] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e45]:
+            - generic [ref=e46]: Orders
+            - generic [ref=e47]:
+              - generic [ref=e48]: shift
+              - generic [ref=e49]: +
+              - generic [ref=e50]: alt
+              - generic [ref=e51]: +
+              - generic [ref=e52]: O
+      - listitem [ref=e53]:
+        - button "Add to cart, shift, alt, K" [ref=e54] [cursor=pointer]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Add to cart
+            - generic [ref=e57]:
+              - generic [ref=e58]: shift
+              - generic [ref=e59]: +
+              - generic [ref=e60]: alt
+              - generic [ref=e61]: +
+              - generic [ref=e62]: K
+      - listitem [ref=e63]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=e64] [cursor=pointer]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: Show/Hide shortcuts
+            - generic [ref=e67]:
+              - generic [ref=e68]: shift
+              - generic [ref=e69]: +
+              - generic [ref=e70]: alt
+              - generic [ref=e71]: +
+              - generic [ref=e72]: Z
+    - generic [ref=e78]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=e79]:
+    - navigation "Primary" [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - link "Amazon.in" [ref=e84] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Surat 395007 Update location" [ref=e87] [cursor=pointer]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Delivering to Surat 395007
+              - generic [ref=e91]: Update location
+        - search [ref=e94]:
+          - generic [ref=e97]:
+            - generic [ref=e99]: Clothing & Accessories
+            - combobox "Select the department you want to search in" [ref=e101] [cursor=pointer]:
+              - option "All Categories"
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories" [selected]
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=e104]
+          - generic "Go" [ref=e107] [cursor=pointer]:
+            - button "Go" [ref=e108]
+        - generic [ref=e110]:
+          - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e112] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+            - generic [ref=e115]:
+              - img "India" [ref=e116]
+              - generic [ref=e117]: EN
+          - link "Hello, sign in Account & Lists" [ref=e119] [cursor=pointer]:
+            - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2FPezzava-Cotton-Printed-Around-Skirt%2Fdp%2FB08KRYYZPF%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+            - generic [ref=e121]: Hello, sign in
+            - generic [ref=e122]: Account & Lists
+          - link "Returns & Orders" [ref=e123] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=e124]: Returns
+            - generic [ref=e125]: "& Orders"
+          - link "0 items in cart" [ref=e126] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [ref=e128]: "0"
+            - generic [ref=e131]: Cart
+      - generic [ref=e132]:
+        - button "Open All Categories Menu" [ref=e134] [cursor=pointer]:
+          - generic [ref=e136]: All
+        - list [ref=e140]:
+          - listitem [ref=e141]:
+            - link "Fresh" [ref=e143] [cursor=pointer]:
+              - /url: /fresh?ref_=nav_cs_fresh
+          - listitem [ref=e144]:
+            - link "MX Player" [ref=e146] [cursor=pointer]:
+              - /url: /minitv?ref_=nav_avod_desktop_topnav
+          - listitem [ref=e147]:
+            - link "Sell" [ref=e149] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=e150]:
+            - link "Bestsellers" [ref=e152] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=e153]:
+            - link "Mobiles" [ref=e155] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=e156]:
+            - link "Today's Deals" [ref=e158] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=e159]:
+            - link "Customer Service" [ref=e161] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=e162]:
+            - link "New Releases" [ref=e164] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=e165]:
+            - link "Prime" [ref=e167] [cursor=pointer]:
+              - /url: /prime?ref_=nav_cs_primelink_nonmember
+          - listitem [ref=e168]:
+            - link "Amazon Pay" [ref=e170] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=e171]:
+            - link "Electronics" [ref=e173] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=e174]:
+            - link "Fashion" [ref=e176] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=e177]:
+            - link "Home & Kitchen" [ref=e179] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=e180]:
+            - link "Computers" [ref=e182] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=e183]:
+            - link "Books" [ref=e185] [cursor=pointer]:
+              - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+          - listitem [ref=e186]:
+            - link "Toys & Games" [ref=e188] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=e189]:
+            - link "Gift Cards" [ref=e191] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=e192]:
+            - link "Beauty & Personal Care" [ref=e194] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=e195]:
+            - link "Car & Motorbike" [ref=e197] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=e198]:
+            - link "Home Improvement" [ref=e200] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=e201]:
+            - link "Custom Products" [ref=e203] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=e204]:
+            - link "Sports, Fitness & Outdoors" [ref=e206] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=e207]:
+            - link "Health, Household & Personal Care" [ref=e209] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=e210]:
+            - link "Grocery & Gourmet Foods" [ref=e212] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=e213]:
+            - link "Pet Supplies" [ref=e215] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=e216]:
+            - link "Baby" [ref=e218] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=e219]:
+            - link "Video Games" [ref=e221] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=e222]:
+            - link "AmazonBasics" [ref=e224] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=e225]:
+            - link "Audible" [ref=e227] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=e228]:
+            - link "Subscribe & Save" [ref=e230] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=e231]:
+            - link "Kindle eBooks" [ref=e233] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=e234]:
+            - link "Flights" [ref=e236] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+        - link "Jan26_Event" [ref=e240] [cursor=pointer]:
+          - /url: /events/greatsummersale/?_encoding=UTF8&ref_=nav_swm_event&pf_rd_p=5b0cae96-094f-4960-87ea-c493b25457f0&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=V7WZYQ34F6QXWEC3ZZX0
+          - img "Jan26_Event" [ref=e241]
+      - list [ref=e244]:
+        - listitem [ref=e245]:
+          - link "Amazon Fashion" [ref=e247] [cursor=pointer]:
+            - /url: /b/?ie=UTF8&node=6648217031&ref_=topnav_storetab_top_ap_mega
+            - img "Amazon Fashion" [ref=e249]
+        - listitem [ref=e250]:
+          - generic [ref=e251]:
+            - link "Women" [ref=e252] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=7459780031&ref_=sv_top_ap_mega_1
+            - button "Women, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e253] [cursor=pointer]
+        - listitem [ref=e254]:
+          - generic [ref=e255]:
+            - link "Men" [ref=e256] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=7459781031&ref_=sv_top_ap_mega_2
+            - button "Men, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e257] [cursor=pointer]
+        - listitem [ref=e258]:
+          - generic [ref=e259]:
+            - link "Kids" [ref=e260] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=9361420031&ref_=sv_top_ap_mega_3
+            - button "Kids, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e261] [cursor=pointer]
+        - listitem [ref=e262]:
+          - generic [ref=e263]:
+            - link "Bags & Luggage" [ref=e264] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=2454169031&ref_=sv_top_ap_mega_4
+            - button "Bags & Luggage, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e265] [cursor=pointer]
+        - listitem [ref=e266]:
+          - generic [ref=e267]:
+            - link "Sportswear" [ref=e268] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=12302882031&ref_=sv_top_ap_mega_5
+            - button "Sportswear, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e269] [cursor=pointer]
+        - listitem [ref=e270]:
+          - generic [ref=e271]:
+            - link "Sales & Deals" [ref=e272] [cursor=pointer]:
+              - /url: /b/?_encoding=UTF8&node=4188827031&ref_=sv_top_ap_mega_6
+            - button "Sales & Deals, You are currently on a drop-down. To open this drop-down, Press Enter." [ref=e273] [cursor=pointer]
+  - main [ref=e277]:
+    - list [ref=e283]:
+      - listitem [ref=e284]:
+        - link "Clothing & Accessories" [ref=e286] [cursor=pointer]:
+          - /url: /Clothing-accesories/b/ref=dp_bc_1?ie=UTF8&node=1571271031
+      - listitem [ref=e287]: ›
+      - listitem [ref=e288]:
+        - link "Women" [ref=e290] [cursor=pointer]:
+          - /url: /Womens-clothing/b/ref=dp_bc_2?ie=UTF8&node=1953602031
+      - listitem [ref=e291]: ›
+      - listitem [ref=e292]:
+        - link "Western Wear" [ref=e294] [cursor=pointer]:
+          - /url: /womens-western-wear/b/ref=dp_bc_3?ie=UTF8&node=11400137031
+      - listitem [ref=e295]: ›
+      - listitem [ref=e296]:
+        - link "Skirts & Shorts" [ref=e298] [cursor=pointer]:
+          - /url: /b/ref=dp_bc_4?ie=UTF8&node=15330094031
+      - listitem [ref=e299]: ›
+      - listitem [ref=e300]:
+        - link "Skirts" [ref=e302] [cursor=pointer]:
+          - /url: /Women-Skirts/b/ref=dp_bc_5?ie=UTF8&node=1968511031
+    - generic [ref=e304]:
+      - generic [ref=e305]:
+        - generic [ref=e307]:
+          - button "Share" [ref=e308]:
+            - button "Share" [ref=e309] [cursor=pointer]
+          - generic [ref=e312]:
+            - radiogroup "Image thumbnails" [ref=e314]:
+              - listitem [ref=e315]:
+                - radio [ref=e320] [cursor=pointer]
+              - listitem [ref=e322]:
+                - radio [ref=e327] [cursor=pointer]
+              - listitem [ref=e329]:
+                - radio [ref=e334] [cursor=pointer]
+              - listitem [ref=e336]:
+                - radio [ref=e341] [cursor=pointer]
+              - listitem [ref=e343]:
+                - radio [ref=e348] [cursor=pointer]
+            - generic [ref=e352]:
+              - list
+              - list [ref=e353]:
+                - listitem [ref=e354] [cursor=pointer]:
+                  - button "Pezzava Cotton Printed Wrap Around Skirt for Women(Red, Free Size)" [ref=e357]:
+                    - img "Pezzava Cotton Printed Wrap Around Skirt for Women(Red, Free Size)" [ref=e358]
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - list
+      - generic [ref=e364]:
+        - generic [ref=e365]:
+          - generic [ref=e366]:
+            - 'link "Brand: Pezzava" [ref=e370] [cursor=pointer]':
+              - /url: /Pezzava/b/ref=bl_sl_s_ap_web_50914867031?ie=UTF8&node=50914867031&field-lbr_brands_browse-bin=Pezzava
+            - generic [ref=e371]:
+              - heading "Cotton Printed Wrap Around Skirt for Women(Red, Free Size)" [level=1] [ref=e374]
+              - generic [ref=e376]:
+                - generic "5.0 out of 5 stars" [ref=e378]:
+                  - button "5.0 out of 5 stars" [ref=e380] [cursor=pointer]:
+                    - text: "5.0"
+                    - generic [ref=e382]: 5.0 out of 5 stars
+                - link "1 Review" [ref=e385] [cursor=pointer]:
+                  - /url: "#averageCustomerReviewsAnchor"
+                  - text: (1)
+          - separator [ref=e386]
+          - generic [ref=e389]:
+            - generic [ref=e391]:
+              - generic [ref=e392]:
+                - generic [ref=e393]: ₹249.00 with 64 percent savings
+                - generic [ref=e394]: "-64%"
+                - generic [ref=e396]: ₹249
+              - generic [ref=e399]:
+                - generic [ref=e400]: "M.R.P.: ₹699.00"
+                - generic [ref=e401]:
+                  - text: "M.R.P.:"
+                  - generic [ref=e402]:
+                    - generic [ref=e403]: ₹699
+                    - text: ₹699
+            - generic [ref=e405]: Inclusive of all taxes
+            - generic:
+              - table
+          - generic [ref=e413]:
+            - heading "Offers" [level=5] [ref=e417]
+            - region [ref=e419]:
+              - generic [ref=e421]:
+                - list [ref=e425]:
+                  - listitem [ref=e426] [cursor=pointer]:
+                    - generic [ref=e428]:
+                      - heading "Cashback" [level=6] [ref=e429]
+                      - generic [ref=e431]:
+                        - generic [ref=e432]: Upto ₹7.00 cashback as Amazon Pay Balance when you pay with Amazon Pay ICICI Bank Credit Cards
+                        - generic [ref=e433]: Upto ₹7.00 cashback as Amazon Pay Balance when you…
+                      - link "1 offer" [ref=e434]:
+                        - /url: "#"
+                  - listitem [ref=e435] [cursor=pointer]:
+                    - generic [ref=e437]:
+                      - heading "Bank Offer" [level=6] [ref=e438]
+                      - generic [ref=e440]:
+                        - generic [ref=e441]: Upto ₹2,500.00 discount on select Credit Cards
+                        - generic [ref=e442]: Upto ₹2,500.00 discount on select Credit Cards
+                      - link "28 offers" [ref=e443]:
+                        - /url: "#"
+                - button "Next page" [ref=e445] [cursor=pointer]:
+                  - generic [ref=e448]: Next page
+          - generic [ref=e453]:
+            - button "10 days Return & Exchange" [ref=e458] [cursor=pointer]
+            - button "Amazon Delivered" [ref=e462] [cursor=pointer]
+            - button "Secure transaction" [ref=e466] [cursor=pointer]
+          - generic [ref=e467]:
+            - heading "Product details" [level=1] [ref=e469]
+            - generic [ref=e471]:
+              - generic [ref=e473]:
+                - button "Top highlights" [expanded] [ref=e475] [cursor=pointer]:
+                  - heading "Top highlights" [level=5] [ref=e477]
+                - generic [ref=e479]:
+                  - generic [ref=e480]:
+                    - list [ref=e481]:
+                      - generic [ref=e483]:
+                        - generic [ref=e485]: Material type
+                        - generic [ref=e487]: Cotton
+                      - generic [ref=e489]:
+                        - generic [ref=e491]: Closure type
+                        - generic [ref=e493]: Drawstring
+                      - generic [ref=e495]:
+                        - generic [ref=e497]: Style
+                        - generic [ref=e499]: Wrap
+                      - generic [ref=e501]:
+                        - generic [ref=e503]: Occasion type
+                        - generic [ref=e505]: Casual
+                      - generic [ref=e507]:
+                        - generic [ref=e509]: Length
+                        - generic [ref=e511]: Mini
+                      - generic [ref=e513]:
+                        - generic [ref=e515]: Pattern
+                        - generic [ref=e517]: Block Print
+                      - generic [ref=e519]:
+                        - generic [ref=e521]: Country of Origin
+                        - generic [ref=e523]: India
+                    - separator [ref=e524]
+                    - heading "About this item" [level=3] [ref=e525]
+                    - list [ref=e526]:
+                      - listitem [ref=e527]: "Skirt Length : 15 Inches long"
+                      - listitem [ref=e528]: Skirt Open waist 38 Inches but skirt is useful for maximum 34 inches waist holder
+                      - listitem [ref=e529]: 100% Cotton printed
+                      - listitem [ref=e530]: "Skirt type : Wraparound skirt"
+                      - listitem [ref=e531]: "Color : As on image but a little bit color may change due to photographic effects or your display settings"
+                    - separator [ref=e532]
+                    - heading "Additional Information" [level=3] [ref=e533]
+                    - generic [ref=e535]:
+                      - generic [ref=e537]: Net Quantity
+                      - generic [ref=e539]: 1.00 Count
+                    - generic [ref=e541]:
+                      - generic [ref=e543]: Generic Name
+                      - generic [ref=e545]: skirt
+                  - button [ref=e548] [cursor=pointer]:
+                    - generic [ref=e550]:
+                      - text: See more
+                      - generic [ref=e551]: About this item
+              - button "Style" [ref=e555] [cursor=pointer]:
+                - heading "Style" [level=5] [ref=e557]
+              - button "Item details" [ref=e561] [cursor=pointer]:
+                - heading "Item details" [level=5] [ref=e563]
+            - link "See all product specifications" [disabled] [ref=e569] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - link "Report an issue with this product" [ref=e574] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e575]:
+            - separator [ref=e576]
+            - generic [ref=e579]:
+              - iframe [ref=e580]:
+                - generic [ref=f1e4]:
+                  - link "BF BODY FIGURE Women's Midi Tiger Print Wrap Around Skirt | Women Wear Midi Skirt, Color - Multicolor" [ref=f1e6] [cursor=pointer]:
+                    - /url: https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNTc4NDEzMTA1NDcwMjQ1OjE3Nzc5MjYyMDU6c3BfaHFwX3NoYXJlZDozMDA3MjkxODc2MTk1MzI6Ojo6&url=%2Fdp%2FB0CVQ8JKRQ%2Fref%3Dsspa_dk_hqp_detail_aax_0%3Fpsc%3D1%26aref%3DAfq1VFLZPc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk&aref=Afq1VFLZPc&sp_cr=ZAZ
+                  - img "BF BODY FIGURE Women&#39;s Midi Tiger Print Wrap Around Skirt | Women Wear Midi Skirt, Color - Multicolor" [ref=f1e7]
+                  - generic [ref=f1e8]:
+                    - generic [ref=f1e9]: BF BODY FIGURE...
+                    - generic [ref=f1e11]: ₹453.00
+              - button "Leave feedback on Sponsored advertisement" [ref=e582] [cursor=pointer]:
+                - generic [ref=e583]: Sponsored
+        - generic [ref=e596]:
+          - generic [ref=e603]:
+            - generic [ref=e604]: ₹249.00
+            - generic [ref=e605]:
+              - text: ₹
+              - generic [ref=e606]:
+                - text: "249"
+                - generic [ref=e607]: .
+              - text: "00"
+          - generic [ref=e609]:
+            - generic [ref=e615]:
+              - generic [ref=e618]:
+                - generic [ref=e620]:
+                  - text: ₹40 delivery Tuesday, 12 May. Order within 7 hrs 6 mins.
+                  - link "Details about delivery costs and shipping methods" [ref=e621] [cursor=pointer]:
+                    - /url: /gp/help/customer/display.html/ref=ddm_not_ft_dp?nodeId=200534000
+                    - text: Details
+                - generic [ref=e623]: Arrives after Mother's Day.
+              - button "Delivering to Surat 395007 - Update location" [ref=e626] [cursor=pointer]:
+                - generic [ref=e632]: Delivering to Surat 395007 - Update location
+            - generic [ref=e639]: Only 4 left in stock.
+            - group "Seller, shipping, and buying option details" [ref=e645]:
+              - generic [ref=e646]:
+                - heading "Delivered by" [level=4] [ref=e647]:
+                  - generic [ref=e648]: Delivered by
+                - generic [ref=e651]: Amazon
+              - generic [ref=e652]:
+                - heading "Sold by" [level=4] [ref=e653]:
+                  - generic [ref=e654]: Sold by
+                - link "Lifestyle Preview" [ref=e658] [cursor=pointer]:
+                  - /url: /gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A12BT0EQ0ZE8T1&asin=B08KRYYZPF&ref_=dp_merchant_link
+              - generic [ref=e661]:
+                - heading "Payment" [level=4] [ref=e662]:
+                  - generic [ref=e663]: Payment
+                - button "Secure transaction" [ref=e666] [cursor=pointer]:
+                  - generic [ref=e667]: Secure transaction
+            - generic [ref=e675]:
+              - generic [ref=e676]: "Quantity:"
+              - combobox "Quantity:" [ref=e677]:
+                - option "1" [selected]
+                - option "2"
+                - option "3"
+                - option "4"
+              - generic [ref=e680] [cursor=pointer]: Quantity:1
+            - generic [ref=e687] [cursor=pointer]:
+              - button "Add to cart" [ref=e688]
+              - generic [ref=e689]: Add to cart
+            - generic [ref=e694] [cursor=pointer]:
+              - button "Buy Now" [ref=e695]
+              - generic [ref=e696]: Buy Now
+          - generic [ref=e697]:
+            - separator [ref=e698]
+            - link "Add to Wish List" [ref=e703] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB08KRYYZPF&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inamazon&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=e705]:
+    - button "Back to top" [ref=e706] [cursor=pointer]:
+      - generic [ref=e707]: Back to top
+    - generic [ref=e708]:
+      - generic [ref=e709]:
+        - heading "Get to Know Us" [level=6] [ref=e710]
+        - list [ref=e711]:
+          - listitem [ref=e712]:
+            - link "About Amazon" [ref=e713] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e714]:
+            - link "Careers" [ref=e715] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=e716]:
+            - link "Press Releases" [ref=e717] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e718]:
+            - link "Amazon Science" [ref=e719] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=e721]:
+        - heading "Connect with Us" [level=6] [ref=e722]
+        - list [ref=e723]:
+          - listitem [ref=e724]:
+            - link "Facebook" [ref=e725] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=e726]:
+            - link "Twitter" [ref=e727] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=e728]:
+            - link "Instagram" [ref=e729] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=e731]:
+        - heading "Make Money with Us" [level=6] [ref=e732]
+        - list [ref=e733]:
+          - listitem [ref=e734]:
+            - link "Sell on Amazon" [ref=e735] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=e736]:
+            - link "Sell under Amazon Accelerator" [ref=e737] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=e738]:
+            - link "Protect and Build Your Brand" [ref=e739] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=e740]:
+            - link "Amazon Global Selling" [ref=e741] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=e742]:
+            - link "Supply to Amazon" [ref=e743] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=e744]:
+            - link "Become an Affiliate" [ref=e745] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=e746]:
+            - link "Fulfilment by Amazon" [ref=e747] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=e748]:
+            - link "Advertise Your Products" [ref=e749] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=e750]:
+            - link "Amazon Pay on Merchants" [ref=e751] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=e753]:
+        - heading "Let Us Help You" [level=6] [ref=e754]
+        - list [ref=e755]:
+          - listitem [ref=e756]:
+            - link "Your Account" [ref=e757] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=e758]:
+            - link "Returns Centre" [ref=e759] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=e760]:
+            - link "Recalls and Product Safety Alerts" [ref=e761] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=e762]:
+            - link "100% Purchase Protection" [ref=e763] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=e764]:
+            - link "Amazon App Download" [ref=e765] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=e766]:
+            - link "Help" [ref=e767] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=e769]:
+      - link "Amazon India Home" [ref=e772] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=e775]:
+        - generic [ref=e776]:
+          - link "Choose a language for shopping. Current selection is English." [ref=e777] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=e779]: English
+          - button "Expand to Change Language or Country" [ref=e780] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=e781] [cursor=pointer]:
+          - generic [ref=e783]: India
+    - generic "More on Amazon" [ref=e784]:
+      - generic "More on Amazon" [ref=e785]:
+        - list [ref=e786]:
+          - listitem [ref=e787]:
+            - link "AbeBooks Books, art & collectibles" [ref=e788] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=e789]
+              - generic [ref=e790]:
+                - text: Books, art
+                - text: "& collectibles"
+          - listitem [ref=e791]
+          - listitem [ref=e792]:
+            - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e793] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=e794]
+              - generic [ref=e795]:
+                - text: Scalable Cloud
+                - text: Computing Services
+          - listitem [ref=e796]
+          - listitem [ref=e797]:
+            - link "Audible Download Audio Books" [ref=e798] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=e799]
+              - generic [ref=e800]:
+                - text: Download
+                - text: Audio Books
+          - listitem [ref=e801]
+          - listitem [ref=e802]:
+            - link "IMDb Movies, TV & Celebrities" [ref=e803] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=e804]
+              - generic [ref=e805]:
+                - text: Movies, TV
+                - text: "& Celebrities"
+        - list [ref=e806]:
+          - listitem [ref=e807]:
+            - link "Shopbop Designer Fashion Brands" [ref=e808] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=e809]
+              - generic [ref=e810]:
+                - text: Designer
+                - text: Fashion Brands
+          - listitem [ref=e811]
+          - listitem [ref=e812]:
+            - link "Amazon Business Everything For Your Business" [ref=e813] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=e814]
+              - generic [ref=e815]:
+                - text: Everything For
+                - text: Your Business
+          - listitem [ref=e816]
+          - listitem [ref=e817]:
+            - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes" [ref=e818] [cursor=pointer]:
+              - /url: /music/prime?ref=footer_apm
+              - heading "Amazon Prime Music" [level=5] [ref=e819]
+              - generic [ref=e820]:
+                - text: 100 million songs, ad-free
+                - text: Over 15 million podcast episodes
+          - listitem [ref=e821]
+          - listitem [ref=e822]
+    - generic [ref=e823]:
+      - list [ref=e824]:
+        - listitem [ref=e825]:
+          - link "Conditions of Use & Sale" [ref=e826] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=e827]:
+          - link "Privacy Notice" [ref=e828] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=e829]:
+          - link "Interest-Based Ads" [ref=e830] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=e831]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=e833]:
+    - iframe [ref=f2e2]:
+      - generic [active]:
+        - img [ref=f3e1]
+        - img [ref=f3e2]
+        - img [ref=f3e3]
+        - img [ref=f3e4]
+        - img [ref=f3e5]
+        - img [ref=f3e6]
+        - img [ref=f3e7]
+        - img [ref=f3e8]
+        - img [ref=f3e9]
+        - img [ref=f3e10]
+        - img [ref=f3e11]
+        - img [ref=f3e12]
+        - img [ref=f3e13]
+        - img [ref=f3e14]
+        - img [ref=f3e15]
+        - img [ref=f3e16]
+        - img [ref=f3e17]
+        - img [ref=f3e18]
+        - img [ref=f3e19]
+        - img [ref=f3e20]
+        - img [ref=f3e21]
+        - img [ref=f3e22]
+        - img [ref=f3e23]
+        - img [ref=f3e24]
+        - img [ref=f3e25]
+        - img [ref=f3e26]
+        - img [ref=f3e27]
+        - img [ref=f3e28]
+        - img [ref=f3e29]
+        - img [ref=f3e30]
+        - img [ref=f3e31]
+        - img [ref=f3e32]
+        - img [ref=f3e33]
+        - img [ref=f3e34]
+        - img [ref=f3e35]
+        - img [ref=f3e36]
+        - img [ref=f3e37]
+        - img [ref=f3e38]

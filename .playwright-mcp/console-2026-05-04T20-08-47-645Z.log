@@ -1,0 +1,6 @@
+[    2035ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:8123/js/products.js:0
+[    2047ms] ReferenceError: loadProducts is not defined
+    at HTMLDocument.<anonymous> (http://127.0.0.1:8123/products.html:101:7)
+[   22964ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:8123/js/products.js:0
+[   22965ms] ReferenceError: loadProducts is not defined
+    at HTMLDocument.<anonymous> (http://127.0.0.1:8123/products.html:101:7)

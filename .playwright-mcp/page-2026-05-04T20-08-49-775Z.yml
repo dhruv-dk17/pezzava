@@ -1,0 +1,75 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "✿ Pezzava" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: ✿ Pezzava
+      - navigation [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Shop" [ref=e8] [cursor=pointer]:
+          - /url: products.html
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: about.html
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: contact.html
+  - generic [ref=e12]:
+    - heading "Our Collection" [level=1] [ref=e13]
+    - paragraph [ref=e14]: Beautiful cotton wrap around skirts — shop on your favourite marketplace
+  - generic [ref=e17]:
+    - button "✦ All Products" [ref=e18] [cursor=pointer]:
+      - generic [ref=e19]: ✦
+      - text: All Products
+    - button "🟠 Amazon" [ref=e20] [cursor=pointer]:
+      - generic [ref=e21]: 🟠
+      - text: Amazon
+    - button "🔵 Flipkart" [ref=e22] [cursor=pointer]:
+      - generic [ref=e23]: 🔵
+      - text: Flipkart
+  - generic [ref=e26]:
+    - complementary [ref=e27]:
+      - heading "Filters" [level=3] [ref=e28]
+      - generic [ref=e29]:
+        - heading "Length" [level=4] [ref=e30]
+        - generic [ref=e31] [cursor=pointer]:
+          - checkbox "Mini" [ref=e32]
+          - text: Mini
+        - generic [ref=e33] [cursor=pointer]:
+          - checkbox "Knee Length" [ref=e34]
+          - text: Knee Length
+        - generic [ref=e35] [cursor=pointer]:
+          - checkbox "Calf Length" [ref=e36]
+          - text: Calf Length
+        - generic [ref=e37] [cursor=pointer]:
+          - checkbox "Long" [ref=e38]
+          - text: Long
+      - generic [ref=e39]:
+        - heading "Color" [level=4] [ref=e40]
+        - generic [ref=e41] [cursor=pointer]:
+          - checkbox "Red" [ref=e42]
+          - text: Red
+        - generic [ref=e43] [cursor=pointer]:
+          - checkbox "Black" [ref=e44]
+          - text: Black
+        - generic [ref=e45] [cursor=pointer]:
+          - checkbox "Blue" [ref=e46]
+          - text: Blue
+        - generic [ref=e47] [cursor=pointer]:
+          - checkbox "Green" [ref=e48]
+          - text: Green
+        - generic [ref=e49] [cursor=pointer]:
+          - checkbox "Multicolor" [ref=e50]
+          - text: Multicolor
+      - button "Clear All" [ref=e51] [cursor=pointer]
+    - generic [ref=e53]:
+      - heading "Loading..." [level=2] [ref=e54]
+      - combobox [ref=e55]:
+        - 'option "Sort by: Default" [selected]'
+        - 'option "Price: Low → High"'
+        - 'option "Price: High → Low"'
+        - option "Highest Rated"
+        - option "Most Reviewed"
+  - contentinfo [ref=e56]:
+    - generic [ref=e58]:
+      - generic [ref=e59]: © 2025 Pezzava. All rights reserved.
+      - generic [ref=e60]: Made with ❤️ in Jaipur, Rajasthan

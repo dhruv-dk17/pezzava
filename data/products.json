@@ -1,0 +1,851 @@
+[
+  {
+    "id": "amz-001",
+    "name": "Pezzava Womens Cotton Knee Length Wrap Skirt (Free Size) Black",
+    "shortName": "Navy Tribal Art Mini Skirt",
+    "color": "Black",
+    "price": 279,
+    "originalPrice": 799,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Mini",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Beautifully crafted cotton mini wrap skirt with navy blue tribal art prints. Features traditional Rajasthani folk motifs in orange and white.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_1.webp",
+      "images/products/Internet_20260504_200016_3.webp",
+      "images/products/Internet_20260504_200016_4.webp",
+      "images/products/Internet_20260504_200016_5.webp",
+      "images/products/Internet_20260504_200016_6.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "mini",
+      "navy",
+      "tribal"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Length-Skirt/dp/B08GJQZ8XV/",
+      "flipkart": null
+    },
+    "rating": 4.2,
+    "reviews": 156,
+    "inStock": true,
+    "featured": true,
+    "prefix": "Internet_20260504_200016"
+  },
+  {
+    "id": "amz-002",
+    "name": "Pezzava Women's Wear Cotton Black & White Mini Wrap Skirt",
+    "shortName": "Black & White Mandala Skirt",
+    "color": "Black & White",
+    "price": 279,
+    "originalPrice": 750,
+    "discount": 49,
+    "fabric": "100% Cotton",
+    "length": "Knee Length",
+    "size": "Free Size",
+    "category": "mini",
+    "store": "amazon",
+    "description": "Stylish black and white mandala printed cotton wrap skirt. Bold contrast prints with spiral and paisley patterns.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_2.webp",
+      "images/products/Internet_20260504_200037_1.webp",
+      "images/products/Internet_20260504_200037_2.webp",
+      "images/products/Internet_20260504_200037_3.webp",
+      "images/products/Internet_20260504_200037_4.webp",
+      "images/products/Internet_20260504_200037_5.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "knee",
+      "black",
+      "white",
+      "mandala"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Black-White/dp/B07ZDDZCVG/",
+      "flipkart": null
+    },
+    "rating": 4.1,
+    "reviews": 89,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_200037"
+  },
+  {
+    "id": "amz-003",
+    "name": "Pezzava Womens Wear Cotton Knee Length Wrap Skirt (Free Size) Black",
+    "shortName": "Colorful Elephant Calf Skirt",
+    "color": "Black",
+    "price": 319,
+    "originalPrice": 850,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Calf Length",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Beautiful calf length cotton skirt with vibrant multicolor elephant and geometric prints. Handcrafted in Jaipur.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_3.webp",
+      "images/products/Internet_20260504_200057_1.webp",
+      "images/products/Internet_20260504_200057_2.webp",
+      "images/products/Internet_20260504_200057_3.webp",
+      "images/products/Internet_20260504_200057_4.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "calf",
+      "multicolor",
+      "elephant",
+      "printed"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Length-Skirt/dp/B08GJRPWWS/",
+      "flipkart": null
+    },
+    "rating": 4.3,
+    "reviews": 127,
+    "inStock": true,
+    "featured": true,
+    "prefix": "Internet_20260504_200057"
+  },
+  {
+    "id": "amz-004",
+    "name": "Pezzava Women Cotton Knee Wrap Around Skirt Blue",
+    "shortName": "B&W Paisley Elephant Skirt",
+    "color": "Blue",
+    "price": 319,
+    "originalPrice": 899,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Knee Length",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Elegant black and white cotton wrap around skirt with paisley, elephant, and floral motifs in horizontal bands.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_4.webp",
+      "images/products/Internet_20260504_200127_1.webp",
+      "images/products/Internet_20260504_200127_2.webp",
+      "images/products/Internet_20260504_200127_3.webp",
+      "images/products/Internet_20260504_200127_4.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "knee",
+      "black",
+      "white",
+      "elephant"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Women-Cotton-Around-Skirt/dp/B08WHLWKB5/",
+      "flipkart": null
+    },
+    "rating": 4.4,
+    "reviews": 203,
+    "inStock": true,
+    "featured": true,
+    "prefix": "Internet_20260504_200127"
+  },
+  {
+    "id": "amz-005",
+    "name": "Pezzava wrap Around Skirt Cotton Stylish Jaipuri Printed Knee Length for Women Red",
+    "shortName": "B&W Elephant Floral Short Skirt",
+    "color": "Red",
+    "price": 319,
+    "originalPrice": 900,
+    "discount": 49,
+    "fabric": "100% Cotton",
+    "length": "Mini",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Stylish Jaipuri printed wrap around skirt in black and white with elephant and floral band patterns.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_5.webp",
+      "images/products/Internet_20260504_200150_1.webp",
+      "images/products/Internet_20260504_200150_2.webp",
+      "images/products/Internet_20260504_200150_3.webp",
+      "images/products/Internet_20260504_200150_4.webp",
+      "images/products/Internet_20260504_200150_5.webp",
+      "images/products/Internet_20260504_200150_6.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "mini",
+      "jaipuri",
+      "black",
+      "white",
+      "elephant"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Around-Stylish-Jaipuri-Printed/dp/B08MXKFZ5W/",
+      "flipkart": null
+    },
+    "rating": 4.0,
+    "reviews": 94,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_200150"
+  },
+  {
+    "id": "amz-006",
+    "name": "Pezzava Women's Knee Animal Printed Wrap Cotton Skirt (Free Size) Blue",
+    "shortName": "B&W Geometric Elephant Skirt",
+    "color": "Blue",
+    "price": 299,
+    "originalPrice": 840,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Knee Length",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Eye-catching black and white animal printed cotton skirt with elephant motifs and geometric diamond patterns.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_6.webp",
+      "images/products/Internet_20260504_200218_1.webp",
+      "images/products/Internet_20260504_200218_2.webp",
+      "images/products/Internet_20260504_200218_3.webp",
+      "images/products/Internet_20260504_200218_4.webp",
+      "images/products/Internet_20260504_200218_5.webp",
+      "images/products/Internet_20260504_200218_6.webp",
+      "images/products/Internet_20260504_200218_7.webp"
+    ],
+    "tags": [
+      "cotton",
+      "knee",
+      "animal print",
+      "black",
+      "white",
+      "elephant"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Animal-Printed-Cotton/dp/B07SH3H9RR/",
+      "flipkart": null
+    },
+    "rating": 4.3,
+    "reviews": 112,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_200218"
+  },
+  {
+    "id": "amz-007",
+    "name": "Pezzava Cotton Printed Knee Wrap Around Skirt",
+    "shortName": "Blue Elephant Patchwork Skirt",
+    "color": "Multicolor (Red/Orange/Black)",
+    "price": 319,
+    "originalPrice": 950,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Knee Length",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Premium cotton printed wrap around skirt with blue and teal patchwork elephant motifs.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_7.webp",
+      "images/products/Internet_20260504_200245_1.webp",
+      "images/products/Internet_20260504_200245_2.webp",
+      "images/products/Internet_20260504_200245_3.webp",
+      "images/products/Internet_20260504_200245_4.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "knee",
+      "blue",
+      "elephant",
+      "printed"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Cotton-Printed-Around-Skirt/dp/B08KRYYZPF/",
+      "flipkart": null
+    },
+    "rating": 4.5,
+    "reviews": 241,
+    "inStock": true,
+    "featured": true,
+    "prefix": "Internet_20260504_200245"
+  },
+  {
+    "id": "amz-008",
+    "name": "Pezzava Women's Cotton Wrap Around Long Skirt Blue",
+    "shortName": "Red Ethnic Calf Skirt",
+    "color": "Blue",
+    "price": 399,
+    "originalPrice": 980,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Calf Length",
+    "size": "Free Size",
+    "category": "long",
+    "store": "amazon",
+    "description": "Classic red ethnic cotton wrap skirt with traditional elephant and floral band patterns in warm tones.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_8.webp",
+      "images/products/Internet_20260504_200304_1.webp",
+      "images/products/Internet_20260504_200304_2.webp",
+      "images/products/Internet_20260504_200304_3.webp",
+      "images/products/Internet_20260504_200304_4.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "calf",
+      "red",
+      "ethnic"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Around-Skirt/dp/B08KWBMDPS/",
+      "flipkart": null
+    },
+    "rating": 4.2,
+    "reviews": 78,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_200304"
+  },
+  {
+    "id": "amz-009",
+    "name": "Pezzava Cotton Hand Block Knee Length Wrap Midi Skirt for Women Marron",
+    "shortName": "Red Folk Art Mini Skirt",
+    "color": "Maroon",
+    "price": 449,
+    "originalPrice": 899,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Mini",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Beautiful red block printed cotton skirt with folk art people and floral motifs in traditional Rajasthani style.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_9.webp",
+      "images/products/Internet_20260504_200338_1.webp",
+      "images/products/Internet_20260504_200338_2.webp",
+      "images/products/Internet_20260504_200338_3.webp",
+      "images/products/Internet_20260504_200338_4.webp",
+      "images/products/Internet_20260504_200338_5.webp"
+    ],
+    "tags": [
+      "cotton",
+      "mini",
+      "red",
+      "block print",
+      "folk art"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Cotton-Block-Length-Marron/dp/B094MMWY37/",
+      "flipkart": null
+    },
+    "rating": 4.1,
+    "reviews": 67,
+    "inStock": false,
+    "featured": false,
+    "prefix": "Internet_20260504_200338"
+  },
+  {
+    "id": "amz-010",
+    "name": "Pezzava Womens Cotton Knee Length Wrap Skirt (Free Size) Red",
+    "shortName": "Blue Ethnic Long Skirt",
+    "color": "Red",
+    "price": 319,
+    "originalPrice": 799,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Graceful long cotton skirt with blue ethnic Rajasthani prints featuring elephants, birds, and paisley patterns.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_10.webp",
+      "images/products/Internet_20260504_200400_1.webp",
+      "images/products/Internet_20260504_200400_2.webp",
+      "images/products/Internet_20260504_200400_3.webp",
+      "images/products/Internet_20260504_200400_4.webp"
+    ],
+    "tags": [
+      "cotton",
+      "long",
+      "blue",
+      "ethnic",
+      "elephant"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Length-Skirt/dp/B08KS9Z119/",
+      "flipkart": null
+    },
+    "rating": 4.3,
+    "reviews": 98,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_200400"
+  },
+  {
+    "id": "amz-011",
+    "name": "Pezzava Women's Wear Cotton Long Wrap Black Skirt",
+    "shortName": "Maroon Elephant Calf Skirt",
+    "color": "Black & White",
+    "price": 499,
+    "originalPrice": 899,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Calf Length",
+    "size": "Free Size",
+    "category": "long",
+    "store": "amazon",
+    "description": "Elegant maroon cotton calf-length skirt with elephant and peacock motifs in warm orange and gold tones.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_11.webp"
+    ],
+    "tags": [
+      "cotton",
+      "calf",
+      "maroon",
+      "elephant",
+      "peacock"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Black-Skirt/dp/B082S1NH88/",
+      "flipkart": null
+    },
+    "rating": 4.4,
+    "reviews": 187,
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "amz-012",
+    "name": "Pezzava Women's Cotton Mini Wrap Around Skirt (Red, Free Size)",
+    "shortName": "Red Elephant Knee Skirt",
+    "color": "Red",
+    "price": 399,
+    "originalPrice": 799,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Knee Length",
+    "size": "Free Size",
+    "category": "mini",
+    "store": "amazon",
+    "description": "Vibrant red printed wrap around skirt with elephant and paisley motifs. Comfortable wrap-around design fits all body types.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_12.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "knee",
+      "red",
+      "elephant",
+      "printed"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Around-Skirt/dp/B08KRNMDQN/",
+      "flipkart": null
+    },
+    "rating": 4.0,
+    "reviews": 134,
+    "inStock": false,
+    "featured": false
+  },
+  {
+    "id": "amz-013",
+    "name": "Pezzava Women's Wear Cotton Long Wrap Skirt (Black and White)",
+    "shortName": "Red Folk Art Mini Skirt",
+    "color": "Black & White",
+    "price": 499,
+    "originalPrice": 999,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Mini",
+    "size": "Free Size",
+    "category": "long",
+    "store": "amazon",
+    "description": "Premium women's wear cotton mini skirt with stunning red folk art prints featuring peacocks and dancers.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_13.webp"
+    ],
+    "tags": [
+      "cotton",
+      "mini",
+      "red",
+      "folk art",
+      "peacock"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Wear-Cotton-Skirt/dp/B07ZHBGCSS/",
+      "flipkart": null
+    },
+    "rating": 4.5,
+    "reviews": 241,
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "amz-014",
+    "name": "Pezzava 24 Inches Knee Animal Printed Wrap Cotton Skirt (Green)",
+    "shortName": "B&W Mandala Long Skirt",
+    "color": "Green",
+    "price": 299,
+    "originalPrice": 940,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "Gorgeous black and white mandala printed cotton long skirt with flowing silhouette and fan-shaped patterns.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_14.webp"
+    ],
+    "tags": [
+      "cotton",
+      "long",
+      "black",
+      "white",
+      "mandala"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Inches-Animal-Printed-Cotton/dp/B07SG2LNG3/",
+      "flipkart": null
+    },
+    "rating": 4.2,
+    "reviews": 156,
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "amz-015",
+    "name": "Pezzava Women's Wear Cotton Long Wrap Skirt",
+    "shortName": "B&W Elephant Long Skirt",
+    "color": "Black & White",
+    "price": 499,
+    "originalPrice": 980,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "amazon",
+    "description": "Classic black and white cotton wrap long skirt with bold elephant motifs, butterflies, and circular flower patterns.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_195959_15.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "black",
+      "white",
+      "elephant"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Wear-Cotton-Skirt/dp/B07ZH1DJSH/",
+      "flipkart": null
+    },
+    "rating": 4.3,
+    "reviews": 178,
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "fk-001",
+    "name": "Pezzava Printed Women Wrap Around Blue Skirt",
+    "shortName": "Blue Ethnic Long Skirt",
+    "color": "Blue",
+    "price": 360,
+    "originalPrice": 720,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "flipkart",
+    "description": "Beautiful blue long wrap around skirt with traditional Rajasthani elephant, peacock, and paisley prints.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_202642_1.jpeg",
+      "images/products/Internet_20260504_202642_2.jpeg",
+      "images/products/Internet_20260504_202642_3.jpeg",
+      "images/products/Internet_20260504_202642_4.jpeg",
+      "images/products/Internet_20260504_202642_5.jpeg"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "blue",
+      "elephant",
+      "printed"
+    ],
+    "marketplace": {
+      "amazon": null,
+      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-blue-skirt/p/itm1b84c6cc0e810?pid=SKIFW9UERARRRX8H"
+    },
+    "rating": 4.1,
+    "reviews": 167,
+    "inStock": true,
+    "featured": true,
+    "prefix": "Internet_20260504_202642"
+  },
+  {
+    "id": "fk-002",
+    "name": "Pezzava Printed Women Wrap Around White Black Skirt",
+    "shortName": "Green Elephant Long Skirt",
+    "color": "Green & Black",
+    "price": 348,
+    "originalPrice": 700,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "flipkart",
+    "description": "Elegant green and black printed long wrap around skirt with elephant and camel motifs on a lime green background.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_202655_1.jpeg",
+      "images/products/Internet_20260504_202655_2.jpeg",
+      "images/products/Internet_20260504_202655_3.jpeg",
+      "images/products/Internet_20260504_202655_4.jpeg"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "green",
+      "black",
+      "elephant"
+    ],
+    "marketplace": {
+      "amazon": null,
+      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-white-black-skirt/p/itme682bf9f22534?pid=SKIFHSPNSHHVYYAH"
+    },
+    "rating": 4.0,
+    "reviews": 93,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_202655"
+  },
+  {
+    "id": "fk-003",
+    "name": "Pezzava Printed Women Wrap Around Green Black Skirt",
+    "shortName": "Red & Black Elephant Skirt",
+    "color": "Red & Black",
+    "price": 348,
+    "originalPrice": 700,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "flipkart",
+    "description": "Stunning red and black printed long wrap around skirt with Rajasthani elephant motifs throughout.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_202713_1.jpeg",
+      "images/products/Internet_20260504_202713_2.jpeg",
+      "images/products/Internet_20260504_202713_3.jpeg",
+      "images/products/Internet_20260504_202713_4.jpeg"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "red",
+      "black",
+      "elephant"
+    ],
+    "marketplace": {
+      "amazon": null,
+      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-green-black-skirt/p/itmf3y4prm4deeyq?pid=SKIEAZ87UZXY6DMP"
+    },
+    "rating": 4.3,
+    "reviews": 134,
+    "inStock": true,
+    "featured": true,
+    "prefix": "Internet_20260504_202713"
+  },
+  {
+    "id": "fk-004",
+    "name": "Pezzava Printed Women Wrap Around Red Black Skirt",
+    "shortName": "Red & Black Mini Skirt",
+    "color": "Red & Black",
+    "price": 370,
+    "originalPrice": 740,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Mini",
+    "size": "Free Size",
+    "category": "mini",
+    "store": "flipkart",
+    "description": "Trendy red and black printed mini wrap around skirt with diamond lattice pattern.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_202736_1.jpeg",
+      "images/products/Internet_20260504_202736_2.jpeg",
+      "images/products/Internet_20260504_202736_3.jpeg",
+      "images/products/Internet_20260504_202736_4.jpeg"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "mini",
+      "red",
+      "black"
+    ],
+    "marketplace": {
+      "amazon": null,
+      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-red-black-skirt/p/itmf3y4qgffymwua?pid=SKIEAZ87BCHK5S9D"
+    },
+    "rating": 4.2,
+    "reviews": 108,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_202736"
+  },
+  {
+    "id": "fk-005",
+    "name": "Pezzava Printed Women Wrap Around Multicolor Skirt",
+    "shortName": "Green & White Ethnic Skirt",
+    "color": "Green & White",
+    "price": 400,
+    "originalPrice": 800,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "flipkart",
+    "description": "Vibrant green and white long wrap around skirt with traditional dancing figures and elephant motifs.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_202754_1.jpeg",
+      "images/products/Internet_20260504_202754_2.jpeg",
+      "images/products/Internet_20260504_202754_3.jpeg",
+      "images/products/Internet_20260504_202754_4.jpeg"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "green",
+      "white",
+      "ethnic"
+    ],
+    "marketplace": {
+      "amazon": null,
+      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-multicolor-skirt/p/itmafd5a8d088308?pid=SKIFSXP5ZG7Y75FU"
+    },
+    "rating": 4.4,
+    "reviews": 189,
+    "inStock": true,
+    "featured": true,
+    "prefix": "Internet_20260504_202754"
+  },
+  {
+    "id": "fk-006",
+    "name": "Pezzava Printed Women A-Line Multicolor Skirt",
+    "shortName": "Blue Multicolor Long Skirt",
+    "color": "Blue",
+    "price": 348,
+    "originalPrice": 700,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "flipkart",
+    "description": "Gorgeous blue A-line long skirt with vibrant multicolor elephant, peacock, and camel motifs.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_202811_1.jpeg",
+      "images/products/Internet_20260504_202811_2.jpeg",
+      "images/products/Internet_20260504_202811_3.jpeg",
+      "images/products/Internet_20260504_202811_4.jpeg"
+    ],
+    "tags": [
+      "cotton",
+      "a-line",
+      "long",
+      "blue",
+      "multicolor",
+      "ethnic"
+    ],
+    "marketplace": {
+      "amazon": null,
+      "flipkart": "https://www.flipkart.com/pezzava-printed-women-a-line-multicolor-skirt/p/itmf6hvfhektjrvh?pid=SKIF6FNSHXKPDDX8"
+    },
+    "rating": 4.3,
+    "reviews": 145,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_202811"
+  },
+  {
+    "id": "fk-007",
+    "name": "Pezzava Printed Wrap Around Ethnic Skirt",
+    "shortName": "Beige & Blue Ethnic Skirt",
+    "color": "Beige & Blue",
+    "price": 400,
+    "originalPrice": 800,
+    "discount": 50,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "flipkart",
+    "description": "Stunning beige and blue ethnic printed long wrap around skirt with deer, elephant, and dancing figures.",
+    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "images": [
+      "images/products/Internet_20260504_202901_1.jpeg",
+      "images/products/Internet_20260504_202901_2.jpeg",
+      "images/products/Internet_20260504_202901_3.jpeg",
+      "images/products/Internet_20260504_202901_4.jpeg"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "beige",
+      "blue",
+      "ethnic"
+    ],
+    "marketplace": {
+      "amazon": null,
+      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-multicolor-skirt/p/itm67dab0b3e1de2?pid=SKIFSXZZT7HGSSGR"
+    },
+    "rating": 4.1,
+    "reviews": 112,
+    "inStock": true,
+    "featured": false,
+    "prefix": "Internet_20260504_202901"
+  }
+]

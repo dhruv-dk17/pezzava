@@ -1,0 +1,578 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e14]:
+    - banner [ref=e18]:
+      - generic "Browse Flipkart" [ref=e20]:
+        - generic [ref=e21]:
+          - link "Flipkart marketplace dropdown" [ref=e22] [cursor=pointer]:
+            - /url: /
+            - img "FLIPKART" [ref=e23]
+          - img "Chevron" [ref=e24]
+      - generic [ref=e28]:
+        - button "Search for Products, Brands and More" [ref=e29] [cursor=pointer]:
+          - img "Search Icon" [ref=e30]
+        - textbox "Search for Products, Brands and More" [ref=e34]
+      - generic [ref=e35]:
+        - generic [ref=e40]:
+          - link "Login" [ref=e41] [cursor=pointer]:
+            - /url: /account/login?ret=/
+            - img "Login" [ref=e42]
+            - generic [ref=e43]: Login
+          - img "Chevron" [ref=e44]
+        - generic [ref=e49]:
+          - link "More" [ref=e50] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e51]: More
+          - img "Chevron" [ref=e52]
+        - link "Cart Cart" [ref=e55] [cursor=pointer]:
+          - /url: /viewcart?marketplace=FLIPKART
+          - img "Cart" [ref=e56]
+          - generic [ref=e57]: Cart
+    - generic [ref=e59]:
+      - generic [ref=e71]:
+        - generic [ref=e74]:
+          - generic [ref=e76]:
+            - link "Home" [ref=e77] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e78]: /
+          - generic [ref=e80]:
+            - link "Clothing and Accessories" [ref=e81] [cursor=pointer]:
+              - /url: /clothing-and-accessories/pr?sid=clo&marketplace=FLIPKART
+            - generic [ref=e82]: /
+          - generic [ref=e84]:
+            - link "Bottomwear" [ref=e85] [cursor=pointer]:
+              - /url: /clothing-and-accessories/bottomwear/pr?sid=clo,vua&marketplace=FLIPKART
+            - generic [ref=e86]: /
+          - generic [ref=e88]:
+            - link "Skirts" [ref=e89] [cursor=pointer]:
+              - /url: /clothing-and-accessories/bottomwear/skirts/pr?sid=clo,vua,iku&marketplace=FLIPKART
+            - generic [ref=e90]: /
+          - generic [ref=e92]:
+            - link "Women's Skirts" [ref=e93] [cursor=pointer]:
+              - /url: /womens-skirts/pr?sid=clo,vua,iku,w5t&marketplace=FLIPKART
+            - generic [ref=e94]: /
+          - generic [ref=e96]:
+            - link "Pezzava Women's Skirts" [ref=e97] [cursor=pointer]:
+              - /url: /womens-skirts/pezzava~brand/pr?sid=clo,vua,iku,w5t&marketplace=FLIPKART
+            - generic [ref=e98]: /
+        - generic [ref=e99]: Women Printed Wrap Around Red, Black Skirt
+      - generic [ref=e103]:
+        - generic [ref=e105]:
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e118]:
+                - img "Image" [ref=e121]
+                - generic [ref=e123]: Key Highlights
+              - generic [ref=e125]:
+                - img [ref=e129]
+                - img [ref=e132]
+              - link "3.6 | 5" [ref=e137] [cursor=pointer]:
+                - /url: /ratings-reviews-details-page?pid=SKIEAZ87BCHK5S9D&lid=LSTSKIEAZ87BCHK5S9D7NEHRJ&marketplace=FLIPKART
+                - generic [ref=e141]:
+                  - generic [ref=e142]: "3.6"
+                  - img [ref=e143]
+                  - generic [ref=e145]: "| 5"
+            - generic [ref=e148]:
+              - img "Image" [ref=e151]
+              - generic [ref=e153]: Key Highlights
+            - generic [ref=e156]:
+              - img "Image" [ref=e159]
+              - generic [ref=e161]: Key Highlights
+            - generic [ref=e162]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img "Image"
+                  - generic:
+                    - generic: Key Highlights
+          - generic [ref=e164]:
+            - generic [ref=e175]:
+              - link "Image Herway Women Solid A-line Black Skirt 82% 1,999 ₹350 AD" [ref=e180] [cursor=pointer]:
+                - /url: /herway-solid-women-a-line-black-skirt/p/itmb27e950850dc9?pid=SKIHD2TCZZ2H2NQH&lid=LSTSKIHD2TCZZ2H2NQHTX67KO&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJhZHZlcnRpc2VtZW50IiwicHJwdCI6InBwIiwibWlkIjoicGxhL3AycHNpbWlsYXIifQ%3D%3D
+                - generic [ref=e181]:
+                  - img "Image" [ref=e184]
+                  - generic [ref=e185]:
+                    - generic [ref=e186]: Herway Women Solid A-line Black Skirt
+                    - generic [ref=e187]:
+                      - img [ref=e188]
+                      - generic [ref=e190]: 82%
+                      - generic [ref=e191]: 1,999
+                      - generic [ref=e192]: ₹350
+                - generic [ref=e194]: AD
+              - link "Image shriramfashion Women Solid Flared White Skirt 80% 1,699 ₹340 AD" [ref=e199] [cursor=pointer]:
+                - /url: /shriramfashion-solid-women-flared-white-skirt/p/itmf9cbb2776781a?pid=SKIHJ4GJTCPY6Z9Z&lid=LSTSKIHJ4GJTCPY6Z9Z7MWVAJ&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJhZHZlcnRpc2VtZW50IiwicHJwdCI6InBwIiwibWlkIjoicGxhL3AycHNpbWlsYXIifQ%3D%3D
+                - generic [ref=e200]:
+                  - img "Image" [ref=e203]
+                  - generic [ref=e204]:
+                    - generic [ref=e205]: shriramfashion Women Solid Flared White Skirt
+                    - generic [ref=e206]:
+                      - img [ref=e207]
+                      - generic [ref=e209]: 80%
+                      - generic [ref=e210]: 1,699
+                      - generic [ref=e211]: ₹340
+                - generic [ref=e213]: AD
+              - link "Image FabVerse Women Solid Regular Brown Skirt 69% 999 ₹314 AD" [ref=e218] [cursor=pointer]:
+                - /url: /fabverse-solid-women-regular-brown-skirt/p/itme6462eac39ac0?pid=SKIHHU4KXTBDKHNB&lid=LSTSKIHHU4KXTBDKHNBAP6HXQ&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJhZHZlcnRpc2VtZW50IiwicHJwdCI6InBwIiwibWlkIjoicGxhL3AycHNpbWlsYXIifQ%3D%3D
+                - generic [ref=e219]:
+                  - img "Image" [ref=e222]
+                  - generic [ref=e223]:
+                    - generic [ref=e224]: FabVerse Women Solid Regular Brown Skirt
+                    - generic [ref=e225]:
+                      - img [ref=e226]
+                      - generic [ref=e228]: 69%
+                      - generic [ref=e229]: "999"
+                      - generic [ref=e230]: ₹314
+                - generic [ref=e232]: AD
+            - generic [ref=e240]:
+              - generic [ref=e241]:
+                - generic [ref=e242]: "Selected Color:"
+                - generic [ref=e243]: Red
+              - generic [ref=e249]:
+                - link "Image" [ref=e254] [cursor=pointer]:
+                  - /url: /pezzava-printed-women-wrap-around-green-skirt/p/itmf3y4zyhhgdyfv?pid=SKIEAZ87J5GGNEHM&marketplace=FLIPKART&lid=LSTSKIEAZ87J5GGNEHMRFTBKA
+                  - img "Image" [ref=e258]
+                - link "Image" [ref=e264] [cursor=pointer]:
+                  - /url: /pezzava-printed-women-wrap-around-red-black-skirt/p/itmf3y4qgffymwua?pid=SKIEAZ87BCHK5S9D&marketplace=FLIPKART&lid=LSTSKIEAZ87BCHK5S9D7NEHRJ
+                  - img "Image" [ref=e268]
+            - generic [ref=e277]:
+              - generic [ref=e278]:
+                - generic [ref=e279]: Select Size
+                - link "Size Chart" [ref=e280] [cursor=pointer]:
+                  - /url: /rv/sizechart?pid=SKIEAZ87BCHK5S9D
+                  - generic [ref=e281]: Size Chart
+              - link "Free" [ref=e292] [cursor=pointer]:
+                - /url: /pezzava-printed-women-wrap-around-red-black-skirt/p/itmf3y4qgffymwua?pid=SKIEAZ87BCHK5S9D&marketplace=FLIPKART&lid=LSTSKIEAZ87BCHK5S9D7NEHRJ&swatchAttr=size
+                - generic [ref=e294]: Free
+            - heading "Pezzava Women Printed Wrap Around Red, Black Skirt" [level=1] [ref=e309]
+            - link "3.6 | 5" [ref=e317] [cursor=pointer]:
+              - /url: /ratings-reviews-details-page?pid=SKIEAZ87BCHK5S9D&lidSKIEAZ87BCHK5S9D&marketplace=FLIPKART
+              - generic [ref=e321]:
+                - generic [ref=e322]: "3.6"
+                - img [ref=e323]
+                - generic [ref=e325]: "| 5"
+            - generic [ref=e335]:
+              - generic [ref=e337]:
+                - img [ref=e338]
+                - generic [ref=e340]: 47%
+              - generic [ref=e342]: "699"
+              - generic [ref=e344]: ₹370
+            - generic [ref=e352]:
+              - generic [ref=e356]:
+                - img [ref=e357]
+                - generic [ref=e369]:
+                  - generic [ref=e371]: Buy at ₹320
+                  - generic [ref=e373]: Apply offers for maximum savings
+                - img [ref=e375]
+              - generic [ref=e381]:
+                - generic [ref=e388]: Buy at ₹320
+                - generic [ref=e395]:
+                  - generic [ref=e402] [cursor=pointer]: Bank offers
+                  - img [ref=e408]
+                  - generic [ref=e413] [cursor=pointer]:
+                    - generic [ref=e414]: Bank offers
+                    - generic [ref=e415]: ₹50 off
+            - generic [ref=e425]:
+              - generic [ref=e428] [cursor=pointer]:
+                - generic [ref=e429]: Apply for Card and Instant EMI
+                - img [ref=e431]
+              - link "Image Get upto ₹500 Off* No Cost EMI* | Unlock ₹1 Lakh Apply Now" [ref=e444] [cursor=pointer]:
+                - /url: https://www.flipkart.com/rv/fpg/cfa/ntb/ce?emiType=cfa-term-loan&productCode=CREDIT_MARKETPLACE&utmSource=PP_FINTECH&utmContext=PP_FINTECH&BU=Pay
+                - generic [ref=e445]:
+                  - img "Image" [ref=e449]
+                  - generic [ref=e450]:
+                    - generic [ref=e451]: Get upto ₹500 Off*
+                    - generic [ref=e452]: No Cost EMI* | Unlock ₹1 Lakh
+                    - generic [ref=e453]: Apply Now
+            - generic [ref=e461]:
+              - generic [ref=e463]: Delivery details
+              - generic [ref=e464]:
+                - generic [ref=e470]:
+                  - generic [ref=e471]:
+                    - img [ref=e472]
+                    - generic [ref=e474]: Location not set
+                  - generic [ref=e476]:
+                    - generic [ref=e477]: Select delivery location
+                    - img [ref=e479]
+                - link "Delivery by 10 May, Sun" [ref=e484] [cursor=pointer]:
+                  - /url: https://www.flipkart.com/item/product-delivery/itemId?pageKey=delivery-page&marketplace=FLIPKART&pin=&lid=LSTSKIEAZ87BCHK5S9D7NEHRJ&pid=SKIEAZ87BCHK5S9D
+                  - generic [ref=e486]:
+                    - img [ref=e487]
+                    - generic [ref=e493]: Delivery
+                    - generic [ref=e494]: by 10 May, Sun
+                - generic [ref=e498]:
+                  - generic [ref=e499]:
+                    - generic [ref=e500]:
+                      - img [ref=e502]
+                      - generic [ref=e506]: Fulfilled by Pezzava
+                    - generic [ref=e507]:
+                      - generic [ref=e508]: "3.6"
+                      - img [ref=e510]
+                      - generic [ref=e512]: •
+                      - generic [ref=e513]: 12 years with Flipkart
+                  - link "See other sellers" [ref=e515] [cursor=pointer]:
+                    - /url: /sellers?pid=SKIEAZ87BCHK5S9D
+            - generic [ref=e524]:
+              - link "10-Day Return" [ref=e529] [cursor=pointer]:
+                - /url: https://www.flipkart.com/easy-return-policy-store?marketplace=FLIPKART
+                - generic [ref=e530]:
+                  - img [ref=e531]
+                  - generic [ref=e538]: 10-Day Return
+              - link "Cash on Delivery" [ref=e543] [cursor=pointer]:
+                - /url: https://www.flipkart.com/item/payments-callout/itemId?pageKey=payments-callout&marketplace=Flipkart&pin=-1&lid=LSTSKIEAZ87BCHK5S9D7NEHRJ&pid=SKIEAZ87BCHK5S9D?marketplace=FLIPKART
+                - generic [ref=e544]:
+                  - img [ref=e545]
+                  - generic [ref=e550]: Cash on Delivery
+              - link "Customer support" [ref=e555] [cursor=pointer]:
+                - /url: https://www.flipkart.com/customer-support-policy-store?marketplace=FLIPKART
+                - generic [ref=e556]:
+                  - img [ref=e557]
+                  - generic [ref=e568]: Customer support
+            - generic [ref=e578]:
+              - generic [ref=e580] [cursor=pointer]:
+                - generic [ref=e582]: Product highlights
+                - img [ref=e584]
+              - generic [ref=e590]:
+                - generic [ref=e592]:
+                  - generic [ref=e593]: Type
+                  - generic [ref=e594]: Wrap Around
+                - generic [ref=e596]:
+                  - generic [ref=e597]: Color
+                  - generic [ref=e598]: Red, Black
+                - generic [ref=e604]:
+                  - generic [ref=e605]: Fabric
+                  - generic [ref=e606]: Pure Cotton
+            - generic [ref=e617]:
+              - generic [ref=e620] [cursor=pointer]:
+                - generic [ref=e621]:
+                  - generic [ref=e622]: All details
+                  - generic [ref=e623]: Features, description and more
+                - img [ref=e625]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Specifications
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Description
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Manufacturer info
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic: Show More
+                                      - generic:
+                                        - img
+            - generic [ref=e638]:
+              - generic [ref=e640] [cursor=pointer]:
+                - generic [ref=e641]: Ratings and reviews
+                - img [ref=e643]
+                - img [ref=e648]
+              - generic [ref=e655]:
+                - generic [ref=e656]:
+                  - generic [ref=e657]:
+                    - generic [ref=e658]: "3.6"
+                    - img [ref=e659]
+                  - generic [ref=e662]: Average
+                - generic [ref=e663]:
+                  - generic [ref=e664]: based on 5 ratings by
+                  - img [ref=e665]
+                  - generic [ref=e668]: Verified Buyers
+            - generic [ref=e679]:
+              - generic [ref=e681] [cursor=pointer]:
+                - generic [ref=e682]:
+                  - generic [ref=e683]: Questions and Answers
+                  - img [ref=e685]
+                - generic [ref=e689]: No questions and answers available
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Be the first to ask about this product
+                        - link "Ask a question":
+                          - /url: /pezzava-printed-women-wrap-around-red-black-skirt/write-question/itmf3y4qgffymwua?pid=SKIEAZ87BCHK5S9D?pid=SKIEAZ87BCHK5S9D&source=pp
+                          - generic: Ask a question
+            - generic [ref=e701]:
+              - generic [ref=e712]: Add to cart
+              - generic [ref=e724]:
+                - generic [ref=e726]: B
+                - generic [ref=e728]: u
+                - generic [ref=e730]: "y"
+                - generic [ref=e734]: a
+                - generic [ref=e736]: t
+                - generic [ref=e740]: ₹
+                - generic [ref=e742]:
+                  - generic [ref=e744]: "0"
+                  - generic [ref=e746]: "1"
+                  - generic [ref=e748]: "2"
+                  - generic [ref=e750]: "3"
+                  - generic [ref=e752]: "4"
+                  - generic [ref=e754]: "5"
+                  - generic [ref=e756]: "6"
+                  - generic [ref=e758]: "7"
+                  - generic [ref=e760]: "8"
+                  - generic [ref=e762]: "9"
+                - generic [ref=e764]:
+                  - generic [ref=e766]: "0"
+                  - generic [ref=e768]: "1"
+                  - generic [ref=e770]: "2"
+                  - generic [ref=e772]: "3"
+                  - generic [ref=e774]: "4"
+                  - generic [ref=e776]: "5"
+                  - generic [ref=e778]: "6"
+                  - generic [ref=e780]: "7"
+                  - generic [ref=e782]: "8"
+                  - generic [ref=e784]: "9"
+                - generic [ref=e786]:
+                  - generic [ref=e788]: "0"
+                  - generic [ref=e790]: "1"
+                  - generic [ref=e792]: "2"
+                  - generic [ref=e794]: "3"
+                  - generic [ref=e796]: "4"
+                  - generic [ref=e798]: "5"
+                  - generic [ref=e800]: "6"
+                  - generic [ref=e802]: "7"
+                  - generic [ref=e804]: "8"
+                  - generic [ref=e806]: "9"
+        - generic [ref=e814]:
+          - link "Similar Products" [ref=e815] [cursor=pointer]:
+            - /url: /products/similar-products?screen=dynamic&pk=stores%3Dclo%2Fvua%2Fiku%2Fw5t%2F~pIds%3DSKIEAZ87BCHK5S9D~marketplace%3DFLIPKART~widgetType%3DproductCard~contentType%3DproductRecommendation%2Fsimilar&marketplace=FLIPKART
+            - generic [ref=e817]:
+              - generic [ref=e820]: Similar Products
+              - img [ref=e822]
+          - generic [ref=e827]:
+            - link "Image AD 3.6 Herway Women Solid A-line Black Skirt 82% OFF ₹1,999 ₹350 Hot Deal" [ref=e830] [cursor=pointer]:
+              - /url: /herway-solid-women-a-line-black-skirt/p/itmb27e950850dc9?pid=SKIHD2TCZZ2H2NQH&lid=LSTSKIHD2TCZZ2H2NQHTX67KO&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e833]:
+                - img "Image" [ref=e837]
+                - generic [ref=e846]: AD
+                - generic [ref=e847]:
+                  - generic [ref=e848]: "3.6"
+                  - img [ref=e849]
+                - generic [ref=e851]:
+                  - generic [ref=e852]: Herway Women Solid A-line Black Skirt
+                  - generic [ref=e853]: 82% OFF
+                  - generic [ref=e854]:
+                    - generic [ref=e855]: ₹1,999
+                    - generic [ref=e856]: ₹350
+                  - generic [ref=e857]: Hot Deal
+            - link "Image AD FabVerse Women Solid Regular Brown Skirt 69% OFF ₹999 ₹314 ₹264 with 2 offers" [ref=e860] [cursor=pointer]:
+              - /url: /fabverse-solid-women-regular-brown-skirt/p/itme6462eac39ac0?pid=SKIHHU4KXTBDKHNB&lid=LSTSKIHHU4KXTBDKHNBAP6HXQ&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e863]:
+                - img "Image" [ref=e867]
+                - generic [ref=e876]: AD
+                - generic [ref=e877]:
+                  - generic [ref=e878]: FabVerse Women Solid Regular Brown Skirt
+                  - generic [ref=e879]: 69% OFF
+                  - generic [ref=e880]:
+                    - generic [ref=e881]: ₹999
+                    - generic [ref=e882]: ₹314
+                  - generic [ref=e883]: ₹264 with 2 offers
+            - link "Image AD FabVerse Women Solid Regular Purple Skirt 69% OFF ₹999 ₹314 ₹264 with 2 offers" [ref=e886] [cursor=pointer]:
+              - /url: /fabverse-solid-women-regular-purple-skirt/p/itm79aa99df03d05?pid=SKIHHU4KZHEPFZZH&lid=LSTSKIHHU4KZHEPFZZHBFAVNI&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e889]:
+                - img "Image" [ref=e893]
+                - generic [ref=e902]: AD
+                - generic [ref=e903]:
+                  - generic [ref=e904]: FabVerse Women Solid Regular Purple Skirt
+                  - generic [ref=e905]: 69% OFF
+                  - generic [ref=e906]:
+                    - generic [ref=e907]: ₹999
+                    - generic [ref=e908]: ₹314
+                  - generic [ref=e909]: ₹264 with 2 offers
+            - link "Image AD FabVerse Women Solid Regular Dark Green Skirt 69% OFF ₹999 ₹314 ₹264 with 2 offers" [ref=e912] [cursor=pointer]:
+              - /url: /fabverse-solid-women-regular-dark-green-skirt/p/itm5da48994a0442?pid=SKIHHU4JGQ8WGYSA&lid=LSTSKIHHU4JGQ8WGYSAPUUQOG&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e915]:
+                - img "Image" [ref=e919]
+                - generic [ref=e928]: AD
+                - generic [ref=e929]:
+                  - generic [ref=e930]: FabVerse Women Solid Regular Dark Green Skirt
+                  - generic [ref=e931]: 69% OFF
+                  - generic [ref=e932]:
+                    - generic [ref=e933]: ₹999
+                    - generic [ref=e934]: ₹314
+                  - generic [ref=e935]: ₹264 with 2 offers
+            - link "Image AD FabVerse Women Solid Regular Dark Blue Skirt 69% OFF ₹999 ₹314 ₹264 with 2 offers" [ref=e938] [cursor=pointer]:
+              - /url: /fabverse-solid-women-regular-dark-blue-skirt/p/itmd06ffadcb6312?pid=SKIHHU5AXFCSENDH&lid=LSTSKIHHU5AXFCSENDHUXMXBZ&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e941]:
+                - img "Image" [ref=e945]
+                - generic [ref=e954]: AD
+                - generic [ref=e955]:
+                  - generic [ref=e956]: FabVerse Women Solid Regular Dark Blue Skirt
+                  - generic [ref=e957]: 69% OFF
+                  - generic [ref=e958]:
+                    - generic [ref=e959]: ₹999
+                    - generic [ref=e960]: ₹314
+                  - generic [ref=e961]: ₹264 with 2 offers
+            - link "Image AD shriramfashion Women Solid Flared White Skirt 80% OFF ₹1,699 ₹340 Hot Deal" [ref=e964] [cursor=pointer]:
+              - /url: /shriramfashion-solid-women-flared-white-skirt/p/itmf9cbb2776781a?pid=SKIHJ4GJTCPY6Z9Z&lid=LSTSKIHJ4GJTCPY6Z9Z7MWVAJ&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e967]:
+                - img "Image" [ref=e971]
+                - generic [ref=e980]: AD
+                - generic [ref=e981]:
+                  - generic [ref=e982]: shriramfashion Women Solid Flared White Skirt
+                  - generic [ref=e983]: 80% OFF
+                  - generic [ref=e984]:
+                    - generic [ref=e985]: ₹1,699
+                    - generic [ref=e986]: ₹340
+                  - generic [ref=e987]: Hot Deal
+            - link "Image 4.1 Sahaj Women Printed Wrap Around Multicolor Skirt 61% OFF ₹999 ₹386 Sale Price Live" [ref=e990] [cursor=pointer]:
+              - /url: /sahaj-printed-women-wrap-around-multicolor-skirt/p/itm8fcbef5fe9f87?pid=SKIGES5VFK6YQFQY&lid=LSTSKIGES5VFK6YQFQYOE3HLR&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e993]:
+                - img "Image" [ref=e997]
+                - generic [ref=e1000]:
+                  - generic [ref=e1001]: "4.1"
+                  - img [ref=e1002]
+                - generic [ref=e1004]:
+                  - generic [ref=e1005]: Sahaj Women Printed Wrap Around Multicolor Skirt
+                  - generic [ref=e1006]: 61% OFF
+                  - generic [ref=e1007]:
+                    - generic [ref=e1008]: ₹999
+                    - generic [ref=e1009]: ₹386
+                  - generic [ref=e1010]: Sale Price Live
+            - link "Image 4.2 Herink Fashion Women Printed Wrap Around Blue Skirt 73% OFF ₹1,299 ₹354 Sale Price Live" [ref=e1013] [cursor=pointer]:
+              - /url: /herink-fashion-printed-women-wrap-around-blue-skirt/p/itm5f0db85d82411?pid=SKIH74EYKN3GTKVG&lid=LSTSKIH74EYKN3GTKVGIBSSEE&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
+              - generic [ref=e1016]:
+                - img "Image" [ref=e1020]
+                - generic [ref=e1023]:
+                  - generic [ref=e1024]: "4.2"
+                  - img [ref=e1025]
+                - generic [ref=e1027]:
+                  - generic [ref=e1028]: Herink Fashion Women Printed Wrap Around Blue Skirt
+                  - generic [ref=e1029]: 73% OFF
+                  - generic [ref=e1030]:
+                    - generic [ref=e1031]: ₹1,299
+                    - generic [ref=e1032]: ₹354
+                  - generic [ref=e1033]: Sale Price Live
+      - generic [ref=e1038]: Hang on, loading content
+      - contentinfo [ref=e1049]:
+        - generic [ref=e1051]:
+          - generic [ref=e1052]:
+            - generic [ref=e1053]:
+              - generic [ref=e1054]: ABOUT
+              - link "Contact Us" [ref=e1055] [cursor=pointer]:
+                - /url: /helpcentre?otracker=footer_navlinks
+              - link "About Us" [ref=e1056] [cursor=pointer]:
+                - /url: https://corporate.flipkart.net/corporate-home
+              - link "Careers" [ref=e1057] [cursor=pointer]:
+                - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+              - link "Flipkart Stories" [ref=e1058] [cursor=pointer]:
+                - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+              - link "Press" [ref=e1059] [cursor=pointer]:
+                - /url: http://stories.flipkart.com/category/top-stories/news/
+              - link "Corporate Information" [ref=e1060] [cursor=pointer]:
+                - /url: /corporate-information
+            - generic [ref=e1061]:
+              - generic [ref=e1062]: GROUP COMPANIES
+              - link "Myntra" [ref=e1063] [cursor=pointer]:
+                - /url: https://www.myntra.com/
+              - link "Cleartrip" [ref=e1064] [cursor=pointer]:
+                - /url: https://www.cleartrip.com/
+              - link "Shopsy" [ref=e1065] [cursor=pointer]:
+                - /url: https://www.shopsy.in
+            - generic [ref=e1066]:
+              - generic [ref=e1067]: HELP
+              - link "Payments" [ref=e1068] [cursor=pointer]:
+                - /url: /pages/payments
+              - link "Shipping" [ref=e1069] [cursor=pointer]:
+                - /url: /pages/shipping
+              - link "Cancellation & Returns" [ref=e1070] [cursor=pointer]:
+                - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+              - link "FAQ" [ref=e1071] [cursor=pointer]:
+                - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+            - generic [ref=e1072]:
+              - generic [ref=e1073]: CONSUMER POLICY
+              - link "Cancellation & Returns" [ref=e1074] [cursor=pointer]:
+                - /url: /pages/returnpolicy?otracker=footer_navlinks
+              - link "Terms Of Use" [ref=e1075] [cursor=pointer]:
+                - /url: /pages/terms?otracker=footer_navlinks
+              - link "Security" [ref=e1076] [cursor=pointer]:
+                - /url: /pages/paymentsecurity?otracker=footer_navlinks
+              - link "Privacy" [ref=e1077] [cursor=pointer]:
+                - /url: /pages/privacypolicy?otracker=footer_navlinks
+              - link "Sitemap" [ref=e1078] [cursor=pointer]:
+                - /url: /sitemap?otracker=footer_navlinks
+              - link "Grievance Redressal" [ref=e1079] [cursor=pointer]:
+                - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+              - link "EPR Compliance" [ref=e1080] [cursor=pointer]:
+                - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+              - link "FSSAI Food Safety Connect App" [ref=e1081] [cursor=pointer]:
+                - /url: https://fssai.gov.in/cms/food-safety-connect.php
+            - generic [ref=e1082]:
+              - generic [ref=e1083]: "Mail Us:"
+              - generic [ref=e1084]:
+                - paragraph [ref=e1085]: Flipkart Internet Private Limited,
+                - paragraph [ref=e1086]: Buildings Alyssa, Begonia &
+                - paragraph [ref=e1087]: Clove Embassy Tech Village,
+                - paragraph [ref=e1088]: Outer Ring Road, Devarabeesanahalli Village,
+                - paragraph [ref=e1089]: Bengaluru, 560103,
+                - paragraph [ref=e1090]: Karnataka, India
+              - generic [ref=e1091]: "Social:"
+              - generic [ref=e1092]:
+                - link "Facebook" [ref=e1094] [cursor=pointer]:
+                  - /url: https://www.facebook.com/flipkart
+                  - img "Facebook" [ref=e1095]
+                - link "Twitter" [ref=e1097] [cursor=pointer]:
+                  - /url: https://www.twitter.com/flipkart
+                  - img "Twitter" [ref=e1098]
+                - link "YouTube" [ref=e1100] [cursor=pointer]:
+                  - /url: https://www.youtube.com/flipkart
+                  - img "YouTube" [ref=e1101]
+                - link "Instagram" [ref=e1103] [cursor=pointer]:
+                  - /url: https://www.instagram.com/flipkart
+                  - img "Instagram" [ref=e1104]
+            - generic [ref=e1105]:
+              - generic [ref=e1106]: "Registered Office Address:"
+              - generic [ref=e1107]:
+                - paragraph [ref=e1108]: Flipkart Internet Private Limited,
+                - paragraph [ref=e1109]: Buildings Alyssa, Begonia &
+                - paragraph [ref=e1110]: Clove Embassy Tech Village,
+                - paragraph [ref=e1111]: Outer Ring Road, Devarabeesanahalli Village,
+                - paragraph [ref=e1112]: Bengaluru, 560103,
+                - paragraph [ref=e1113]: Karnataka, India
+                - paragraph [ref=e1114]: "CIN : U51109KA2012PTC066107"
+                - paragraph
+                - paragraph [ref=e1115]:
+                  - text: "Telephone:"
+                  - link "044-45614700" [ref=e1116] [cursor=pointer]:
+                    - /url: tel:044-45614700
+                  - text: /
+                  - link "044-67415800" [ref=e1117] [cursor=pointer]:
+                    - /url: tel:044-67415800
+          - generic [ref=e1118]:
+            - generic [ref=e1119]:
+              - img "Become a Seller" [ref=e1120]
+              - link "Become a Seller" [ref=e1121] [cursor=pointer]:
+                - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+            - generic [ref=e1122]:
+              - img "Advertise" [ref=e1123]
+              - generic "Advertise" [ref=e1124]
+            - generic [ref=e1125]:
+              - img "Gift Cards" [ref=e1126]
+              - link "Gift Cards" [ref=e1127] [cursor=pointer]:
+                - /url: /the-gift-card-store?otracker=footer_navlinks
+            - generic [ref=e1128]:
+              - img "Help Center" [ref=e1129]
+              - link "Help Center" [ref=e1130] [cursor=pointer]:
+                - /url: /helpcentre?otracker=footer_navlinks
+            - generic [ref=e1131]: © 2007-2026 Flipkart.com
+            - img "Payment methods"
+  - contentinfo
