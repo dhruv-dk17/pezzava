@@ -73,16 +73,16 @@ export default function AboutPage() {
                  </h2>
                  <div className="space-y-8 font-manrope text-lg text-on-surface-variant leading-relaxed">
                    <p>
-                     Founded in the heart of Jaipur, Pezzava was born from a desire to bridge the gap between 
-                     ancient Rajasthani textile traditions and the wardrobe of the modern woman. 
-                     Jaipur, known globally for its vibrant craftsmanship, provides the perfect backdrop 
-                     for our creative journey.
+                     Pezzava is a clothing brand based in Jaipur, Rajasthan, established in 2012. The brand focuses on creating apparel and textile products that reflect a blend of traditional craftsmanship and everyday wearability.
                    </p>
                    <p>
-                     Our signature wrap-around skirts are more than just garments; they are a canvas 
-                     for the block-printing techniques that have been passed down through generations. 
-                     We work directly with local artisans, ensuring that every piece is crafted with 
-                     respect for the environment and the people who make them.
+                     Operating as a proprietorship, Pezzava manages its design, sourcing, and production processes with close attention to quality and consistency. Over the years, the brand has developed a practical understanding of customer preferences, allowing it to offer products that balance style, comfort, and value.
+                   </p>
+                   <p>
+                     Pezzava works with domestic customers, providing a range of clothing and textile products suited for modern use while staying rooted in Indian textile traditions.
+                   </p>
+                   <p>
+                     The business is registered under GST with registration number 08AWIPK5231H1ZJ.
                    </p>
                  </div>
                </motion.div>
