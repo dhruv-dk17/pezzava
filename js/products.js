@@ -176,7 +176,7 @@ function normalizeRawProduct(product) {
       amazon: product.marketplace?.amazon || null,
       flipkart: product.marketplace?.flipkart || null
     },
-    description: '',
+    description: product.description || '',
     care: product.care || 'Gentle hand wash recommended.',
     images: uniq(product.images || []),
     tags: uniq(product.tags || []),
@@ -184,10 +184,17 @@ function normalizeRawProduct(product) {
     reviews: product.reviews || 0,
     inStock: product.inStock !== false,
     featured: Boolean(product.featured),
-    sortRank: product._sortRank || 0
+    sortRank: product._sortRank || 0,
+    // Premium Detail Fields
+    details: product.details || null,
+    about: product.about || [],
+    extraInfo: product.extraInfo || null,
+    showcase: product.showcase || []
   };
 
-  normalized.description = buildDescription(normalized);
+  if (!normalized.description) {
+    normalized.description = buildDescription(normalized);
+  }
   return normalized;
 }
 
@@ -237,10 +244,12 @@ function mergeGroupedProducts(groupConfig, variants) {
     reviews: weightedReviews || preferredVariant.reviews,
     featured: variants.some((variant) => variant.featured),
     sortRank: Math.min(...variants.map((variant) => variant.sortRank)),
-    description: ''
+    description: preferredVariant.description || ''
   };
 
-  merged.description = buildDescription(merged);
+  if (!merged.description) {
+    merged.description = buildDescription(merged);
+  }
   return merged;
 }
 
@@ -340,7 +349,12 @@ function createBuyButtons(product) {
   return stores
     .map((store) => {
       const btnClass = store === 'amazon' ? 'btn-amazon' : 'btn-flipkart';
-      // Neutralized link with # as requested
+      const url = product.marketplace?.[store];
+      
+      if (url && url !== '#') {
+        return `<a href="${url}" target="_blank" rel="noopener" class="btn ${btnClass} buy-now-btn" onclick="event.stopPropagation()">${store === 'amazon' ? 'Buy on Amazon' : 'Buy on Flipkart'}</a>`;
+      }
+      
       return `<a href="#" class="btn ${btnClass} buy-now-btn" onclick="event.preventDefault(); event.stopPropagation(); alert('Purchase link will be updated soon!')">${store === 'amazon' ? 'Buy on Amazon' : 'Buy on Flipkart'}</a>`;
     })
     .join('');
@@ -384,13 +398,52 @@ function createProductCard(product) {
     </div>
   `;
 
-  // Neutralized click as requested - temporarily disabled product detail view
-  card.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log('Product view is temporarily disabled.');
+  card.addEventListener('click', () => {
+    window.location.href = `product.html?id=${product.id}`;
   });
 
   return card;
+}
+
+function formatCategoryLabel(category) {
+  return CATEGORY_LABELS[category] || 'Wrap Skirt';
+}
+
+function formatAvailabilityText(product) {
+  if (!product.inStock) return 'Currently unavailable';
+  if (product.storeAvailability.length > 1) return 'Available on multiple stores';
+  if (product.storeAvailability.includes('amazon')) return 'Available on Amazon';
+  if (product.storeAvailability.includes('flipkart')) return 'Available on Flipkart';
+  return 'Availability updating';
+}
+
+function buildProductTagline(product) {
+  return `${product.fabric || 'Cotton'} ${product.length || 'wrap skirt'} in ${product.color || 'signature prints'} with an adjustable fit and everyday comfort.`;
+}
+
+function buildMetaChips(product) {
+  return [
+    product.fabric,
+    product.length,
+    product.size,
+    product.color,
+    product.rating ? `${product.rating} rating` : '',
+    product.reviews ? `${product.reviews} reviews` : ''
+  ].filter(Boolean);
+}
+
+function getProductHeroContent(product) {
+  const hero = product.hero || {};
+
+  return {
+    tagline: hero.tagline || buildProductTagline(product),
+    storyLabel: hero.storyLabel || 'Pezzava signature',
+    storyTitle: hero.storyTitle || 'Print-rich silhouettes inspired by Jaipur craft traditions',
+    storyBody: hero.storyBody || 'Each detail page now feels more like a considered fashion landing page and less like a basic listing. The redesign gives shoppers clearer fit cues, stronger storytelling, and faster purchase confidence.',
+    galleryNotes: Array.isArray(hero.galleryNotes) && hero.galleryNotes.length
+      ? hero.galleryNotes.slice(0, 2)
+      : ['Handcrafted print-led design', 'Soft cotton drape']
+  };
 }
 
 // Use a single IntersectionObserver for all cards (performance)
@@ -492,117 +545,252 @@ function buildDetailButtons(product) {
       const btnClass = store === 'amazon' ? 'btn-amazon' : 'btn-flipkart';
       const price = product.stores[store]?.price;
       const label = price ? `${store === 'amazon' ? 'Buy on Amazon' : 'Buy on Flipkart'} - Rs ${price}` : (store === 'amazon' ? 'Buy on Amazon' : 'Buy on Flipkart');
-      // Neutralized link with #
+      const url = product.marketplace?.[store];
+
+      if (url && url !== '#') {
+        return `<a href="${url}" target="_blank" rel="noopener" class="btn ${btnClass}">${label}</a>`;
+      }
+
       return `<a href="#" class="btn ${btnClass}" onclick="event.preventDefault(); alert('Purchase link will be updated soon!')">${label}</a>`;
     })
     .join('');
 }
 
+function renderDetailError(title, message) {
+  const container = document.querySelector('.product-detail .container');
+  if (!container) return;
+
+  container.innerHTML = `<div class="error-state">
+    <h2>${title}</h2>
+    <p>${message}</p>
+    <a href="products.html" class="btn btn-primary">Back to Shop</a>
+  </div>`;
+}
+
 // Product Detail Page
 function loadProductDetail() {
   const params = new URLSearchParams(window.location.search);
-  const productId = params.get('id');
+  let productId = params.get('id');
   if (!productId) {
-    document.querySelector('.product-detail .container').innerHTML = '<div class="error-state"><h2>Product not selected.</h2><p>Please choose a product from the shop page.</p><a href="products.html" class="btn btn-primary">Back to Shop</a></div>';
-    return;
+    productId = 'amz-001';
+    const nextUrl = `${window.location.pathname}?id=${productId}`;
+    window.history.replaceState({}, '', nextUrl);
   }
 
   loadProducts().then((products) => {
-    const product = productLookup.get(productId);
-
-    if (!product) {
-      document.querySelector('.product-detail .container').innerHTML = '<div class="error-state"><h2>Oops! Product not found.</h2><p>The product you are looking for does not exist or has been removed.</p><a href="products.html" class="btn btn-primary">Back to Shop</a></div>';
+    if (!products || !products.length) {
+      renderDetailError('Unable to load product.', 'The catalog could not be loaded. Please make sure the site is running through your local server.');
       return;
     }
 
-    const images = product.images || [];
-    document.title = `${product.displayName} - Pezzava`;
+    const product = productLookup.get(productId);
 
-    const breadcrumbName = document.getElementById('detail-breadcrumb-name');
-    if (breadcrumbName) breadcrumbName.textContent = product.displayName;
-
-    document.getElementById('detail-name').textContent = product.displayName;
-    document.getElementById('detail-price').textContent = `${product.storeAvailability.length > 1 ? 'From ' : ''}Rs ${product.price}`;
-    document.getElementById('detail-original-price').textContent = product.originalPrice ? `Rs ${product.originalPrice}` : '';
-    document.getElementById('detail-discount').textContent = product.discount ? `${product.discount}% off` : '';
-    document.getElementById('detail-description').textContent = product.description;
-    document.getElementById('detail-fabric').textContent = product.fabric || '100% Cotton';
-    document.getElementById('detail-length').textContent = product.length || 'Varies';
-    document.getElementById('detail-size').textContent = product.size || 'Free Size';
-    document.getElementById('detail-color').textContent = product.color;
-    document.getElementById('detail-care').textContent = product.care || 'Gentle hand wash recommended.';
-
-    const ratingEl = document.getElementById('detail-rating');
-    if (ratingEl) {
-      ratingEl.innerHTML = `<span class="stars">${renderStars(product.rating)}</span> <span class="rating-value">${product.rating}</span> <span class="review-count">(${product.reviews} reviews)</span>`;
+    if (!product) {
+      renderDetailError('Oops! Product not found.', 'The product you are looking for does not exist or has been removed.');
+      return;
     }
 
-    const mainWrapper = document.getElementById('detail-gallery-main');
-    const thumbWrapper = document.getElementById('detail-gallery-thumbs');
+    try {
+      const images = product.images || [];
+      document.title = `${product.displayName} - Pezzava`;
 
-    if (mainWrapper && thumbWrapper) {
-      mainWrapper.innerHTML = '';
-      thumbWrapper.innerHTML = '';
+      const breadcrumbName = document.getElementById('detail-breadcrumb-name');
+      if (breadcrumbName) breadcrumbName.textContent = product.displayName;
 
-      if (images.length > 0) {
-        images.forEach((img) => {
-          const mainSlide = document.createElement('div');
-          mainSlide.className = 'swiper-slide';
-          mainSlide.innerHTML = `<img src="${img}" alt="${product.displayName}" loading="eager">`;
-          mainWrapper.appendChild(mainSlide);
+      document.getElementById('detail-name').textContent = product.displayName;
+      document.getElementById('detail-price').textContent = `${product.storeAvailability.length > 1 ? 'From ' : ''}Rs ${product.price}`;
+      document.getElementById('detail-original-price').textContent = product.originalPrice ? `Rs ${product.originalPrice}` : '';
+      document.getElementById('detail-discount').textContent = product.discount ? `${product.discount}% off` : '';
+      document.getElementById('detail-description').innerText = product.description;
+      const categoryEl = document.getElementById('detail-category');
+      if (categoryEl) categoryEl.textContent = formatCategoryLabel(product.category);
 
-          const thumbSlide = document.createElement('div');
-          thumbSlide.className = 'swiper-slide';
-          thumbSlide.innerHTML = `<img src="${img}" alt="${product.displayName} thumbnail">`;
-          thumbWrapper.appendChild(thumbSlide);
-        });
-      } else {
-        mainWrapper.innerHTML = '<div class="swiper-slide"><div class="product-placeholder" style="height:500px"><span class="icon" style="font-size:80px">Skirt</span><span>No Image Available</span></div></div>';
+      const storeChipEl = document.getElementById('detail-store-chip');
+      if (storeChipEl) {
+        const storeText = product.storeAvailability.length > 1
+          ? 'Amazon + Flipkart'
+          : formatStoreName(product.storeAvailability[0] || product.store || 'amazon');
+        storeChipEl.textContent = storeText;
       }
 
-      if (typeof Swiper === 'function') {
-        const thumbsSwiper = new Swiper('.thumb-swiper', {
-          spaceBetween: 10,
-          slidesPerView: 4,
-          freeMode: true,
-          watchSlidesProgress: true
-        });
+      const heroContent = getProductHeroContent(product);
 
-        new Swiper('.main-swiper', {
-          spaceBetween: 10,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          },
-          thumbs: {
-            swiper: thumbsSwiper
-          },
-          grabCursor: true,
-          keyboard: {
-            enabled: true
-          }
-        });
-      } else {
-        mainWrapper.style.display = 'grid';
-        mainWrapper.style.gap = '12px';
-        thumbWrapper.closest('.thumb-swiper').style.display = 'none';
+      const taglineEl = document.getElementById('detail-tagline');
+      if (taglineEl) taglineEl.textContent = heroContent.tagline;
+
+      const availabilityEl = document.getElementById('detail-availability');
+      if (availabilityEl) availabilityEl.textContent = formatAvailabilityText(product);
+
+      const galleryNote1El = document.getElementById('detail-gallery-note-1');
+      if (galleryNote1El) galleryNote1El.textContent = heroContent.galleryNotes[0] || 'Handcrafted print-led design';
+
+      const galleryNote2El = document.getElementById('detail-gallery-note-2');
+      if (galleryNote2El) galleryNote2El.textContent = heroContent.galleryNotes[1] || 'Soft cotton drape';
+
+      const storyLabelEl = document.getElementById('detail-story-label');
+      if (storyLabelEl) storyLabelEl.textContent = heroContent.storyLabel;
+
+      const storyTitleEl = document.getElementById('detail-story-title');
+      if (storyTitleEl) storyTitleEl.textContent = heroContent.storyTitle;
+
+      const storyBodyEl = document.getElementById('detail-story-body');
+      if (storyBodyEl) storyBodyEl.textContent = heroContent.storyBody;
+
+      const metaChipsEl = document.getElementById('detail-meta-chips');
+      if (metaChipsEl) {
+        metaChipsEl.innerHTML = buildMetaChips(product)
+          .map((chip) => `<span class="product-meta-chip">${chip}</span>`)
+          .join('');
       }
+
+      document.getElementById('detail-fabric').textContent = product.fabric || '100% Cotton';
+      document.getElementById('detail-length').textContent = product.length || 'Varies';
+      document.getElementById('detail-size').textContent = product.size || 'Free Size';
+      document.getElementById('detail-color').textContent = product.color;
+      document.getElementById('detail-care').textContent = product.care || 'Gentle hand wash recommended.';
+      const fabricStatEl = document.getElementById('detail-fabric-stat');
+      if (fabricStatEl) fabricStatEl.textContent = product.fabric || '100% Cotton';
+
+      const sizeStatEl = document.getElementById('detail-size-stat');
+      if (sizeStatEl) sizeStatEl.textContent = product.size || 'Free Size';
+
+      const lengthStatEl = document.getElementById('detail-length-stat');
+      if (lengthStatEl) lengthStatEl.textContent = product.length || 'Wrap Fit';
+
+      const ratingEl = document.getElementById('detail-rating');
+      if (ratingEl) {
+        ratingEl.innerHTML = `<span class="stars">${renderStars(product.rating)}</span> <span class="rating-value">${product.rating}</span> <span class="review-count">(${product.reviews} reviews)</span>`;
+      }
+
+      const mainWrapper = document.getElementById('detail-gallery-main');
+      const thumbWrapper = document.getElementById('detail-gallery-thumbs');
+
+      if (mainWrapper && thumbWrapper) {
+        mainWrapper.innerHTML = '';
+        thumbWrapper.innerHTML = '';
+
+        if (images.length > 0) {
+          images.forEach((img) => {
+            const mainSlide = document.createElement('div');
+            mainSlide.className = 'swiper-slide';
+            mainSlide.innerHTML = `<img src="${img}" alt="${product.displayName}" loading="eager">`;
+            mainWrapper.appendChild(mainSlide);
+
+            const thumbSlide = document.createElement('div');
+            thumbSlide.className = 'swiper-slide';
+            thumbSlide.innerHTML = `<img src="${img}" alt="${product.displayName} thumbnail">`;
+            thumbWrapper.appendChild(thumbSlide);
+          });
+        } else {
+          mainWrapper.innerHTML = '<div class="swiper-slide"><div class="product-placeholder" style="height:500px"><span class="icon" style="font-size:80px">Skirt</span><span>No Image Available</span></div></div>';
+        }
+
+        if (typeof Swiper === 'function') {
+          const thumbsSwiper = new Swiper('.thumb-swiper', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true
+          });
+
+          new Swiper('.main-swiper', {
+            spaceBetween: 10,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            },
+            thumbs: {
+              swiper: thumbsSwiper
+            },
+            grabCursor: true,
+            keyboard: {
+              enabled: true
+            }
+          });
+        } else {
+          mainWrapper.style.display = 'grid';
+          mainWrapper.style.gap = '12px';
+          const thumbsRoot = thumbWrapper.closest('.thumb-swiper');
+          if (thumbsRoot) thumbsRoot.style.display = 'none';
+        }
+      }
+
+      const buyBtns = document.getElementById('detail-buy-buttons');
+      if (buyBtns) buyBtns.innerHTML = buildDetailButtons(product);
+
+      renderPremiumDetails(product);
+
+      const related = products
+        .filter((item) => item.id !== product.id && (item.category === product.category || item.storeAvailability.some((store) => product.storeAvailability.includes(store))))
+        .slice(0, 4);
+
+      const relatedContainer = document.getElementById('related-products');
+      if (relatedContainer) {
+        if (related.length) {
+          renderProducts(related, relatedContainer);
+        } else {
+          const relatedSection = relatedContainer.closest('section');
+          if (relatedSection) relatedSection.style.display = 'none';
+        }
+      }
+    } catch (error) {
+      console.error('Failed to render product detail:', error);
+      renderDetailError('Unable to render product.', 'Something went wrong while building this page. Please refresh and try again.');
     }
-
-    const buyBtns = document.getElementById('detail-buy-buttons');
-    if (buyBtns) buyBtns.innerHTML = buildDetailButtons(product);
-
-    const related = products
-      .filter((item) => item.id !== product.id && (item.category === product.category || item.storeAvailability.some((store) => product.storeAvailability.includes(store))))
-      .slice(0, 4);
-
-    const relatedContainer = document.getElementById('related-products');
-    if (relatedContainer) {
-      if (related.length) {
-        renderProducts(related, relatedContainer);
-      } else {
-        relatedContainer.closest('section').style.display = 'none';
-      }
-    }
+  }).catch((error) => {
+    console.error('Failed to load product detail:', error);
+    renderDetailError('Unable to load product.', 'Please make sure the site is running through your local server and try again.');
   });
+}
+
+function renderPremiumDetails(product) {
+  const highlightsContainer = document.getElementById('premium-highlights-container');
+  const highlightsEl = document.getElementById('premium-highlights');
+  if (highlightsContainer && highlightsEl && product.details) {
+    highlightsEl.innerHTML = `
+      ${Object.entries(product.details).map(([label, value]) => `
+        <article class="highlight-item">
+          <span class="highlight-label">${label}</span>
+          <span class="highlight-value">${value}</span>
+        </article>
+      `).join('')}
+    `;
+    highlightsContainer.style.display = 'block';
+  }
+
+  const aboutContainer = document.getElementById('premium-about-container');
+  const aboutEl = document.getElementById('premium-about-list');
+  if (aboutContainer && aboutEl && product.about && product.about.length) {
+    aboutEl.innerHTML = product.about.map((point) => `<li>${point}</li>`).join('');
+    aboutContainer.style.display = 'block';
+  }
+
+  const showcaseContainer = document.getElementById('premium-showcase-container');
+  const showcaseEl = document.getElementById('premium-showcase');
+  if (showcaseContainer && showcaseEl && product.showcase && product.showcase.length) {
+    showcaseEl.innerHTML = product.showcase.map((item) => `
+      <article class="showcase-item">
+        <div class="showcase-image">
+          <img src="${item.image}" alt="${item.title}">
+        </div>
+        <div class="showcase-content">
+          <h3>${item.title}</h3>
+          <p>${item.text}</p>
+        </div>
+      </article>
+    `).join('');
+    showcaseContainer.style.display = 'block';
+  }
+
+  const extraContainer = document.getElementById('premium-extra-container');
+  const extraEl = document.getElementById('premium-extra-table');
+  if (extraContainer && extraEl && product.extraInfo) {
+    extraEl.innerHTML = Object.entries(product.extraInfo).map(([label, value]) => `
+      <tr>
+        <th>${label}</th>
+        <td>${value}</td>
+      </tr>
+    `).join('');
+    extraContainer.style.display = 'block';
+  }
 }

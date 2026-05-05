@@ -1,65 +1,181 @@
 [
   {
     "id": "amz-001",
-    "name": "Pezzava Womens Cotton Knee Length Wrap Skirt (Free Size) Black",
+    "name": "Cotton Wraparound Skirt for Women (Free Size)",
     "shortName": "Navy Tribal Art Mini Skirt",
-    "color": "Black",
-    "price": 279,
-    "originalPrice": 799,
-    "discount": 50,
+    "color": "Navy Blue",
+    "price": 249,
+    "originalPrice": 699,
+    "discount": 64,
     "fabric": "100% Cotton",
-    "length": "Mini",
+    "length": "Mini (15 Inches)",
     "size": "Free Size",
-    "category": "knee",
+    "category": "mini",
     "store": "amazon",
-    "description": "Beautifully crafted cotton mini wrap skirt with navy blue tribal art prints. Features traditional Rajasthani folk motifs in orange and white.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A navy-toned cotton mini wrap skirt finished with tribal-inspired artwork and a soft, breathable drape. Designed for easy styling, adjustable comfort, and a handcrafted Jaipur character.",
+    "hero": {
+      "tagline": "Navy tribal motifs, a breezy cotton drape, and an easy wrap fit for everyday wear.",
+      "storyLabel": "Featured product",
+      "storyTitle": "A playful navy mini with handcrafted tribal energy",
+      "storyBody": "This product page now focuses on the first skirt as a hero item. The deep navy base, printed tribal motifs, and wrap-around silhouette give it a more fashion-led identity than the old generic listing copy.",
+      "galleryNotes": [
+        "Navy tribal print focus",
+        "Mini wrap silhouette"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Rise style": "Mid Rise",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Mini",
+      "Pattern": "Tribal Art Print",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Skirt Length: 15 Inches long",
+      "Skirt Open waist 38 Inches (suitable for up to 34 inches waist holder)",
+      "100% cotton with navy tribal art inspired print",
+      "Skirt type: Wraparound skirt",
+      "Soft mini silhouette that adjusts comfortably through the waist",
+      "Color may appear slightly different depending on display settings"
+    ],
+    "extraInfo": {
+      "Net Quantity": "1.00 Count",
+      "Generic Name": "skirt"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p1.1.webp",
+        "title": "Adjustable Wrap Fit",
+        "text": "Classic drawstring styling lets the skirt sit comfortably and shape naturally through the waist."
+      },
+      {
+        "image": "images/products/P1.2.webp",
+        "title": "Navy Tribal Surface",
+        "text": "The print-led surface brings a stronger navy story and a more artisanal visual rhythm."
+      },
+      {
+        "image": "images/products/P1.3.webp",
+        "title": "Soft Cotton Comfort",
+        "text": "Breathable cotton keeps the skirt light, wearable, and easy to style through warm days."
+      },
+      {
+        "image": "images/products/P1.4.webp",
+        "title": "Playful Mini Length",
+        "text": "A shorter silhouette gives the skirt a youthful, easygoing look while keeping movement relaxed."
+      }
+    ],
+    "care": "10 days Return & Exchange. Amazon Delivered. Secure transaction. Gentle hand wash recommended.",
     "images": [
-      "images/products/Internet_20260504_195959_1.webp",
-      "images/products/Internet_20260504_200016_3.webp",
-      "images/products/Internet_20260504_200016_4.webp",
-      "images/products/Internet_20260504_200016_5.webp",
-      "images/products/Internet_20260504_200016_6.webp"
+      "images/products/p1.webp",
+      "images/products/p1.1.webp",
+      "images/products/P1.2.webp",
+      "images/products/P1.3.webp",
+      "images/products/P1.4.webp"
     ],
     "tags": [
       "cotton",
       "wrap around",
       "mini",
       "navy",
-      "tribal"
+      "tribal art",
+      "jaipuri"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Length-Skirt/dp/B08GJQZ8XV/",
+      "amazon": "https://www.amazon.in/dp/B08KR975XL",
       "flipkart": null
     },
-    "rating": 4.2,
-    "reviews": 156,
+    "rating": 3.2,
+    "reviews": 13,
     "inStock": true,
-    "featured": true,
-    "prefix": "Internet_20260504_200016"
+    "featured": true
   },
   {
     "id": "amz-002",
-    "name": "Pezzava Women's Wear Cotton Black & White Mini Wrap Skirt",
-    "shortName": "Black & White Mandala Skirt",
+    "name": "Women's Beautiful Cotton Knee Length Skirt (Black and White, Free Size)",
+    "shortName": "Black & White Knee Length Skirt",
     "color": "Black & White",
-    "price": 279,
-    "originalPrice": 750,
-    "discount": 49,
+    "price": 299,
+    "originalPrice": 899,
+    "discount": 67,
     "fabric": "100% Cotton",
     "length": "Knee Length",
     "size": "Free Size",
-    "category": "mini",
+    "category": "knee",
     "store": "amazon",
-    "description": "Stylish black and white mandala printed cotton wrap skirt. Bold contrast prints with spiral and paisley patterns.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A beautiful black and white cotton knee length wrap skirt with a loose, comfortable fit and bold artisan-style print work. Designed for casual wear with an adjustable drawstring waist and breathable everyday comfort.",
+    "hero": {
+      "tagline": "Black and white contrast, easy cotton comfort, and a flattering knee-length wrap silhouette.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A bold black-and-white wrap skirt with everyday ease",
+      "storyBody": "This product is the Pezzava black and white knee-length style from Amazon. The updated page now reflects its actual fit, pricing, rating, and product details instead of the earlier placeholder content.",
+      "galleryNotes": [
+        "Black and white print",
+        "Knee-length wrap fit"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Rise style": "Mid Rise",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Knee-Length",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Care Instructions: Do Not Bleach",
+      "Fit Type: Loose",
+      "Beautiful black and white cotton wrap skirt for casual wear",
+      "Adjustable drawstring waist with breathable cotton comfort",
+      "Knee-length silhouette suited for spring-summer styling",
+      "Pezzava women's skirt in free size"
+    ],
+    "extraInfo": {
+      "Item Weight": "370 g",
+      "Net Quantity": "1 Count",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Garment Size Country": "India",
+      "Manufacturer Part Number": "SKT-WCK-A0380",
+      "Item Type Name": "skirt",
+      "Unit Count": "1 Count",
+      "Best Sellers Rank": "#65,877 in Clothing & Accessories; #911 in Women's Skirts & Shorts",
+      "ASIN": "B082RXMWPL"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p2.2.webp",
+        "title": "Strong Black & White Contrast",
+        "text": "The high-contrast monochrome print gives this skirt a bold, graphic look that stands out without feeling overworked."
+      },
+      {
+        "image": "images/products/p2.3.webp",
+        "title": "Easy Loose Fit",
+        "text": "A relaxed wrap construction and drawstring closure make the skirt comfortable through the waist and easy to style."
+      },
+      {
+        "image": "images/products/p2.4.webp",
+        "title": "Everyday Cotton Comfort",
+        "text": "Breathable cotton fabric keeps the silhouette wearable for casual day looks across warmer seasons."
+      },
+      {
+        "image": "images/products/p2.5.webp",
+        "title": "Knee-Length Shape",
+        "text": "The knee-length cut balances coverage and movement, giving the piece a practical everyday profile."
+      }
+    ],
+    "care": "Do Not Bleach. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
     "images": [
-      "images/products/Internet_20260504_195959_2.webp",
-      "images/products/Internet_20260504_200037_1.webp",
-      "images/products/Internet_20260504_200037_2.webp",
-      "images/products/Internet_20260504_200037_3.webp",
-      "images/products/Internet_20260504_200037_4.webp",
-      "images/products/Internet_20260504_200037_5.webp"
+      "images/products/p2.webp",
+      "images/products/p2.2.webp",
+      "images/products/p2.3.webp",
+      "images/products/p2.4.webp",
+      "images/products/p2.5.webp",
+      "images/products/p2.6.webp"
     ],
     "tags": [
       "cotton",
@@ -67,496 +183,1191 @@
       "knee",
       "black",
       "white",
-      "mandala"
+      "knee length",
+      "casual"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Black-White/dp/B07ZDDZCVG/",
+      "amazon": "https://www.amazon.in/Pezzava-Womens-Beautiful-Cotton-Length/dp/B082RXMWPL/",
       "flipkart": null
     },
-    "rating": 4.1,
-    "reviews": 89,
+    "rating": 4.0,
+    "reviews": 22,
     "inStock": true,
     "featured": false,
-    "prefix": "Internet_20260504_200037"
+    "prefix": "p2"
   },
   {
     "id": "amz-003",
-    "name": "Pezzava Womens Wear Cotton Knee Length Wrap Skirt (Free Size) Black",
-    "shortName": "Colorful Elephant Calf Skirt",
+    "name": "Pezzava Women's Black Animal Print Knee-Length Wrap Skirt",
+    "shortName": "Black Animal Print Wrap Skirt",
     "color": "Black",
     "price": 319,
-    "originalPrice": 850,
-    "discount": 50,
+    "originalPrice": 899,
+    "discount": 65,
     "fabric": "100% Cotton",
-    "length": "Calf Length",
+    "length": "Knee Length",
     "size": "Free Size",
     "category": "knee",
     "store": "amazon",
-    "description": "Beautiful calf length cotton skirt with vibrant multicolor elephant and geometric prints. Handcrafted in Jaipur.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A black cotton knee-length wrap skirt with animal-print character, a comfortable free-size fit, and an easy casual silhouette. Designed with a belt closure and breathable cotton construction for everyday wear.",
+    "hero": {
+      "tagline": "Black animal-print cotton, a wrap silhouette, and an easy knee-length fit for casual daily wear.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A black wrap skirt with bold print and simple everyday comfort",
+      "storyBody": "This product now reflects the Amazon listing you shared for the black Pezzava wrap skirt. The page has been updated to match its knee-length shape, cotton fabric, sizing notes, and product details instead of the previous mismatched copy.",
+      "galleryNotes": [
+        "Black animal print",
+        "22-inch knee length"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Belt",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Knee-Length",
+      "Care instructions": "Machine Wash",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Length: 22 Inches. Please measure your body waist and length and check product measurement for your fit",
+      "Waist: Skirt open waist is 38 Inches but useful for maximum 34 inches waist holder",
+      "100% Cotton printed",
+      "Wash care: Gentle wash",
+      "Skirt type: Wrap around skirt",
+      "Color may vary slightly due to photographic effects or display settings"
+    ],
+    "extraInfo": {
+      "Item Weight": "180 g",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "number-of-items": "1",
+      "Manufacturer Part Number": "SKT-WCK-A0382",
+      "Item Type Name": "skirt",
+      "Best Sellers Rank": "#253,236 in Clothing & Accessories; #3,162 in Women's Skirts & Shorts",
+      "ASIN": "B08GJQZ8XV"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p3.1.webp",
+        "title": "Bold Black Print",
+        "text": "The deep black base and animal-print styling give the skirt a stronger graphic personality while staying easy to wear."
+      },
+      {
+        "image": "images/products/p3.2.webp",
+        "title": "Adjustable Belt Closure",
+        "text": "The wrap construction with belt fastening helps the skirt sit securely while allowing a comfortable adjustable fit."
+      },
+      {
+        "image": "images/products/p3.3.webp",
+        "title": "Breathable Cotton Feel",
+        "text": "100% cotton keeps the piece light and wearable for casual day looks, especially across warmer weather."
+      },
+      {
+        "image": "images/products/p3.4.webp",
+        "title": "Everyday Knee-Length Shape",
+        "text": "The 22-inch knee-length profile gives balanced coverage and a practical silhouette for regular use."
+      }
+    ],
+    "care": "Machine Wash. Gentle wash recommended. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
     "images": [
-      "images/products/Internet_20260504_195959_3.webp",
-      "images/products/Internet_20260504_200057_1.webp",
-      "images/products/Internet_20260504_200057_2.webp",
-      "images/products/Internet_20260504_200057_3.webp",
-      "images/products/Internet_20260504_200057_4.webp"
+      "images/products/p3.1.webp",
+      "images/products/p3.2.webp",
+      "images/products/p3.3.webp",
+      "images/products/p3.4.webp",
+      "images/products/p3.5.webp"
     ],
     "tags": [
       "cotton",
       "wrap around",
-      "calf",
-      "multicolor",
-      "elephant",
-      "printed"
+      "knee",
+      "black",
+      "animal print",
+      "casual"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Length-Skirt/dp/B08GJRPWWS/",
+      "amazon": "https://www.amazon.in/dp/B08GJQZ8XV/",
       "flipkart": null
     },
-    "rating": 4.3,
-    "reviews": 127,
+    "rating": 3.7,
+    "reviews": 17,
     "inStock": true,
     "featured": true,
-    "prefix": "Internet_20260504_200057"
+    "prefix": "p3"
   },
   {
     "id": "amz-004",
-    "name": "Pezzava Women Cotton Knee Wrap Around Skirt Blue",
-    "shortName": "B&W Paisley Elephant Skirt",
-    "color": "Blue",
+    "name": "Pezzava Women's Monochrome Wrap Skirt",
+    "shortName": "Black Print Knee-Length Wrap Skirt",
+    "color": "Black",
     "price": 319,
     "originalPrice": 899,
-    "discount": 50,
+    "discount": 65,
     "fabric": "100% Cotton",
     "length": "Knee Length",
     "size": "Free Size",
     "category": "knee",
     "store": "amazon",
-    "description": "Elegant black and white cotton wrap around skirt with paisley, elephant, and floral motifs in horizontal bands.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A monochrome cotton knee-length wrap skirt with a comfortable free-size fit, casual styling, and an easy belt closure. Designed for everyday wear with printed character and breathable cotton comfort.",
+    "hero": {
+      "tagline": "Monochrome cotton print, a wrap silhouette, and a versatile knee-length fit for casual wear.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A clean black printed wrap skirt with easy everyday styling",
+      "storyBody": "This product now follows the Amazon listing details you shared, while using its own `p4` image set and a cleaner Pezzava-facing display name for the page.",
+      "galleryNotes": [
+        "Monochrome printed look",
+        "Free-size wrap fit"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Belt",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Knee-Length",
+      "Care instructions": "Machine Wash",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Length: 22 Inches. Please measure your body waist and length and check product measurement for your fit",
+      "Waist: Skirt open waist is 38 Inches but useful for maximum 34 inches waist holder",
+      "100% Cotton printed",
+      "Wash care: Gentle wash",
+      "Skirt type: Wrap around skirt",
+      "Color may vary slightly due to photographic effects or display settings"
+    ],
+    "extraInfo": {
+      "Item Weight": "180 g",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "number-of-items": "1",
+      "Manufacturer Part Number": "SKT-WCK-A0382",
+      "Item Type Name": "skirt",
+      "Best Sellers Rank": "#253,236 in Clothing & Accessories; #3,162 in Women's Skirts & Shorts",
+      "ASIN": "B08GJQZ8XV"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p4.1.webp",
+        "title": "Graphic Monochrome Surface",
+        "text": "The black-based print gives the skirt a bold visual presence while keeping the styling easy to pair."
+      },
+      {
+        "image": "images/products/p4.2.webp",
+        "title": "Wrap With Belt Closure",
+        "text": "A practical belt-style wrap construction helps the skirt sit comfortably and adjust through the waist."
+      },
+      {
+        "image": "images/products/p4.3.webp",
+        "title": "Soft Casual Cotton",
+        "text": "Breathable cotton fabric keeps the piece wearable for everyday looks across warm-weather dressing."
+      },
+      {
+        "image": "images/products/p4.4.webp",
+        "title": "Balanced Knee-Length Cut",
+        "text": "The knee-length shape offers a relaxed casual profile with enough movement and comfortable coverage."
+      }
+    ],
+    "care": "Machine Wash. Gentle wash recommended. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
     "images": [
-      "images/products/Internet_20260504_195959_4.webp",
-      "images/products/Internet_20260504_200127_1.webp",
-      "images/products/Internet_20260504_200127_2.webp",
-      "images/products/Internet_20260504_200127_3.webp",
-      "images/products/Internet_20260504_200127_4.webp"
+      "images/products/p4.webp",
+      "images/products/p4.1.webp",
+      "images/products/p4.2.webp",
+      "images/products/p4.3.webp",
+      "images/products/p4.4.webp"
     ],
     "tags": [
       "cotton",
       "wrap around",
       "knee",
       "black",
-      "white",
-      "elephant"
+      "printed",
+      "casual"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Women-Cotton-Around-Skirt/dp/B08WHLWKB5/",
+      "amazon": "https://www.amazon.in/dp/B08GJQZ8XV/",
       "flipkart": null
     },
-    "rating": 4.4,
-    "reviews": 203,
+    "rating": 3.7,
+    "reviews": 17,
     "inStock": true,
     "featured": true,
-    "prefix": "Internet_20260504_200127"
+    "prefix": "p4"
   },
   {
     "id": "amz-005",
-    "name": "Pezzava wrap Around Skirt Cotton Stylish Jaipuri Printed Knee Length for Women Red",
-    "shortName": "B&W Elephant Floral Short Skirt",
-    "color": "Red",
-    "price": 319,
-    "originalPrice": 900,
-    "discount": 49,
-    "fabric": "100% Cotton",
-    "length": "Mini",
-    "size": "Free Size",
-    "category": "knee",
-    "store": "amazon",
-    "description": "Stylish Jaipuri printed wrap around skirt in black and white with elephant and floral band patterns.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
-    "images": [
-      "images/products/Internet_20260504_195959_5.webp",
-      "images/products/Internet_20260504_200150_1.webp",
-      "images/products/Internet_20260504_200150_2.webp",
-      "images/products/Internet_20260504_200150_3.webp",
-      "images/products/Internet_20260504_200150_4.webp",
-      "images/products/Internet_20260504_200150_5.webp",
-      "images/products/Internet_20260504_200150_6.webp"
-    ],
-    "tags": [
-      "cotton",
-      "wrap around",
-      "mini",
-      "jaipuri",
-      "black",
-      "white",
-      "elephant"
-    ],
-    "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Around-Stylish-Jaipuri-Printed/dp/B08MXKFZ5W/",
-      "flipkart": null
-    },
-    "rating": 4.0,
-    "reviews": 94,
-    "inStock": true,
-    "featured": false,
-    "prefix": "Internet_20260504_200150"
-  },
-  {
-    "id": "amz-006",
-    "name": "Pezzava Women's Knee Animal Printed Wrap Cotton Skirt (Free Size) Blue",
-    "shortName": "B&W Geometric Elephant Skirt",
+    "name": "Pezzava Women's Blue Floral Knee Wrap Skirt",
+    "shortName": "Blue Floral Wrap Skirt",
     "color": "Blue",
-    "price": 299,
-    "originalPrice": 840,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Knee Length",
-    "size": "Free Size",
-    "category": "knee",
-    "store": "amazon",
-    "description": "Eye-catching black and white animal printed cotton skirt with elephant motifs and geometric diamond patterns.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
-    "images": [
-      "images/products/Internet_20260504_195959_6.webp",
-      "images/products/Internet_20260504_200218_1.webp",
-      "images/products/Internet_20260504_200218_2.webp",
-      "images/products/Internet_20260504_200218_3.webp",
-      "images/products/Internet_20260504_200218_4.webp",
-      "images/products/Internet_20260504_200218_5.webp",
-      "images/products/Internet_20260504_200218_6.webp",
-      "images/products/Internet_20260504_200218_7.webp"
-    ],
-    "tags": [
-      "cotton",
-      "knee",
-      "animal print",
-      "black",
-      "white",
-      "elephant"
-    ],
-    "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Animal-Printed-Cotton/dp/B07SH3H9RR/",
-      "flipkart": null
-    },
-    "rating": 4.3,
-    "reviews": 112,
-    "inStock": true,
-    "featured": false,
-    "prefix": "Internet_20260504_200218"
-  },
-  {
-    "id": "amz-007",
-    "name": "Pezzava Cotton Printed Knee Wrap Around Skirt",
-    "shortName": "Blue Elephant Patchwork Skirt",
-    "color": "Multicolor (Red/Orange/Black)",
     "price": 319,
-    "originalPrice": 950,
-    "discount": 50,
+    "originalPrice": 899,
+    "discount": 65,
     "fabric": "100% Cotton",
     "length": "Knee Length",
     "size": "Free Size",
     "category": "knee",
     "store": "amazon",
-    "description": "Premium cotton printed wrap around skirt with blue and teal patchwork elephant motifs.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A blue cotton knee-length wrap skirt with floral printed character, an easy drawstring closure, and an Indian ethnic casual feel. Designed for breathable everyday wear with a free-size waist wrap construction.",
+    "hero": {
+      "tagline": "Blue printed cotton, a floral surface, and an easy knee-length wrap silhouette for casual styling.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A blue floral wrap skirt with soft everyday movement",
+      "storyBody": "This product now matches the Amazon listing you shared for the blue Pezzava knee wrap skirt. The page uses its own `p5` image set and refreshed content that reflects the floral print, sizing notes, and casual Indian ethnic styling.",
+      "galleryNotes": [
+        "Blue floral print",
+        "Knee-length wrap fit"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Knee-Length",
+      "Pattern": "Floral",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Length: 22 Inches",
+      "Waist: Skirt open waist is 38 Inches but useful for maximum 34 inches waist holder",
+      "Skirt type: Wrap around skirt",
+      "Cotton printed",
+      "Indian ethnic skirt",
+      "Free-size casual silhouette for everyday use"
+    ],
+    "extraInfo": {
+      "Net Quantity": "1.00 Count",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "Manufacturer Part Number": "SKT-WCK-A0389",
+      "Item Type Name": "skirt",
+      "Unit Count": "1.00 Count",
+      "Best Sellers Rank": "#351,507 in Clothing & Accessories; #4,313 in Women's Skirts & Shorts",
+      "ASIN": "B08WHLWKB5"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p5.1.webp",
+        "title": "Blue Floral Surface",
+        "text": "The printed blue surface gives the skirt a softer, more decorative feel while keeping it easy to wear."
+      },
+      {
+        "image": "images/products/p5.2.webp",
+        "title": "Drawstring Wrap Ease",
+        "text": "The wrap-around construction and drawstring closure help the skirt sit comfortably through the waist."
+      },
+      {
+        "image": "images/products/p5.3.webp",
+        "title": "Light Cotton Comfort",
+        "text": "Breathable cotton fabric keeps the skirt casual, wearable, and well-suited to warmer day dressing."
+      },
+      {
+        "image": "images/products/p5.4.webp",
+        "title": "Ethnic Everyday Styling",
+        "text": "Its Indian ethnic print language gives the piece a distinctive look without making it difficult to style casually."
+      }
+    ],
+    "care": "10 days Return & Exchange. Amazon Delivered. Secure transaction. Gentle hand wash recommended.",
     "images": [
-      "images/products/Internet_20260504_195959_7.webp",
-      "images/products/Internet_20260504_200245_1.webp",
-      "images/products/Internet_20260504_200245_2.webp",
-      "images/products/Internet_20260504_200245_3.webp",
-      "images/products/Internet_20260504_200245_4.webp"
+      "images/products/p5.webp",
+      "images/products/p5.1.webp",
+      "images/products/p5.2.webp",
+      "images/products/p5.3.webp",
+      "images/products/p5.4.webp",
+      "images/products/p5.5.webp",
+      "images/products/p5.6.webp"
     ],
     "tags": [
       "cotton",
       "wrap around",
       "knee",
       "blue",
-      "elephant",
-      "printed"
-    ],
-    "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Cotton-Printed-Around-Skirt/dp/B08KRYYZPF/",
-      "flipkart": null
-    },
-    "rating": 4.5,
-    "reviews": 241,
-    "inStock": true,
-    "featured": true,
-    "prefix": "Internet_20260504_200245"
-  },
-  {
-    "id": "amz-008",
-    "name": "Pezzava Women's Cotton Wrap Around Long Skirt Blue",
-    "shortName": "Red Ethnic Calf Skirt",
-    "color": "Blue",
-    "price": 399,
-    "originalPrice": 980,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Calf Length",
-    "size": "Free Size",
-    "category": "long",
-    "store": "amazon",
-    "description": "Classic red ethnic cotton wrap skirt with traditional elephant and floral band patterns in warm tones.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
-    "images": [
-      "images/products/Internet_20260504_195959_8.webp",
-      "images/products/Internet_20260504_200304_1.webp",
-      "images/products/Internet_20260504_200304_2.webp",
-      "images/products/Internet_20260504_200304_3.webp",
-      "images/products/Internet_20260504_200304_4.webp"
-    ],
-    "tags": [
-      "cotton",
-      "wrap around",
-      "calf",
-      "red",
+      "floral",
       "ethnic"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Around-Skirt/dp/B08KWBMDPS/",
+      "amazon": "https://www.amazon.in/dp/B08WHLWKB5/",
       "flipkart": null
     },
-    "rating": 4.2,
-    "reviews": 78,
+    "rating": 3.4,
+    "reviews": 9,
     "inStock": true,
     "featured": false,
-    "prefix": "Internet_20260504_200304"
+    "prefix": "p5"
   },
   {
-    "id": "amz-009",
-    "name": "Pezzava Cotton Hand Block Knee Length Wrap Midi Skirt for Women Marron",
-    "shortName": "Red Folk Art Mini Skirt",
-    "color": "Maroon",
-    "price": 449,
-    "originalPrice": 899,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Mini",
-    "size": "Free Size",
-    "category": "knee",
-    "store": "amazon",
-    "description": "Beautiful red block printed cotton skirt with folk art people and floral motifs in traditional Rajasthani style.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
-    "images": [
-      "images/products/Internet_20260504_195959_9.webp",
-      "images/products/Internet_20260504_200338_1.webp",
-      "images/products/Internet_20260504_200338_2.webp",
-      "images/products/Internet_20260504_200338_3.webp",
-      "images/products/Internet_20260504_200338_4.webp",
-      "images/products/Internet_20260504_200338_5.webp"
-    ],
-    "tags": [
-      "cotton",
-      "mini",
-      "red",
-      "block print",
-      "folk art"
-    ],
-    "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Cotton-Block-Length-Marron/dp/B094MMWY37/",
-      "flipkart": null
-    },
-    "rating": 4.1,
-    "reviews": 67,
-    "inStock": false,
-    "featured": false,
-    "prefix": "Internet_20260504_200338"
-  },
-  {
-    "id": "amz-010",
-    "name": "Pezzava Womens Cotton Knee Length Wrap Skirt (Free Size) Red",
-    "shortName": "Blue Ethnic Long Skirt",
+    "id": "amz-006",
+    "name": "Pezzava Women's Red Jaipuri Midi Wrap Skirt",
+    "shortName": "Red Jaipuri Wrap Skirt",
     "color": "Red",
     "price": 319,
-    "originalPrice": 799,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Long",
-    "size": "Free Size",
-    "category": "knee",
-    "store": "amazon",
-    "description": "Graceful long cotton skirt with blue ethnic Rajasthani prints featuring elephants, birds, and paisley patterns.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
-    "images": [
-      "images/products/Internet_20260504_195959_10.webp",
-      "images/products/Internet_20260504_200400_1.webp",
-      "images/products/Internet_20260504_200400_2.webp",
-      "images/products/Internet_20260504_200400_3.webp",
-      "images/products/Internet_20260504_200400_4.webp"
-    ],
-    "tags": [
-      "cotton",
-      "long",
-      "blue",
-      "ethnic",
-      "elephant"
-    ],
-    "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Length-Skirt/dp/B08KS9Z119/",
-      "flipkart": null
-    },
-    "rating": 4.3,
-    "reviews": 98,
-    "inStock": true,
-    "featured": false,
-    "prefix": "Internet_20260504_200400"
-  },
-  {
-    "id": "amz-011",
-    "name": "Pezzava Women's Wear Cotton Long Wrap Black Skirt",
-    "shortName": "Maroon Elephant Calf Skirt",
-    "color": "Black & White",
-    "price": 499,
     "originalPrice": 899,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Calf Length",
-    "size": "Free Size",
-    "category": "long",
-    "store": "amazon",
-    "description": "Elegant maroon cotton calf-length skirt with elephant and peacock motifs in warm orange and gold tones.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
-    "images": [
-      "images/products/Internet_20260504_195959_11.webp"
-    ],
-    "tags": [
-      "cotton",
-      "calf",
-      "maroon",
-      "elephant",
-      "peacock"
-    ],
-    "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Black-Skirt/dp/B082S1NH88/",
-      "flipkart": null
-    },
-    "rating": 4.4,
-    "reviews": 187,
-    "inStock": true,
-    "featured": true
-  },
-  {
-    "id": "amz-012",
-    "name": "Pezzava Women's Cotton Mini Wrap Around Skirt (Red, Free Size)",
-    "shortName": "Red Elephant Knee Skirt",
-    "color": "Red",
-    "price": 399,
-    "originalPrice": 799,
-    "discount": 50,
+    "discount": 65,
     "fabric": "100% Cotton",
     "length": "Knee Length",
     "size": "Free Size",
-    "category": "mini",
+    "category": "knee",
     "store": "amazon",
-    "description": "Vibrant red printed wrap around skirt with elephant and paisley motifs. Comfortable wrap-around design fits all body types.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A stylish red cotton wrap skirt with Jaipuri printed character, a comfortable drawstring waist, and an Indian ethnic casual look. Designed as an easy midi-style wrap silhouette for breathable everyday wear.",
+    "hero": {
+      "tagline": "Red Jaipuri print, soft cotton comfort, and an easy wrap silhouette for casual everyday styling.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A red printed wrap skirt with ethnic character and soft movement",
+      "storyBody": "This product now reflects the Amazon listing you shared for the red Pezzava wrap skirt. The page uses its own `p6` gallery and updated details for its printed cotton fabric, high-rise wrap fit, and Indian ethnic styling.",
+      "galleryNotes": [
+        "Red Jaipuri print",
+        "Midi wrap silhouette"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Rise style": "High Rise",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Midi",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Length: 22 Inches",
+      "Waist: Skirt open waist is 38 Inches but useful for maximum 34 inches waist holder",
+      "Skirt type: Wrap around skirt",
+      "Cotton printed",
+      "Indian ethnic skirt",
+      "Soft everyday wrap fit with casual comfort"
+    ],
+    "extraInfo": {
+      "Item Weight": "180 g",
+      "Net Quantity": "1.00 Count",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "Manufacturer Part Number": "SKT-WCK-A0393",
+      "Item Type Name": "skirt",
+      "Unit Count": "1.00 Count",
+      "Best Sellers Rank": "#370,640 in Clothing & Accessories; #4,551 in Women's Skirts & Shorts",
+      "ASIN": "B08MXKFZ5W"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p6.1.webp",
+        "title": "Warm Red Printed Surface",
+        "text": "The rich red printed surface gives the skirt a stronger ethnic personality while keeping the look easy to style."
+      },
+      {
+        "image": "images/products/p6.2.webp",
+        "title": "Easy Drawstring Wrap",
+        "text": "The wrap construction and drawstring waist help the skirt adjust comfortably and sit naturally through the body."
+      },
+      {
+        "image": "images/products/p6,3.webp",
+        "title": "Breathable Cotton Feel",
+        "text": "100% cotton keeps the skirt light, casual, and better suited to warm-weather everyday dressing."
+      },
+      {
+        "image": "images/products/p6.4.webp",
+        "title": "Ethnic Midi Shape",
+        "text": "Its midi-style wrap length gives balanced movement and a practical silhouette for regular wear."
+      }
+    ],
+    "care": "10 days Return & Exchange. Amazon Delivered. Secure transaction. Gentle wash recommended.",
     "images": [
-      "images/products/Internet_20260504_195959_12.webp"
+      "images/products/p6.webp",
+      "images/products/p6.1.webp",
+      "images/products/p6.2.webp",
+      "images/products/p6,3.webp",
+      "images/products/p6.4.webp",
+      "images/products/p6.5.webp",
+      "images/products/p6.6.webp",
+      "images/products/p6.7.webp"
+    ],
+    "tags": [
+      "cotton",
+      "knee",
+      "red",
+      "jaipuri",
+      "printed",
+      "ethnic"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B08MXKFZ5W/",
+      "flipkart": null
+    },
+    "rating": 4.5,
+    "reviews": 6,
+    "inStock": true,
+    "featured": false,
+    "prefix": "p6"
+  },
+  {
+    "id": "amz-007",
+    "name": "Pezzava Women's Blue Animal Print Dance Wrap Skirt",
+    "shortName": "Blue Animal Print Wrap Skirt",
+    "color": "Blue",
+    "price": 299,
+    "originalPrice": 899,
+    "discount": 67,
+    "fabric": "100% Cotton",
+    "length": "Knee Length",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "A blue cotton knee-length wrap skirt with animal-print detailing, a drawstring closure, and a lightweight silhouette suited to casual wear or dance styling. Built as a free-size wrap for easy movement and breathable comfort.",
+    "hero": {
+      "tagline": "Blue animal print, breathable cotton, and a knee-length wrap fit made for easy movement.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A blue animal-print wrap skirt with playful movement",
+      "storyBody": "This product now reflects the Amazon listing you shared for the Pezzava blue knee animal printed skirt. The content and gallery have been updated to match its cotton wrap styling, dance-ready feel, and current Amazon pricing.",
+      "galleryNotes": [
+        "Blue animal print",
+        "Dance-ready wrap fit"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Dance",
+      "Length": "Knee-Length",
+      "Pattern": "Animal print"
+    },
+    "about": [
+      "Care Instructions: Do Not Bleach",
+      "Cotton wrap skirt with animal-print styling",
+      "Free-size construction for easy wear",
+      "Knee-length silhouette designed for movement",
+      "Suitable for casual styling and dance wear"
+    ],
+    "extraInfo": {
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Manufacturer Part Number": "SKT-WCK-A0375",
+      "Item Type Name": "skirt",
+      "Best Sellers Rank": "#641,453 in Clothing & Accessories; #7,530 in Women's Skirts & Shorts",
+      "ASIN": "B07SH3H9RR"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p7.webp",
+        "title": "Blue Printed Character",
+        "text": "The blue base and animal-inspired print give the skirt a lively look that feels playful without being difficult to style."
+      },
+      {
+        "image": "images/products/p7.2.webp",
+        "title": "Easy Drawstring Waist",
+        "text": "The wrap construction and drawstring closure help the skirt adjust comfortably and move easily with the body."
+      },
+      {
+        "image": "images/products/p7.3.webp",
+        "title": "Cotton Comfort For Movement",
+        "text": "Breathable cotton keeps the silhouette light and practical for warm-weather casual wear or dance-inspired styling."
+      },
+      {
+        "image": "images/products/p7.4.webp",
+        "title": "Knee-Length Everyday Shape",
+        "text": "The knee-length cut balances comfort and freedom of movement, making it an easy everyday wrap option."
+      }
+    ],
+    "care": "Do Not Bleach. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
+    "images": [
+      "images/products/p7.webp",
+      "images/products/p7.2.webp",
+      "images/products/p7.3.webp",
+      "images/products/p7.4.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "knee",
+      "blue",
+      "animal print",
+      "dance"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B07SH3H9RR/",
+      "flipkart": null
+    },
+    "rating": 4.5,
+    "reviews": 6,
+    "inStock": true,
+    "featured": true,
+    "prefix": "p7"
+  },
+  {
+    "id": "amz-008",
+    "name": "Pezzava Women's Blue Long Wrap Skirt",
+    "shortName": "Blue Long Wrap Skirt",
+    "color": "Blue",
+    "price": 399,
+    "originalPrice": 1599,
+    "discount": 75,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "amazon",
+    "description": "A long blue cotton wrap skirt with a high-rise fit, drawstring closure, and traditional printed character. Designed as a breezy full-length ethnic wrap silhouette for casual wear and summer comfort.",
+    "hero": {
+      "tagline": "Blue printed cotton, a long wrap silhouette, and a high-rise fit for easy ethnic styling.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A flowing blue wrap skirt with traditional everyday ease",
+      "storyBody": "This product now matches the Amazon listing you shared for the long blue Pezzava wrap skirt. The page has been updated to reflect its full-length shape, cotton construction, high-rise fit, and current Amazon details.",
+      "galleryNotes": [
+        "Blue long printed skirt",
+        "39-inch wrap length"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Rise style": "High Rise",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Knee-Length",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Length: 39 Inches",
+      "Waist: Can be worn by up to 36 Inches waist holder",
+      "100% Cotton printed ethnic traditional skirt",
+      "Type: Wrap around skirt",
+      "Color may vary slightly due to photographic effects or display settings"
+    ],
+    "extraInfo": {
+      "Net Quantity": "1.00 Count",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "Manufacturer Part Number": "SKT-WCL-A0376",
+      "Item Type Name": "skirt",
+      "Unit Count": "1.00 Count",
+      "Best Sellers Rank": "#962,475 in Clothing & Accessories; #10,926 in Women's Skirts & Shorts",
+      "ASIN": "B08KWBMDPS"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p8.webp",
+        "title": "Flowing Long Silhouette",
+        "text": "The full-length wrap profile gives the skirt a softer drape and a more traditional everyday feel."
+      },
+      {
+        "image": "images/products/p8.1.webp",
+        "title": "High-Rise Wrap Comfort",
+        "text": "The high-rise wrap construction helps the skirt sit comfortably and shape naturally through the waist."
+      },
+      {
+        "image": "images/products/p8,2.webp",
+        "title": "Printed Cotton Character",
+        "text": "The printed cotton surface keeps the piece breathable while giving it a distinctly ethnic visual language."
+      },
+      {
+        "image": "images/products/p8.3.webp",
+        "title": "Summer-Ready Styling",
+        "text": "Its lightweight fabric and easy movement make it better suited to warm-weather casual dressing."
+      }
+    ],
+    "care": "10 days Return & Exchange. Amazon Delivered. Secure transaction.",
+    "images": [
+      "images/products/p8.webp",
+      "images/products/p8.1.webp",
+      "images/products/p8,2.webp",
+      "images/products/p8.3.webp",
+      "images/products/p8.4.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "blue",
+      "ethnic"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B08KWBMDPS/",
+      "flipkart": null
+    },
+    "rating": 2.0,
+    "reviews": 2,
+    "inStock": true,
+    "featured": false,
+    "prefix": "p8"
+  },
+  {
+    "id": "amz-009",
+    "name": "Pezzava Women's Monochrome Maxi Wrap Skirt",
+    "shortName": "Black & White Maxi Wrap Skirt",
+    "color": "Black & White",
+    "price": 499,
+    "originalPrice": 1599,
+    "discount": 69,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "amazon",
+    "description": "A black and white cotton maxi wrap skirt with a fluid full-length silhouette, drawstring closure, and ceremonial styling appeal. Designed for breathable comfort with a soft monochrome surface and a free-size wrap fit.",
+    "hero": {
+      "tagline": "Black-and-white cotton, a full-length wrap drape, and a clean ceremonial silhouette.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A monochrome maxi wrap skirt with soft ceremony-ready presence",
+      "storyBody": "This product now reflects the Amazon listing you shared for the Pezzava black-and-white long wrap skirt. The page has been updated to match its maxi length, ceremony-led positioning, and new short Amazon link.",
+      "galleryNotes": [
+        "Black & white maxi look",
+        "Ceremony-ready wrap fit"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Ceremony",
+      "Length": "Maxi",
+      "Care instructions": "Machine Wash, Do Not Bleach",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Care Instructions: Machine Wash",
+      "Cotton full-length wrap skirt in black and white",
+      "Designed for ceremony styling with breathable comfort",
+      "Free-size wrap construction for adjustable wear",
+      "Lightweight silhouette suited to warm-weather use"
+    ],
+    "extraInfo": {
+      "Item Weight": "360 g",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "Manufacturer Part Number": "SKT-WCL-A0367",
+      "Item Type Name": "skirt",
+      "ASIN": "B07ZJ3VRHG"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p9.webp",
+        "title": "Monochrome Maxi Drape",
+        "text": "The long black-and-white silhouette gives this skirt a more elevated feel while staying airy and easy to wear."
+      },
+      {
+        "image": "images/products/p9.2.webp",
+        "title": "Drawstring Wrap Ease",
+        "text": "The wrap construction and drawstring waist help the skirt adjust comfortably while preserving a flowing look."
+      },
+      {
+        "image": "images/products/p9,3.webp",
+        "title": "Ceremony-Ready Styling",
+        "text": "Its cleaner monochrome palette and longer silhouette make it better suited to dressed-up casual or ceremony settings."
+      },
+      {
+        "image": "images/products/p9.4.webp",
+        "title": "Soft Cotton Movement",
+        "text": "Breathable cotton keeps the maxi wrap comfortable and light despite the fuller, longer profile."
+      }
+    ],
+    "care": "Machine Wash. Do Not Bleach. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
+    "images": [
+      "images/products/p9.webp",
+      "images/products/p9.2.webp",
+      "images/products/p9,3.webp",
+      "images/products/p9.4.webp",
+      "images/products/p9.5.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "black",
+      "white",
+      "ceremony"
+    ],
+    "marketplace": {
+      "amazon": "https://amzn.in/d/072JDrBN",
+      "flipkart": null
+    },
+    "rating": 3.5,
+    "reviews": 2,
+    "inStock": true,
+    "featured": false,
+    "prefix": "p9"
+  },
+  {
+    "id": "amz-010",
+    "name": "Pezzava Women's Red Ethnic Animal Print Wrap Skirt",
+    "shortName": "Red Ethnic Wrap Skirt",
+    "color": "Red",
+    "price": 319,
+    "originalPrice": 899,
+    "discount": 65,
+    "fabric": "100% Cotton",
+    "length": "Knee Length",
+    "size": "Free Size",
+    "category": "knee",
+    "store": "amazon",
+    "description": "A red cotton knee-length wrap skirt with animal-print detailing, ethnic styling, and a free-size drawstring waist. Designed for breathable comfort and easy everyday movement with a strong printed character.",
+    "hero": {
+      "tagline": "Red printed cotton, an ethnic wrap silhouette, and a comfortable knee-length fit for everyday wear.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A red animal-print wrap skirt with easy ethnic styling",
+      "storyBody": "This product now matches the Amazon listing you shared for the Pezzava red knee-length wrap skirt. The page has been updated with its `p10` gallery, animal-print details, pricing, and ethnic styling cues.",
+      "galleryNotes": [
+        "Red animal print",
+        "Knee-length wrap fit"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Ethnic",
+      "Length": "Knee-Length",
+      "Pattern": "Animal Print",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Length: 22 Inches",
+      "Waist: Skirt open waist is 38 Inches but useful for maximum 34 inches waist holder",
+      "100% Cotton printed",
+      "Skirt type: Wrap around skirt",
+      "Color may vary slightly due to photographic effects or display settings"
+    ],
+    "extraInfo": {
+      "Net Quantity": "1.00 Count",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "Manufacturer Part Number": "SKT-WCK",
+      "Item Type Name": "skirt",
+      "Unit Count": "1.00 Count",
+      "Best Sellers Rank": "#2,027,328 in Clothing & Accessories; #21,454 in Women's Skirts & Shorts",
+      "ASIN": "B08KS9Z119"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p10.webp",
+        "title": "Rich Red Printed Surface",
+        "text": "The red printed surface gives the skirt a stronger ethnic identity while keeping it visually versatile."
+      },
+      {
+        "image": "images/products/p10.2.webp",
+        "title": "Easy Drawstring Wrap",
+        "text": "The wrap-around construction and drawstring waist make the fit adjustable and comfortable through the body."
+      },
+      {
+        "image": "images/products/p10,3.webp",
+        "title": "Cotton Comfort",
+        "text": "Breathable cotton helps the skirt stay light and wearable through summer and warm-weather casual use."
+      },
+      {
+        "image": "images/products/p10.4.webp",
+        "title": "Ethnic Everyday Shape",
+        "text": "Its knee-length silhouette and printed character make it easy to style for regular ethnic-inspired looks."
+      }
+    ],
+    "care": "10 days Return & Exchange. Amazon Delivered. Secure transaction.",
+    "images": [
+      "images/products/p10.webp",
+      "images/products/p10.2.webp",
+      "images/products/p10,3.webp",
+      "images/products/p10.4.webp",
+      "images/products/p10.5.webp",
+      "images/products/p10.6.webp",
+      "images/products/p10.7.webp"
     ],
     "tags": [
       "cotton",
       "wrap around",
       "knee",
       "red",
-      "elephant",
-      "printed"
+      "animal print",
+      "ethnic"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Cotton-Around-Skirt/dp/B08KRNMDQN/",
+      "amazon": "https://www.amazon.in/dp/B08KS9Z119/",
       "flipkart": null
     },
-    "rating": 4.0,
-    "reviews": 134,
-    "inStock": false,
-    "featured": false
+    "rating": 3.3,
+    "reviews": 10,
+    "inStock": true,
+    "featured": false,
+    "prefix": "p10"
   },
   {
-    "id": "amz-013",
-    "name": "Pezzava Women's Wear Cotton Long Wrap Skirt (Black and White)",
-    "shortName": "Red Folk Art Mini Skirt",
+    "id": "amz-011",
+    "name": "Pezzava Women's Monochrome Long Wrap Skirt",
+    "shortName": "Black & White Long Wrap Skirt",
     "color": "Black & White",
     "price": 499,
-    "originalPrice": 999,
+    "originalPrice": 1599,
+    "discount": 69,
+    "fabric": "100% Cotton",
+    "length": "Long",
+    "size": "Free Size",
+    "category": "long",
+    "store": "amazon",
+    "description": "A black-and-white cotton long wrap skirt with a soft full-length drape, drawstring closure, and an easy monochrome look. Designed for breathable wear with a cleaner dance-ready silhouette and simple styling versatility.",
+    "hero": {
+      "tagline": "Black-and-white printed cotton, a long wrap silhouette, and soft everyday movement.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A monochrome long wrap skirt with easy movement and clean contrast",
+      "storyBody": "This product now reflects the Amazon listing you shared for the Pezzava cotton long wrap black skirt. The page has been updated with its `p11` gallery, maxi styling cues, and monochrome product details.",
+      "galleryNotes": [
+        "Black & white contrast",
+        "Long wrap silhouette"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Length": "Maxi",
+      "Care instructions": "Machine Wash, Do Not Bleach",
+      "Country of Origin": "India"
+    },
+    "about": [
+      "Care Instructions: Machine Wash",
+      "Breathable cotton long wrap skirt in monochrome styling",
+      "Full-length silhouette for easy movement and a softer drape",
+      "Black-and-white palette suited to summer dressing",
+      "Dance-friendly wrap construction with adjustable comfort"
+    ],
+    "extraInfo": {
+      "Item Weight": "370 g",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Country Of Origin": "India",
+      "Manufacturer Part Number": "SKT-WCL-A0366",
+      "ASIN": "B082S1NH88"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p11.webp",
+        "title": "Monochrome Long Drape",
+        "text": "The long black-and-white silhouette gives the skirt a cleaner, more elevated look while staying easy to wear."
+      },
+      {
+        "image": "images/products/p11.1.webp",
+        "title": "Drawstring Wrap Ease",
+        "text": "The wrap-around construction and drawstring waist help the piece adjust comfortably through the body."
+      },
+      {
+        "image": "images/products/p11.2.webp",
+        "title": "Soft Cotton Comfort",
+        "text": "Breathable cotton keeps the full-length skirt light enough for warm-weather styling and daily wear."
+      },
+      {
+        "image": "images/products/p11.3.webp",
+        "title": "Dance-Ready Movement",
+        "text": "Its wrap silhouette and longer drape create a relaxed shape that moves naturally while staying practical."
+      }
+    ],
+    "care": "Machine Wash. Do Not Bleach. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
+    "images": [
+      "images/products/p11.webp",
+      "images/products/p11.1.webp",
+      "images/products/p11.2.webp",
+      "images/products/p11.3.webp",
+      "images/products/p11.4.webp",
+      "images/products/p11.5.webp",
+      "images/products/p11.6.webp"
+    ],
+    "tags": [
+      "cotton",
+      "wrap around",
+      "long",
+      "black",
+      "white",
+      "dance"
+    ],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B082S1NH88/",
+      "flipkart": null
+    },
+    "rating": 0,
+    "reviews": 0,
+    "inStock": true,
+    "featured": true,
+    "prefix": "p11"
+  },
+  {
+    "id": "amz-012",
+    "name": "Pezzava Women's Red Mini Wrap Skirt",
+    "shortName": "Red Mini Wrap Skirt",
+    "color": "Red",
+    "price": 399,
+    "originalPrice": 799,
     "discount": 50,
     "fabric": "100% Cotton",
     "length": "Mini",
     "size": "Free Size",
-    "category": "long",
+    "category": "mini",
     "store": "amazon",
-    "description": "Premium women's wear cotton mini skirt with stunning red folk art prints featuring peacocks and dancers.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A red cotton mini wrap skirt with printed character, a tie closure, and an easy casual silhouette. Designed for lightweight everyday wear with a short wrap length and breathable cotton comfort.",
+    "hero": {
+      "tagline": "Red printed cotton, a mini wrap silhouette, and an easy casual fit with lightweight movement.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A red mini wrap skirt with playful movement and easy comfort",
+      "storyBody": "This product now reflects the Amazon listing you shared for the unavailable red Pezzava mini wrap skirt. The page has been updated with its `p12` gallery, tie closure, sizing notes, and out-of-stock status.",
+      "galleryNotes": [
+        "Red mini wrap style",
+        "15-inch skirt length"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Tie",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Maxi",
+      "Pattern": "Block Print"
+    },
+    "about": [
+      "Skirt Length: 15 Inches long",
+      "Skirt open waist 38 Inches but useful for maximum 34 inches waist holder",
+      "100% Cotton printed",
+      "Skirt type: Wraparound skirt",
+      "Color may vary slightly due to photographic effects or display settings"
+    ],
+    "extraInfo": {
+      "Item Weight": "402 g",
+      "Net Quantity": "1.00 Count",
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Manufacturer Part Number": "SKT-WCM-A0455",
+      "Item Type Name": "skirt",
+      "Unit Count": "1.00 Count",
+      "Best Sellers Rank": "#1,633,019 in Clothing & Accessories; #17,414 in Women's Skirts & Shorts",
+      "ASIN": "B08KRNMDQN"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p12.1.webp",
+        "title": "Mini Wrap Proportion",
+        "text": "The shorter wrap length gives the skirt a lighter, more playful shape while keeping it easy to wear."
+      },
+      {
+        "image": "images/products/p12.2.webp",
+        "title": "Easy Tie Closure",
+        "text": "The tie closure keeps the silhouette adjustable and helps the skirt sit comfortably through the waist."
+      },
+      {
+        "image": "images/products/p12.3.webp",
+        "title": "Printed Cotton Comfort",
+        "text": "Breathable cotton and printed surface detail keep the skirt light enough for casual warm-weather styling."
+      },
+      {
+        "image": "images/products/p12.4.webp",
+        "title": "Casual Dance-Ready Feel",
+        "text": "Its wrap construction and compact length make it an easy option for casual dressing with movement."
+      }
+    ],
+    "care": "Currently unavailable. Secure transaction.",
     "images": [
-      "images/products/Internet_20260504_195959_13.webp"
+      "images/products/p12.1.webp",
+      "images/products/p12.2.webp",
+      "images/products/p12.3.webp",
+      "images/products/p12.4.webp",
+      "images/products/p12.5.webp"
     ],
     "tags": [
       "cotton",
+      "wrap around",
       "mini",
       "red",
-      "folk art",
-      "peacock"
+      "animal print",
+      "printed"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Wear-Cotton-Skirt/dp/B07ZHBGCSS/",
+      "amazon": "https://www.amazon.in/dp/B08KRNMDQN/",
       "flipkart": null
     },
-    "rating": 4.5,
-    "reviews": 241,
-    "inStock": true,
-    "featured": true
+    "rating": 5.0,
+    "reviews": 1,
+    "inStock": false,
+    "featured": false,
+    "prefix": "p12"
   },
   {
     "id": "amz-014",
-    "name": "Pezzava 24 Inches Knee Animal Printed Wrap Cotton Skirt (Green)",
-    "shortName": "B&W Mandala Long Skirt",
+    "name": "Pezzava Women's Green Animal Print Knee Wrap Skirt",
+    "shortName": "Green Animal Print Wrap Skirt",
     "color": "Green",
     "price": 299,
-    "originalPrice": 940,
-    "discount": 50,
+    "originalPrice": 899,
+    "discount": 67,
     "fabric": "100% Cotton",
-    "length": "Long",
+    "length": "Knee Length",
     "size": "Free Size",
     "category": "knee",
     "store": "amazon",
-    "description": "Gorgeous black and white mandala printed cotton long skirt with flowing silhouette and fan-shaped patterns.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A green cotton knee-length wrap skirt with animal-print styling, a drawstring closure, and a light silhouette designed for movement. Built as a free-size wrap for casual wear or dance-led styling in warmer seasons.",
+    "hero": {
+      "tagline": "Green animal print, breathable cotton, and a knee-length wrap fit made for easy movement.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A green animal-print wrap skirt with playful movement",
+      "storyBody": "This product now reflects the Amazon listing you shared for the Pezzava 24-inch green animal printed wrap skirt. The page has been updated with its `p14` gallery, dance-focused styling, and current Amazon details.",
+      "galleryNotes": [
+        "Green animal print",
+        "24-inch knee length"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Dance",
+      "Length": "Knee-Length",
+      "Pattern": "Animal print"
+    },
+    "about": [
+      "Care Instructions: Do Not Bleach",
+      "24-inch knee-length cotton wrap skirt",
+      "Animal-print surface for dance-ready styling",
+      "Free-size wrap construction for adjustable comfort",
+      "Lightweight silhouette suited to spring-summer wear"
+    ],
+    "extraInfo": {
+      "Generic Name": "skirt",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Manufacturer Part Number": "SKT-WCK-A0373",
+      "Item Type Name": "skirt",
+      "Best Sellers Rank": "#1,330,442 in Clothing & Accessories; #14,574 in Women's Skirts & Shorts",
+      "ASIN": "B07SG2LNG3"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p14.1.webp",
+        "title": "Green Printed Surface",
+        "text": "The green base and animal-inspired print give the skirt a lively visual identity while keeping it wearable."
+      },
+      {
+        "image": "images/products/p14.2.webp",
+        "title": "Easy Drawstring Wrap",
+        "text": "The wrap construction and drawstring waist make the fit adjustable and comfortable through the body."
+      },
+      {
+        "image": "images/products/p14.3.webp",
+        "title": "Cotton Comfort For Movement",
+        "text": "Breathable cotton keeps the silhouette light and practical for spring-summer casual wear or dance styling."
+      },
+      {
+        "image": "images/products/p14.4.webp",
+        "title": "Knee-Length Everyday Shape",
+        "text": "Its 24-inch knee-length proportion balances freedom of movement with easy everyday wearability."
+      }
+    ],
+    "care": "Do Not Bleach. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
     "images": [
-      "images/products/Internet_20260504_195959_14.webp"
+      "images/products/p14.1.webp",
+      "images/products/p14.2.webp",
+      "images/products/p14.3.webp",
+      "images/products/p14.4.webp"
     ],
     "tags": [
       "cotton",
-      "long",
-      "black",
-      "white",
-      "mandala"
+      "wrap around",
+      "knee",
+      "green",
+      "animal print",
+      "dance"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Inches-Animal-Printed-Cotton/dp/B07SG2LNG3/",
+      "amazon": "https://www.amazon.in/dp/B07SG2LNG3/",
       "flipkart": null
     },
-    "rating": 4.2,
-    "reviews": 156,
+    "rating": 1.0,
+    "reviews": 1,
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "prefix": "p14"
   },
   {
     "id": "amz-015",
-    "name": "Pezzava Women's Wear Cotton Long Wrap Skirt",
-    "shortName": "B&W Elephant Long Skirt",
+    "name": "Pezzava Women's Monochrome Maxi Wrap Skirt",
+    "shortName": "Black & White Casual Maxi Skirt",
     "color": "Black & White",
     "price": 499,
-    "originalPrice": 980,
-    "discount": 50,
+    "originalPrice": 1599,
+    "discount": 69,
     "fabric": "100% Cotton",
     "length": "Long",
     "size": "Free Size",
     "category": "long",
     "store": "amazon",
-    "description": "Classic black and white cotton wrap long skirt with bold elephant motifs, butterflies, and circular flower patterns.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "A black-and-white cotton long wrap skirt with a soft full-length drape, drawstring closure, and easy casual styling. Designed for breathable comfort with a monochrome palette and a dance-friendly wrap silhouette.",
+    "hero": {
+      "tagline": "Black-and-white cotton, a full-length wrap silhouette, and easy casual movement.",
+      "storyLabel": "Amazon best match",
+      "storyTitle": "A monochrome maxi wrap skirt built for easy everyday flow",
+      "storyBody": "This product now reflects the Amazon listing you shared for the Pezzava women's wear cotton long wrap skirt. The page uses the `p15` gallery and updated details for its casual maxi styling and breathable cotton construction.",
+      "galleryNotes": [
+        "Black & white casual look",
+        "Full-length wrap drape"
+      ]
+    },
+    "details": {
+      "Material type": "Cotton",
+      "Closure type": "Drawstring",
+      "Style": "Wrap",
+      "Occasion type": "Casual",
+      "Length": "Maxi",
+      "Care instructions": "Machine Wash, Do Not Bleach"
+    },
+    "about": [
+      "Care Instructions: Machine Wash",
+      "Full-length cotton wrap skirt in black and white",
+      "Monochrome casual styling with a breathable feel",
+      "Drawstring waist for adjustable comfort",
+      "Light summer-friendly silhouette with dance-ready movement"
+    ],
+    "extraInfo": {
+      "Item Weight": "360 g",
+      "Brand Name": "Pezzava",
+      "Age Range Description": "Adult",
+      "Manufacturer Part Number": "SKT-WCL-A0369",
+      "ASIN": "B07ZH1DJSH"
+    },
+    "showcase": [
+      {
+        "image": "images/products/p15.webp",
+        "title": "Monochrome Everyday Drape",
+        "text": "The long black-and-white silhouette gives the skirt a clean visual presence while staying easy to style."
+      },
+      {
+        "image": "images/products/p15.1.webp",
+        "title": "Drawstring Wrap Ease",
+        "text": "The drawstring closure helps the wrap fit stay adjustable and comfortable through the waist."
+      },
+      {
+        "image": "images/products/p15.2.webp",
+        "title": "Breathable Cotton Comfort",
+        "text": "Soft cotton fabric keeps the maxi profile light enough for summer wear and relaxed daily use."
+      },
+      {
+        "image": "images/products/p15.3.webp",
+        "title": "Dance-Ready Casual Flow",
+        "text": "Its longer wrap movement and easy fit make it practical for casual styling with a more fluid feel."
+      }
+    ],
+    "care": "Machine Wash. Do Not Bleach. 10 days Return & Exchange. Amazon Delivered. Secure transaction.",
     "images": [
-      "images/products/Internet_20260504_195959_15.webp"
+      "images/products/p15.webp",
+      "images/products/p15.1.webp",
+      "images/products/p15.2.webp",
+      "images/products/p15.3.webp",
+      "images/products/p15.4.webp",
+      "images/products/p15.5.webp",
+      "images/products/p15.6.webp"
     ],
     "tags": [
       "cotton",
@@ -564,211 +1375,401 @@
       "long",
       "black",
       "white",
-      "elephant"
+      "casual",
+      "dance"
     ],
     "marketplace": {
-      "amazon": "https://www.amazon.in/Pezzava-Womens-Wear-Cotton-Skirt/dp/B07ZH1DJSH/",
+      "amazon": "https://www.amazon.in/dp/B07ZH1DJSH/",
       "flipkart": null
     },
-    "rating": 4.3,
-    "reviews": 178,
+    "rating": 0,
+    "reviews": 0,
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "prefix": "p15"
   },
   {
     "id": "fk-001",
-    "name": "Pezzava Printed Women Wrap Around Blue Skirt",
-    "shortName": "Blue Ethnic Long Skirt",
+    "name": "Pezzava Women Printed Wrap Around Blue Skirt",
+    "shortName": "Pezzava Women Printed Wrap Around Blue Skirt",
     "color": "Blue",
     "price": 360,
-    "originalPrice": 720,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Long",
-    "size": "Free Size",
+    "originalPrice": 999,
+    "discount": 64,
+    "fabric": "Pure Cotton",
+    "length": "Maxi/Full Length",
+    "size": "Free Regular",
     "category": "long",
     "store": "flipkart",
-    "description": "Beautiful blue long wrap around skirt with traditional Rajasthani elephant, peacock, and paisley prints.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "Free-size printed blue wrap around skirt in pure cotton with a belt waistband and maxi/full-length silhouette, designed for casual western wear and everyday comfort.",
+    "care": "Machine or Hand Wash in Regular Water. Always Dry Cotton Clothes In The Shade, Not Front of Sunlight.",
     "images": [
-      "images/products/Internet_20260504_202642_1.jpeg",
-      "images/products/Internet_20260504_202642_2.jpeg",
-      "images/products/Internet_20260504_202642_3.jpeg",
-      "images/products/Internet_20260504_202642_4.jpeg",
-      "images/products/Internet_20260504_202642_5.jpeg"
+      "images/products/p16.1.jpeg",
+      "images/products/p16.2.jpeg",
+      "images/products/p16,3.jpeg",
+      "images/products/p16.4.jpeg",
+      "images/products/p16.5.jpeg"
     ],
     "tags": [
-      "cotton",
+      "pure cotton",
       "wrap around",
       "long",
       "blue",
-      "elephant",
-      "printed"
+      "printed",
+      "maxi"
     ],
     "marketplace": {
       "amazon": null,
       "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-blue-skirt/p/itm1b84c6cc0e810?pid=SKIFW9UERARRRX8H"
     },
-    "rating": 4.1,
-    "reviews": 167,
+    "rating": 3.6,
+    "reviews": 3,
     "inStock": true,
     "featured": true,
-    "prefix": "Internet_20260504_202642"
+    "prefix": "p16",
+    "details": {
+      "Type": "Wrap Around",
+      "Color": "Blue",
+      "Fabric": "Pure Cotton",
+      "Occasion": "Casual",
+      "Pattern": "Printed",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length"
+    },
+    "about": [
+      "Brand: Pezzava",
+      "Style code: SKT-WCL-A0376",
+      "Suitable for western wear",
+      "Belt waistband for adjustable wrap fit",
+      "Sales package includes 1 skirt"
+    ],
+    "extraInfo": {
+      "Brand": "Pezzava",
+      "Type": "Wrap Around",
+      "Brand Color": "Blue",
+      "Style Code": "SKT-WCL-A0376",
+      "Series": "Skirt",
+      "Color": "Blue",
+      "Ideal For": "Women",
+      "Suitable For": "Western Wear",
+      "Fabric": "Pure Cotton",
+      "Fabric Care": "Machine or Hand Wash in Regular Water. Always Dry Cotton Clothes In The Shade, Not Front of Sunlight.",
+      "Waistband": "Belt",
+      "Sales Package": "1 Skirt",
+      "Net Quantity": "1",
+      "Fashion Core": "Fashion",
+      "Occasion": "Casual",
+      "Pattern": "Printed",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length",
+      "Rating Summary": "Very Good",
+      "Verified Buyer Ratings": "3"
+    }
   },
   {
     "id": "fk-002",
-    "name": "Pezzava Printed Women Wrap Around White Black Skirt",
-    "shortName": "Green Elephant Long Skirt",
-    "color": "Green & Black",
+    "name": "Pezzava Women Printed Wrap Around Green, Black Skirt",
+    "shortName": "Pezzava Women Printed Wrap Around Green, Black Skirt",
+    "color": "Green, Black",
     "price": 348,
-    "originalPrice": 700,
+    "originalPrice": 699,
     "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Long",
-    "size": "Free Size",
+    "fabric": "Pure Cotton",
+    "length": "Maxi/Full Length",
+    "size": "Free Regular",
     "category": "long",
     "store": "flipkart",
-    "description": "Elegant green and black printed long wrap around skirt with elephant and camel motifs on a lime green background.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "Free-size green and black printed wrap around skirt in pure cotton with a maxi/full-length silhouette, designed for casual western wear and everyday comfort.",
+    "care": "Please get the product dry-cleaned for the first time to maintain the vibrancy of the fabric. Thereafter, regular machine or hand wash in normal or Luke warm water.",
     "images": [
-      "images/products/Internet_20260504_202655_1.jpeg",
-      "images/products/Internet_20260504_202655_2.jpeg",
-      "images/products/Internet_20260504_202655_3.jpeg",
-      "images/products/Internet_20260504_202655_4.jpeg"
+      "images/products/p17.1.jpeg",
+      "images/products/p17.2.jpeg",
+      "images/products/p17.3.jpeg",
+      "images/products/p17.4.jpeg"
     ],
     "tags": [
-      "cotton",
+      "pure cotton",
       "wrap around",
       "long",
       "green",
       "black",
-      "elephant"
+      "printed",
+      "maxi"
     ],
     "marketplace": {
       "amazon": null,
-      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-white-black-skirt/p/itme682bf9f22534?pid=SKIFHSPNSHHVYYAH"
+      "flipkart": "https://dl.flipkart.com/s/EBLCyyNNNN"
     },
-    "rating": 4.0,
-    "reviews": 93,
+    "rating": 3.6,
+    "reviews": 3,
     "inStock": true,
     "featured": false,
-    "prefix": "Internet_20260504_202655"
+    "prefix": "p17",
+    "details": {
+      "Type": "Wrap Around",
+      "Color": "Green, Black",
+      "Fabric": "Pure Cotton",
+      "Occasion": "Casual",
+      "Pattern": "Printed",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length"
+    },
+    "about": [
+      "Brand: Pezzava",
+      "Style code: SKT-WCL-A0292",
+      "Suitable for western wear",
+      "Pure cotton printed wrap silhouette",
+      "Sales package includes 1 skirt"
+    ],
+    "extraInfo": {
+      "Brand": "Pezzava",
+      "Type": "Wrap Around",
+      "Brand Color": "Green",
+      "Style Code": "SKT-WCL-A0292",
+      "Color": "Green, Black",
+      "Ideal For": "Women",
+      "Suitable For": "Western Wear",
+      "Fabric": "Pure Cotton",
+      "Fabric Care": "Please get the product dry-cleaned for the first time to maintain the vibrancy of the fabric. Thereafter, regular machine or hand wash in normal or Luke warm water.",
+      "Sales Package": "1 Skirt",
+      "Net Quantity": "1",
+      "Fashion Core": "Fashion",
+      "Occasion": "Casual",
+      "Pattern": "Printed",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length",
+      "Rating Summary": "Good",
+      "Verified Buyer Ratings": "3"
+    }
   },
   {
     "id": "fk-003",
-    "name": "Pezzava Printed Women Wrap Around Green Black Skirt",
-    "shortName": "Red & Black Elephant Skirt",
-    "color": "Red & Black",
+    "name": "Pezzava Women Printed Wrap Around Red, Black Skirt",
+    "shortName": "Pezzava Women Printed Wrap Around Red, Black Skirt",
+    "color": "Red, Black",
     "price": 348,
-    "originalPrice": 700,
+    "originalPrice": 699,
     "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Long",
-    "size": "Free Size",
+    "fabric": "Pure Cotton",
+    "length": "Maxi/Full Length",
+    "size": "Free Regular",
     "category": "long",
     "store": "flipkart",
-    "description": "Stunning red and black printed long wrap around skirt with Rajasthani elephant motifs throughout.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "Free-size red and black printed wrap around skirt in pure cotton with a maxi/full-length silhouette, designed for casual western wear and everyday comfort.",
+    "care": "Please get the product dry-cleaned for the first time to maintain the vibrancy of the fabric. Thereafter, regular machine or hand wash in normal or Luke warm water.",
     "images": [
-      "images/products/Internet_20260504_202713_1.jpeg",
-      "images/products/Internet_20260504_202713_2.jpeg",
-      "images/products/Internet_20260504_202713_3.jpeg",
-      "images/products/Internet_20260504_202713_4.jpeg"
+      "images/products/p18.jpeg",
+      "images/products/p18.2.jpeg",
+      "images/products/p18.3.jpeg",
+      "images/products/p18.4.jpeg"
     ],
     "tags": [
-      "cotton",
+      "pure cotton",
       "wrap around",
       "long",
       "red",
       "black",
-      "elephant"
+      "printed",
+      "maxi"
     ],
     "marketplace": {
       "amazon": null,
-      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-green-black-skirt/p/itmf3y4prm4deeyq?pid=SKIEAZ87UZXY6DMP"
+      "flipkart": "https://dl.flipkart.com/s/ENq6KXNNNN"
     },
-    "rating": 4.3,
-    "reviews": 134,
+    "rating": 3.6,
+    "reviews": 3,
     "inStock": true,
     "featured": true,
-    "prefix": "Internet_20260504_202713"
+    "prefix": "p18",
+    "details": {
+      "Type": "Wrap Around",
+      "Color": "Red, Black",
+      "Fabric": "Pure Cotton",
+      "Occasion": "Casual",
+      "Pattern": "Printed",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length"
+    },
+    "about": [
+      "Brand: Pezzava",
+      "Style code: SKT-WCL-A0291",
+      "Suitable for western wear",
+      "Pure cotton printed wrap silhouette",
+      "Sales package includes 1 skirt"
+    ],
+    "extraInfo": {
+      "Brand": "Pezzava",
+      "Type": "Wrap Around",
+      "Brand Color": "Red",
+      "Style Code": "SKT-WCL-A0291",
+      "Color": "Red, Black",
+      "Ideal For": "Women",
+      "Suitable For": "Western Wear",
+      "Fabric": "Pure Cotton",
+      "Fabric Care": "Please get the product dry-cleaned for the first time to maintain the vibrancy of the fabric. Thereafter, regular machine or hand wash in normal or Luke warm water.",
+      "Sales Package": "1 Skirt",
+      "Net Quantity": "1",
+      "Fashion Core": "Fashion",
+      "Occasion": "Casual",
+      "Pattern": "Printed",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length",
+      "Rating Summary": "Good",
+      "Verified Buyer Ratings": "3"
+    }
   },
   {
     "id": "fk-004",
-    "name": "Pezzava Printed Women Wrap Around Red Black Skirt",
-    "shortName": "Red & Black Mini Skirt",
-    "color": "Red & Black",
-    "price": 370,
-    "originalPrice": 740,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Mini",
-    "size": "Free Size",
+    "name": "Pezzava Women Self Design Wrap Around Red Skirt",
+    "shortName": "Pezzava Women Self Design Wrap Around Red Skirt",
+    "color": "Red",
+    "price": 119,
+    "originalPrice": 499,
+    "discount": 76,
+    "fabric": "Pure Cotton",
+    "length": "Mini/Short",
+    "size": "Free Regular",
     "category": "mini",
     "store": "flipkart",
-    "description": "Trendy red and black printed mini wrap around skirt with diamond lattice pattern.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "Free-size self design red wrap around skirt in pure cotton with a belt waistband and mini/short silhouette, designed for casual western wear with comfortable indoor and outdoor styling.",
+    "care": "Normal Hand Wash or Machine Wash in Regular Water. Always Dry Cotton Clothes in The Shade Not Front of Sunlight.",
     "images": [
-      "images/products/Internet_20260504_202736_1.jpeg",
-      "images/products/Internet_20260504_202736_2.jpeg",
-      "images/products/Internet_20260504_202736_3.jpeg",
-      "images/products/Internet_20260504_202736_4.jpeg"
+      "images/products/p19.1.jpeg",
+      "images/products/p19.2.jpeg",
+      "images/products/p19.3.jpeg",
+      "images/products/p19.4.jpeg"
     ],
     "tags": [
-      "cotton",
+      "pure cotton",
       "wrap around",
       "mini",
       "red",
-      "black"
+      "self design"
     ],
     "marketplace": {
       "amazon": null,
-      "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-red-black-skirt/p/itmf3y4qgffymwua?pid=SKIEAZ87BCHK5S9D"
+      "flipkart": "https://dl.flipkart.com/s/9uCAwiuuuN"
     },
-    "rating": 4.2,
-    "reviews": 108,
+    "rating": 3.6,
+    "reviews": 286,
     "inStock": true,
     "featured": false,
-    "prefix": "Internet_20260504_202736"
+    "prefix": "p19",
+    "details": {
+      "Type": "Wrap Around",
+      "Color": "Red",
+      "Fabric": "Pure Cotton",
+      "Waistband": "Belt",
+      "Pattern": "Self Design",
+      "Size": "Free Regular",
+      "Length": "Mini/Short"
+    },
+    "about": [
+      "Brand: Pezzava",
+      "Style code: PEZ-FWCM-A1",
+      "Series: Skirt",
+      "Skirt length is 16 inches",
+      "Wrap-around style for indoor and outdoor wear"
+    ],
+    "extraInfo": {
+      "Brand": "Pezzava",
+      "Type": "Wrap Around",
+      "Brand Color": "Red",
+      "Style Code": "PEZ-FWCM-A1",
+      "Series": "Skirt",
+      "Color": "Red",
+      "Ideal For": "Women",
+      "Suitable For": "Western Wear",
+      "Fabric": "Pure Cotton",
+      "Fabric Care": "Normal Hand Wash or Machine Wash in Regular Water. Always Dry Cotton Clothes in The Shade Not Front of Sunlight.",
+      "Waistband": "Belt",
+      "Sales Package": "1 Skirt",
+      "Other Details": "Skirt's Length(Height) is 16 Inches, Image Model Height is 5.4 Feet. So you can know the length of this skirt that where will the skirt according to your height. This is a Wrap around Skirt usually wrapped your body as a towel & make you feel very comfortable, this is for wear indoor and outdoor both. This skirt can be wear with a top or t-shirt",
+      "Net Quantity": "1",
+      "Fashion Core": "Fashion",
+      "Occasion": "Casual",
+      "Pattern": "Self Design",
+      "Size": "Free Regular",
+      "Trend": "Wrap",
+      "Length": "Mini/Short",
+      "Rating Summary": "Good",
+      "Verified Buyer Ratings": "286"
+    }
   },
   {
     "id": "fk-005",
-    "name": "Pezzava Printed Women Wrap Around Multicolor Skirt",
-    "shortName": "Green & White Ethnic Skirt",
-    "color": "Green & White",
+    "name": "Pezzava Women Printed Wrap Around Multicolor Skirt",
+    "shortName": "Pezzava Women Printed Wrap Around Multicolor Skirt",
+    "color": "Multicolor",
     "price": 400,
-    "originalPrice": 800,
-    "discount": 50,
-    "fabric": "100% Cotton",
-    "length": "Long",
-    "size": "Free Size",
+    "originalPrice": 999,
+    "discount": 60,
+    "fabric": "Pure Cotton",
+    "length": "Maxi/Full Length",
+    "size": "Free Regular",
     "category": "long",
     "store": "flipkart",
-    "description": "Vibrant green and white long wrap around skirt with traditional dancing figures and elephant motifs.",
-    "care": "Gentle machine wash in cold water. Dry in shade.",
+    "description": "Free-size multicolor printed wrap around skirt in pure cotton with a belt waistband and maxi/full-length silhouette, designed for ethnic wear and comfortable indoor and outdoor styling.",
+    "care": "Normal Machine Wash or Hand Wash in Regular or Cold Water. Always Dry Cotton Clothes In The Shade, Not Front of Sunlight",
     "images": [
-      "images/products/Internet_20260504_202754_1.jpeg",
-      "images/products/Internet_20260504_202754_2.jpeg",
-      "images/products/Internet_20260504_202754_3.jpeg",
-      "images/products/Internet_20260504_202754_4.jpeg"
+      "images/products/p20.1.jpeg",
+      "images/products/p20.2.jpeg",
+      "images/products/p20.3.jpeg",
+      "images/products/p20.4.jpeg"
     ],
     "tags": [
-      "cotton",
+      "pure cotton",
       "wrap around",
       "long",
-      "green",
-      "white",
-      "ethnic"
+      "multicolor",
+      "ethnic",
+      "printed"
     ],
     "marketplace": {
       "amazon": null,
       "flipkart": "https://www.flipkart.com/pezzava-printed-women-wrap-around-multicolor-skirt/p/itmafd5a8d088308?pid=SKIFSXP5ZG7Y75FU"
     },
-    "rating": 4.4,
+    "rating": 3.6,
     "reviews": 189,
     "inStock": true,
     "featured": true,
-    "prefix": "Internet_20260504_202754"
+    "prefix": "p20",
+    "details": {
+      "Type": "Wrap Around",
+      "Color": "Multicolor",
+      "Fabric": "Pure Cotton",
+      "Waistband": "Belt",
+      "Suitable For": "Ethnic Wear",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length"
+    },
+    "about": [
+      "Brand: Pezzava",
+      "Style code: SKT-WCL-A0229B",
+      "Series: Skirt",
+      "Skirt length is 39 inches",
+      "Wrap-around style for indoor and outdoor wear"
+    ],
+    "extraInfo": {
+      "Brand": "Pezzava",
+      "Type": "Wrap Around",
+      "Brand Color": "Multi Color",
+      "Style Code": "SKT-WCL-A0229B",
+      "Series": "Skirt",
+      "Color": "Multicolor",
+      "Ideal For": "Women",
+      "Suitable For": "Ethnic Wear",
+      "Fabric": "Pure Cotton",
+      "Fabric Care": "Normal Machine Wash or Hand Wash in Regular or Cold Water. Always Dry Cotton Clothes In The Shade, Not Front of Sunlight",
+      "Waistband": "Belt",
+      "Sales Package": "1 Skirt",
+      "Other Details": "NOTE = Skirt Length is 39 Inches, Image Model Height is 5.4 Feet. So you can know the length of this skirt that where will the skirt according to your height. NOTE = Before buy product, Please measure your body waist and length and check product measurement for your fit, This is an Wrap around Skirt usually wrapped your body as a towel & make you feel very comfortable. This Skirt is for wear indoor and outdoor both. This Skirt can be wear with a Top or T-Shirt.",
+      "Net Quantity": "1",
+      "Fashion Core": "Fashion",
+      "Pattern": "Printed",
+      "Size": "Free Regular",
+      "Length": "Maxi/Full Length"
+    }
   },
   {
     "id": "fk-006",
@@ -786,10 +1787,10 @@
     "description": "Gorgeous blue A-line long skirt with vibrant multicolor elephant, peacock, and camel motifs.",
     "care": "Gentle machine wash in cold water. Dry in shade.",
     "images": [
-      "images/products/Internet_20260504_202811_1.jpeg",
-      "images/products/Internet_20260504_202811_2.jpeg",
-      "images/products/Internet_20260504_202811_3.jpeg",
-      "images/products/Internet_20260504_202811_4.jpeg"
+      "images/products/p21.1.jpeg",
+      "images/products/p21.2.jpeg",
+      "images/products/p21.3.jpeg",
+      "images/products/p21.4.jpeg"
     ],
     "tags": [
       "cotton",
@@ -807,7 +1808,7 @@
     "reviews": 145,
     "inStock": true,
     "featured": false,
-    "prefix": "Internet_20260504_202811"
+    "prefix": "p21"
   },
   {
     "id": "fk-007",
@@ -825,10 +1826,10 @@
     "description": "Stunning beige and blue ethnic printed long wrap around skirt with deer, elephant, and dancing figures.",
     "care": "Gentle machine wash in cold water. Dry in shade.",
     "images": [
-      "images/products/Internet_20260504_202901_1.jpeg",
-      "images/products/Internet_20260504_202901_2.jpeg",
-      "images/products/Internet_20260504_202901_3.jpeg",
-      "images/products/Internet_20260504_202901_4.jpeg"
+      "images/products/p22.1.jpeg",
+      "images/products/p22.2.jpeg",
+      "images/products/p22.3.jpeg",
+      "images/products/p22.4.jpeg"
     ],
     "tags": [
       "cotton",
@@ -846,6 +1847,6 @@
     "reviews": 112,
     "inStock": true,
     "featured": false,
-    "prefix": "Internet_20260504_202901"
+    "prefix": "p22"
   }
 ]
