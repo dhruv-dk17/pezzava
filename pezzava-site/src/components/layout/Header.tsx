@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ShoppingBag, ArrowRight } from "lucide-react";
 
@@ -44,9 +45,15 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="font-display tracking-[0.5em] uppercase text-xl md:text-2xl font-bold text-on-surface hover:text-primary transition-colors duration-500"
+          className="relative w-32 h-20 md:w-40 md:h-24 hover:scale-105 transition-transform duration-500"
         >
-          Pezzava
+          <Image 
+            src="/logo.png" 
+            alt="Pezzava" 
+            fill 
+            className="object-contain" 
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -91,7 +98,9 @@ const Header = () => {
             className="fixed inset-0 z-[60] bg-white flex flex-col p-8"
           >
             <div className="flex justify-between items-center mb-16">
-              <span className="font-display tracking-[0.2em] uppercase text-xl font-bold">PEZZAVA</span>
+              <div className="relative w-32 h-16">
+                <Image src="/logo.png" alt="Pezzava" fill className="object-contain" />
+              </div>
               <button onClick={() => setIsOpen(false)} className="text-primary">
                 <X size={32} />
               </button>

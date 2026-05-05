@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,8 +8,8 @@ const Footer = () => {
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
         {/* Brand Column */}
         <div className="lg:col-span-2">
-          <Link href="/" className="font-display tracking-[0.3em] uppercase text-2xl font-bold text-on-surface mb-6 block">
-            PEZZAVA
+          <Link href="/" className="relative w-40 h-24 mb-6 block hover:scale-105 transition-transform duration-500">
+            <Image src="/logo.png" alt="Pezzava" fill className="object-contain" />
           </Link>
           <p className="font-body text-on-surface-variant max-w-md leading-relaxed mb-8">
             Bridging the ornate architectural history of Rajasthan with the restrained clarity of modern editorial fashion. 
