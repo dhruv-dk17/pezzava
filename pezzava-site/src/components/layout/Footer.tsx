@@ -41,7 +41,7 @@ const Footer = () => {
 
       <div className="max-w-[1440px] mx-auto mt-20 pt-12 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex gap-10">
-          <a href="https://www.instagram.com/pezzava6828?igsh=NWc5cGp5aHhkbmF2" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Instagram</a>
+          <a href="https://www.instagram.com/pezzava6828" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Instagram</a>
           <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Facebook</a>
         </div>
         <div className="text-[10px] font-body text-stone-400 uppercase tracking-widest">
