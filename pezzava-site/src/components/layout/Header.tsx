@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ShoppingBag, ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -18,6 +19,8 @@ const navLinks = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,17 +30,23 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // On homepage, we use light text over the dark hero when not scrolled.
+  // On all other pages, we use dark text for visibility against light backgrounds.
+  const isLightHeader = isHome && !scrolled;
+
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "glass-morphism py-4 shadow-sm" : "bg-white/80 backdrop-blur-sm py-6 md:bg-transparent md:backdrop-blur-none"
+        scrolled || !isHome 
+          ? "glass-morphism py-4 shadow-sm" 
+          : "bg-white/80 backdrop-blur-sm py-6 md:bg-transparent md:backdrop-blur-none"
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-8 flex justify-between items-center">
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(true)}
-          className={`md:hidden hover:opacity-100 transition-opacity drop-shadow-md ${scrolled ? "text-primary" : "text-white"}`}
+          className={`md:hidden hover:opacity-100 transition-opacity drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}
         >
           <Menu size={24} />
         </button>
@@ -63,7 +72,7 @@ const Header = () => {
               key={link.name}
               href={link.href}
               className={`font-body text-[12px] font-medium uppercase tracking-widest transition-colors relative group drop-shadow-md ${
-                scrolled ? "text-on-surface-variant" : "text-white"
+                isLightHeader ? "text-white" : "text-on-surface-variant"
               } hover:text-primary`}
             >
               {link.name}
@@ -74,18 +83,20 @@ const Header = () => {
 
         {/* Action Buttons */}
         <div className="flex items-center gap-6">
-          <Link href="/shop" className={`hover:opacity-100 opacity-90 transition-opacity hidden md:block drop-shadow-md ${scrolled ? "text-primary" : "text-white"}`}>
+          <Link href="/shop" className={`hover:opacity-100 opacity-90 transition-opacity hidden md:block drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}>
             <ShoppingBag size={22} />
           </Link>
           <Link
             href="/shop"
             className={`hidden lg:flex items-center gap-3 px-8 py-3 text-[10px] uppercase tracking-[0.3em] font-bold rounded-sm transition-all duration-500 hover:shadow-2xl ${
-              scrolled ? "bg-on-surface text-white hover:bg-primary" : "bg-white text-on-surface hover:bg-primary hover:text-white"
+              isLightHeader 
+                ? "bg-white text-on-surface hover:bg-primary hover:text-white" 
+                : "bg-on-surface text-white hover:bg-primary"
             }`}
           >
             Explore Shop
           </Link>
-          <Link href="/shop" className={`md:hidden drop-shadow-md ${scrolled ? "text-primary" : "text-white"}`}>
+          <Link href="/shop" className={`md:hidden drop-shadow-md ${isLightHeader ? "text-white" : "text-primary"}`}>
             <ShoppingBag size={22} />
           </Link>
         </div>
