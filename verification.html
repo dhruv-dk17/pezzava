@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Verification | Pezzava</title>
+  <meta name="description" content="Official internship verification for Simran Kumawat at Pezzava.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>📜</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <img src="images/logo.png" alt="Pezzava" style="height: 60px; width: auto; object-fit: contain;">
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="career.html">Careers</a>
+      </nav>
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- VERIFICATION CONTENT -->
+  <main style="padding-top: calc(var(--header-h) + 60px); min-height: 100vh; background: var(--cream);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 60px;">
+        <h1 class="reveal-fade" style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3rem); color: var(--charcoal); margin-bottom: 16px;">Certificate Verification</h1>
+        <p class="reveal-fade" style="color: var(--text-light); max-width: 600px; margin: 0 auto;">Pezzava verifies the successful completion of internship programs for our talented contributors.</p>
+      </div>
+
+      <div class="verification-card reveal-fade">
+        <div class="verification-header">
+          <div style="font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; letter-spacing: 0.1em; color: var(--primary);">PEZZAVA OFFICIAL</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">REF: PZV-INT-2025-01</div>
+        </div>
+        
+        <div class="verification-details">
+          <p><strong>Intern's Name:</strong> Simran Kumawat</p>
+          <p><strong>Role:</strong> Graphic Design Intern</p>
+          <p><strong>Department:</strong> Creative & Branding</p>
+          <p><strong>Status:</strong> Completed Successfully</p>
+          <p><strong>Issue Date:</strong> May 5, 2025</p>
+        </div>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px dashed var(--outline-variant); text-align: center;">
+          <p style="font-size: 0.9rem; font-style: italic; color: var(--text-muted);">This is an electronically generated document. No signature is required for verification.</p>
+        </div>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto 80px;">
+        <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--charcoal); margin-bottom: 24px; text-align: center;">Experience Letter</h2>
+        <div class="pdf-container">
+          <iframe src="intership_letter.pdf" width="100%" height="100%" style="border: none;">
+            This browser does not support PDFs. Please download the PDF to view it: <a href="intership_letter.pdf">Download PDF</a>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="display: inline-block; margin-bottom: 20px;">
+            <img src="images/logo.png" alt="Pezzava" style="height: 60px; width: auto; object-fit: contain;">
+          </a>
+          <p>Comfortable cotton wrap around skirts crafted in Jaipur, Rajasthan. Bringing traditional craftsmanship to modern wardrobes.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="products.html">Mini Skirts</a></li>
+            <li><a href="products.html">Knee Length</a></li>
+            <li><a href="products.html">Calf Length</a></li>
+            <li><a href="products.html">Long / Maxi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Jaipur, Rajasthan</li>
+            <li>✉️ <a href="mailto:pezzava@gmail.com">pezzava@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Pezzava. All rights reserved.</span>
+        <span>Made with ❤️ in Jaipur, Rajasthan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Small reveal animation for verification page
+      const reveals = document.querySelectorAll('.reveal-fade');
+      reveals.forEach((el, index) => {
+        setTimeout(() => {
+          el.classList.add('active');
+        }, 200 * (index + 1));
+      });
+    });
+  </script>
+</body>
+</html>

@@ -102,6 +102,7 @@ function setActiveNav() {
 document.addEventListener('DOMContentLoaded', () => {
   setActiveNav();
   initTilt();
+  initCursor();
   // Animate counters when visible
   const counterSection = document.querySelector('.counter-section');
   if (counterSection) {
@@ -110,3 +111,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 }).observe(counterSection);
   }
 });
+
+// Custom Cursor Implementation
+function initCursor() {
+  if (window.innerWidth <= 1024) return;
+
+  const dot = document.createElement('div');
+  const outline = document.createElement('div');
+  dot.className = 'cursor-dot';
+  outline.className = 'cursor-outline';
+  document.body.appendChild(dot);
+  document.body.appendChild(outline);
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let outlineX = 0;
+  let outlineY = 0;
+
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    
+    dot.style.left = `${mouseX}px`;
+    dot.style.top = `${mouseY}px`;
+    dot.style.opacity = '1';
+    outline.style.opacity = '1';
+  });
+
+  // Smooth follower for outline
+  const animateOutline = () => {
+    const easing = 0.15;
+    outlineX += (mouseX - outlineX) * easing;
+    outlineY += (mouseY - outlineY) * easing;
+
+    outline.style.left = `${outlineX}px`;
+    outline.style.top = `${outlineY}px`;
+
+    requestAnimationFrame(animateOutline);
+  };
+  animateOutline();
+
+  // Hover effects
+  const interactiveElements = document.querySelectorAll('a, button, .product-card, .btn');
+  interactiveElements.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      outline.style.width = '40px';
+      outline.style.height = '40px';
+      outline.style.backgroundColor = 'rgba(148, 123, 89, 0.1)';
+      outline.style.borderColor = 'transparent';
+    });
+    el.addEventListener('mouseleave', () => {
+      outline.style.width = '24px';
+      outline.style.height = '24px';
+      outline.style.backgroundColor = 'transparent';
+      outline.style.borderColor = 'var(--primary)';
+    });
+  });
+
+  // Hide cursor when leaving window
+  document.addEventListener('mouseleave', () => {
+    dot.style.opacity = '0';
+    outline.style.opacity = '0';
+  });
+}
