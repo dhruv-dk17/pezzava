@@ -40,7 +40,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageWrapper from "@/components/layout/PageWrapper";
 import { CursorFollower } from "@/components/ui/CursorFollower";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
+
 
 export default function RootLayout({
   children,
@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en" className={`${notoSerif.variable} ${manrope.variable} selection:bg-primary-container selection:text-on-primary`}>
       <body className="antialiased bg-background text-on-surface flex flex-col min-h-screen">
         <CursorFollower />
-        <VerificationBadge />
+
         <Header />
         <main className="flex-1 flex flex-col">
           <PageWrapper>

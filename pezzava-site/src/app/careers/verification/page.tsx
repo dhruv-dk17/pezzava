@@ -7,7 +7,6 @@ const VerificationPage = () => {
   const internDetails = [
     { icon: "user", label: "Intern's Name", value: "Simran Kumawat" },
     { icon: "user", label: "Father's Name", value: "Hansraj Kumawat" },
-    { icon: "grad", label: "University Roll No.", value: "116223" },
     { icon: "building", label: "College Name", value: "St. Wilfred's PG College" },
     { icon: "briefcase", label: "Company", value: "Pezzava" },
     { icon: "briefcase", label: "Role", value: "E-Commerce Operations Intern" },
