@@ -12,7 +12,7 @@
   <header class="header"><div class="container">
     <a href="index.html" class="logo"><span class="logo-text">✿ Pezzava</span></a>
     <nav class="nav-links" id="nav-links">
-      <a href="index.html">Home</a><a href="products.html" class="active">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a href="index.html">Home</a><a href="products.html" class="active">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="career.html">Careers</a>
     </nav>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div></header>
@@ -61,7 +61,7 @@
             <label><input type="checkbox" class="filter-color" value="green" onchange="applyFilters()"> Green</label>
             <label><input type="checkbox" class="filter-color" value="multi" onchange="applyFilters()"> Multicolor</label>
           </div>
-          <button class="btn btn-outline" style="width:100%;justify-content:center;margin-top:8px;border-color:rgba(0,0,0,0.15);color:var(--text-light);" onclick="document.querySelectorAll('.filter-color,.filter-category').forEach(c=>c.checked=false);applyFilters();">Clear All</button>
+          <button class="btn btn-outline" style="width:100%;justify-content:center;margin-top:8px;border-color:transparent;background:rgba(212,175,55,0.1);color:var(--gold);" onclick="document.querySelectorAll('.filter-color,.filter-category').forEach(c=>c.checked=false);applyFilters();">Clear All</button>
         </aside>
         <div>
           <div class="products-header">
@@ -85,12 +85,29 @@
     </div>
   </section>
 
-  <footer class="footer"><div class="container">
-    <div class="footer-bottom">
-      <span>© 2025 Pezzava. All rights reserved.</span>
-      <span>Made with ❤️ in Jaipur, Rajasthan</span>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text" style="font-size:1.6rem;">✿ Pezzava</span>
+          <p style="margin-top: 15px; opacity: 0.8; line-height: 1.6;">Exquisite cotton wrap around skirts, handcrafted in Jaipur with precision and a passion for tradition.</p>
+        </div>
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 20px;">Quick Links</h4>
+          <ul>
+            <li style="margin-bottom: 12px;"><a href="index.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Home</a></li>
+            <li style="margin-bottom: 12px;"><a href="products.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Shop Collection</a></li>
+            <li style="margin-bottom: 12px;"><a href="about.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Our Story</a></li>
+            <li style="margin-bottom: 12px;"><a href="contact.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Contact Us</a></li>
+            <li style="margin-bottom: 12px;"><a href="career.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.05); margin-top: 60px; padding-top: 30px;">
+        <span style="opacity: 0.5; font-size: 0.9rem;">© 2025 Pezzava. Crafted with Heritage.</span>
+      </div>
     </div>
-  </div></footer>
+  </footer>
 
   <div class="modal-overlay" id="marketplace-modal"><div class="modal">
     <button class="modal-close" onclick="closeModal()">✕</button>

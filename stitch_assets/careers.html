@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Join the Atelier - PEZZAVA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#605f54",
+                        "surface-container-low": "#f4f3f1",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#241a00",
+                        "primary-fixed": "#e0e992",
+                        "on-surface": "#1a1c1a",
+                        "surface-container-high": "#e9e8e5",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-tertiary-container": "#2c2b22",
+                        "outline-variant": "#c8c7b6",
+                        "tertiary-container": "#959285",
+                        "surface-tint": "#5c631c",
+                        "surface-container": "#efeeeb",
+                        "on-background": "#1a1c1a",
+                        "on-primary-fixed": "#1a1e00",
+                        "on-tertiary-fixed": "#1d1c13",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#292d00",
+                        "primary": "#5c631c",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#e9c349",
+                        "tertiary-fixed-dim": "#cac6b9",
+                        "primary-container": "#8f974a",
+                        "inverse-surface": "#2f312f",
+                        "outline": "#787869",
+                        "on-primary-fixed-variant": "#444b03",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#48473d",
+                        "on-surface-variant": "#47483a",
+                        "tertiary-fixed": "#e6e2d4",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e3e2e0",
+                        "primary-fixed-dim": "#c4cd79",
+                        "surface-dim": "#dbdad7",
+                        "surface-bright": "#faf9f6",
+                        "secondary-container": "#fed65b",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-on-surface": "#f2f1ee",
+                        "on-secondary-container": "#745c00",
+                        "inverse-primary": "#c4cd79",
+                        "on-error-container": "#93000a",
+                        "background": "#faf9f6",
+                        "surface": "#faf9f6",
+                        "secondary": "#735c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["manrope"],
+                        "headline-md": ["notoSerif"],
+                        "headline-lg": ["notoSerif"],
+                        "display-xl": ["notoSerif"],
+                        "body-md": ["manrope"],
+                        "body-lg": ["manrope"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
+                        "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 z-50 sticky border-b border-stone-200 dark:border-stone-800 flat no shadows bg-stone-50/90 dark:bg-stone-900/90 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<button aria-label="Menu" class="scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-[#8F974A] dark:text-[#A4AC65]">menu</span>
+</button>
+<div class="text-2xl font-serif tracking-[0.4em] text-[#8F974A] dark:text-[#A4AC65]">
+                PEZZAVA
+            </div>
+<button aria-label="Shopping Bag" class="scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-[#8F974A] dark:text-[#A4AC65]">shopping_bag</span>
+</button>
+</div>
+<!-- Web Navigation (Hidden on mobile) -->
+<nav class="hidden md:flex justify-center gap-8 py-3 w-full border-t border-stone-200 dark:border-stone-800">
+<a class="font-serif tracking-[0.2em] text-sm uppercase text-stone-500 dark:text-stone-400 hover:text-[#D4AF37] transition-colors duration-300" href="#">Collection</a>
+<a class="font-serif tracking-[0.2em] text-sm uppercase text-stone-500 dark:text-stone-400 hover:text-[#D4AF37] transition-colors duration-300" href="#">Heritage</a>
+<a class="font-serif tracking-[0.2em] text-sm uppercase text-stone-500 dark:text-stone-400 hover:text-[#D4AF37] transition-colors duration-300" href="#">Search</a>
+<a class="font-serif tracking-[0.2em] text-sm uppercase text-stone-500 dark:text-stone-400 hover:text-[#D4AF37] transition-colors duration-300" href="#">Account</a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="A high-fashion editorial hero image for a premium clothing brand. A model stands poised in a beautifully crafted garment, embodying modern royal Rajasthan aesthetics. The lighting is soft and natural, emphasizing the intricate textures of the fabric against a minimalist, architectural background. The color palette features muted olive greens, sandstone neutrals, and crisp whites. The mood is calm, luxurious, and deeply rooted in heritage craftsmanship." class="w-full h-full object-cover" data-alt="A high-fashion editorial hero image for a premium clothing brand. A model stands poised in a beautifully crafted garment, embodying modern royal Rajasthan aesthetics. The lighting is soft and natural, emphasizing the intricate textures of the fabric against a minimalist, architectural background. The color palette features muted olive greens, sandstone neutrals, and crisp whites. The mood is calm, luxurious, and deeply rooted in heritage craftsmanship." src="https://lh3.googleusercontent.com/aida/ADBb0ujTMs1mV1X91IlsT97fXx6u9X5ItLJ478nu8ygARKcgAIhY8TdRLPWaVbUnn0k7Uws_tHTer6b7mifugJB6SaAfEYhXg0Vu4rRzeQQpRR3hMvCtoQEZstBriZquxP4oMyG7TmOPdYnEVl57tbUnu8Nm9PJBLfGBjgf0zuFUMpRBR4Cw90kfl6CH8bGzup2bfcFsK1WtTtlQ1AJXZKGojoynpKtYcqwINxHQo58sACGbB9_IEJ9BA_Ydgz_wP4owvfGEiiSkVCE1"/>
+<div class="absolute inset-0 bg-background/20 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center">
+<span class="font-label-caps text-label-caps text-primary-container tracking-[0.2em] mb-4 uppercase">The Atelier</span>
+<h1 class="font-display-xl text-display-xl text-on-background mb-6 max-w-3xl">Crafting Heritage for the Modern Era.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">We are artisans, designers, and storytellers rooted in Jaipur, creating a bridge between ornate history and modern editorial clarity.</p>
+</div>
+</section>
+<!-- Life at Pezzava / Editorial Split -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-2 flex flex-col gap-8 order-2 md:order-1">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Life at Pezzava</h2>
+<div class="w-12 h-[1px] bg-primary-container mb-6"></div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Our studio is a sanctuary of quiet focus. We believe that true luxury is unhurried, and our environment reflects this ethos. Surrounded by the architectural echoes of Rajasthan, our team collaborates in a space that honors both tradition and innovation.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">We value structural elegance over ornamentation, and poised intention over rapid production. Here, every stitch is a considered decision, every design a curated artifact.</p>
+</div>
+</div>
+<div class="md:col-span-4 md:col-start-8 relative order-1 md:order-2 mb-12 md:mb-0">
+<div class="absolute -inset-4 bg-surface-container-low rounded-xl -z-10 shadow-[0_8px_30px_rgba(143,151,74,0.06)] transform translate-x-4 translate-y-4"></div>
+<img alt="A candid, artistic shot of a designer working meticulously in a bright, minimalist studio space in Jaipur. Sunlight streams through tall windows, illuminating drafting tables covered in fine textiles and sketches. The atmosphere is quiet, focused, and deeply creative. The color palette relies on warm sandstone neutrals, off-whites, and subtle hints of gold and olive green. The aesthetic is modern, editorial, and deeply respectful of artisanal craft." class="w-full h-auto object-cover rounded-DEFAULT shadow-[0_4px_20px_rgba(143,151,74,0.08)]" data-alt="A candid, artistic shot of a designer working meticulously in a bright, minimalist studio space in Jaipur. Sunlight streams through tall windows, illuminating drafting tables covered in fine textiles and sketches. The atmosphere is quiet, focused, and deeply creative. The color palette relies on warm sandstone neutrals, off-whites, and subtle hints of gold and olive green. The aesthetic is modern, editorial, and deeply respectful of artisanal craft." src="https://lh3.googleusercontent.com/aida/ADBb0uh3JQeSzQ3ilifDMtdRDSv5r0CYYPkGZgP35uP0vYrIj8ujj_w3D8x0-Hv1GiHFkFiVhEWfs8ocWU6mtJFafunz_WusLhmeDkO9-cUEwNNRpXse2JnfY6H0bDxy0gJmW8uLlk1cOUQlKARQ-Wbnt7VWpMzrd-WbYZlmImrFnP8XIu6Lob4pp5ebjJ8SSI3GmvDe7W7TBVpxJCxb5PEPVDLxvsjICfqrfMP9sMTkZbz4-nenTbOKWdDFpyRKnWDR8LrLpd0YVq8h_Q"/>
+</div>
+</div>
+</section>
+<!-- Artisanal Craft Focus -->
+<section class="py-section-gap bg-surface-container-low relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background">The Artisanal Heart</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-2xl mx-auto">Dedication to the unseen details.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-6 flex flex-col gap-gutter">
+<img alt="A close-up, highly detailed photograph of artisan hands gently folding a delicately embroidered silk fabric. The texture of the silk and the precision of the stitching are the absolute focus. The lighting is dramatic yet soft, highlighting the sheen of the fabric against a neutral, dark background. The scene conveys a sense of reverence, slow luxury, and masterful craftsmanship typical of high-end Rajasthani textiles." class="w-full h-[500px] object-cover rounded-DEFAULT" data-alt="A close-up, highly detailed photograph of artisan hands gently folding a delicately embroidered silk fabric. The texture of the silk and the precision of the stitching are the absolute focus. The lighting is dramatic yet soft, highlighting the sheen of the fabric against a neutral, dark background. The scene conveys a sense of reverence, slow luxury, and masterful craftsmanship typical of high-end Rajasthani textiles." src="https://lh3.googleusercontent.com/aida/ADBb0ug1IkGnh88ZVwL--deu_SfzBty5ndLEE7tZ7xiomN9jtjVr5sGGfTYE3IAoR_Gt1lIeMp1E3TL774tY6GlYuHlyroJTWgDRSb73_uGxUYgvutdx_JUVeDsDBUHhVddVCxyt2NJxTg8zfwowQ2ZIAmfBlFLpjKM_hwhqKqua_l-4K0dOvudVTMwBV5iC0cwNx_0ZhBOgkUVjDIRPABclq2wqOtrcUpa7zOQ2zow_lNY6p0yaV7iykXvA7Uz0MjMsIQe7sIiN93yp_A"/>
+<div class="p-8 bg-surface rounded-lg shadow-[0_4px_16px_rgba(143,151,74,0.05)] border border-outline-variant/30">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Heritage Techniques</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Preserving ancestral methods while reinterpreting them for the contemporary silhouette.</p>
+</div>
+</div>
+<div class="md:col-span-5 md:col-start-8 flex flex-col justify-center">
+<div class="relative pl-8 border-l border-primary-container/30 py-4 mb-12">
+<span class="absolute top-0 left-0 -translate-x-1/2 w-2 h-2 rounded-full bg-primary-container"></span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-3">Sourcing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We seek out the finest raw materials, establishing direct relationships with local weavers who share our commitment to ethical and sustainable practices.</p>
+</div>
+<div class="relative pl-8 border-l border-primary-container/30 py-4 mb-12">
+<span class="absolute top-0 left-0 -translate-x-1/2 w-2 h-2 rounded-full bg-primary-container"></span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-3">Construction</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Our patterns are drafted with architectural precision. Every seam, fold, and drape is engineered to create forms that are both striking and enduring.</p>
+</div>
+<div class="relative pl-8 border-l border-primary-container/30 py-4">
+<span class="absolute top-0 left-0 -translate-x-1/2 w-2 h-2 rounded-full bg-primary-container"></span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-3">Finishing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">The final touches define the luxury experience. Subtle, unhurried hand-finishing ensures that each piece is a quiet masterpiece.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Spontaneous Applications -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto text-center">
+<div class="mb-8 inline-flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-high text-primary-container mb-6">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<h2 class="font-display-xl text-display-xl text-on-background mb-6">Join the Narrative</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">While we do not currently have open positions, we are always open to discovering talent that resonates with our aesthetic and values. If you are a designer, artisan, or creative mind who understands 'Heritage Minimalism', we invite you to introduce yourself.</p>
+<a class="inline-flex items-center gap-3 px-8 py-4 bg-primary-container text-on-primary font-label-caps text-label-caps uppercase rounded-DEFAULT hover:bg-primary transition-colors duration-300" href="mailto:hello@pezzava.com">
+<span>Submit Portfolio</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<p class="font-body-md text-body-md text-on-surface-variant mt-6">hello@pezzava.com</p>
+</section>
+<!-- Image Grid Decorative -->
+<section class="py-12 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-center">
+<img alt="A beautiful abstract detail of a woven textile, focusing on the intersection of threads and the subtle interplay of light and shadow across the fabric's surface. The color scheme is entirely neutral, utilizing shades of sandstone, ivory, and soft grey. The composition is highly asymmetric, reflecting a high-end editorial spread. The mood is minimalist, tactile, and calming." class="w-full max-w-3xl h-auto object-cover" data-alt="A beautiful abstract detail of a woven textile, focusing on the intersection of threads and the subtle interplay of light and shadow across the fabric's surface. The color scheme is entirely neutral, utilizing shades of sandstone, ivory, and soft grey. The composition is highly asymmetric, reflecting a high-end editorial spread. The mood is minimalist, tactile, and calming." src="https://lh3.googleusercontent.com/aida/ADBb0ui8rx8w0mzBGHNAI83yBqFKImaG1bgAqBrjc_5NtI58DlYozDazaokwW3T7OOlqXkRadQvxUsYaBetMJTsd1rGl0dhyfpf-RMZiCvEEW3imH-nSS2prKv4FoxLS9en_Sos1RKSM3zjKYC8rFaRvOdrXTaf9XrgZlxWXCVYhPTEwSJzPO2ccuEK1cNN0EXsT11JJc4-PahyBBmKwCGn5DgxvAEFHWaV139-DIDJ8_qApfctPPQ-CpfKEm83D_DI3nvLYsG0ZfWDg"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 md:hidden bg-stone-50 dark:bg-stone-900 border-t border-stone-100 dark:border-stone-800 shadow-[0_-4px_12px_rgba(143,151,74,0.05)] z-50">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 pb-1 hover:text-[#8F974A] transition-all" href="#">
+<span class="material-symbols-outlined mb-1">auto_awesome</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Collection</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 pb-1 hover:text-[#8F974A] transition-all" href="#">
+<span class="material-symbols-outlined mb-1">history_edu</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Heritage</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 pb-1 hover:text-[#8F974A] transition-all" href="#">
+<span class="material-symbols-outlined mb-1">search</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 pb-1 hover:text-[#8F974A] transition-all" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Account</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center gap-12 border-t border-stone-200 dark:border-stone-800 px-12 full-width bottom py-20 bg-stone-100 dark:bg-stone-950">
+<div class="text-xl font-serif tracking-[0.3em] text-[#8F974A]">PEZZAVA</div>
+<div class="flex gap-8 flex-wrap justify-center">
+<a class="font-serif text-xs tracking-[0.15em] uppercase text-stone-500 hover:text-[#8F974A] underline underline-offset-4" href="#">The Story</a>
+<a class="font-serif text-xs tracking-[0.15em] uppercase text-[#D4AF37] hover:text-[#8F974A] underline underline-offset-4" href="#">Atelier</a>
+<a class="font-serif text-xs tracking-[0.15em] uppercase text-stone-500 hover:text-[#8F974A] underline underline-offset-4" href="#">Shipping</a>
+<a class="font-serif text-xs tracking-[0.15em] uppercase text-stone-500 hover:text-[#8F974A] underline underline-offset-4" href="#">Privacy</a>
+</div>
+<div class="font-serif text-xs tracking-[0.15em] uppercase text-stone-500 text-center">
+            © 2024 PEZZAVA. ETHEREAL CRAFTSMANSHIP FROM RAJASTHAN.
+        </div>
+</footer>
+</body></html>

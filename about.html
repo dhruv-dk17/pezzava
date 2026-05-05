@@ -77,29 +77,33 @@
   <header class="header"><div class="container">
     <a href="index.html" class="logo"><span class="logo-text">✿ Pezzava</span></a>
     <nav class="nav-links" id="nav-links">
-      <a href="index.html">Home</a><a href="products.html">Shop</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a>
+      <a href="index.html">Home</a><a href="products.html">Shop</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a><a href="career.html">Careers</a>
     </nav>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div></header>
 
   <!-- HERO -->
   <section class="about-hero">
-    <div class="container">
-      <h1 class="reveal" style="font-size: 4rem; font-family: var(--font-display); margin-bottom: 20px;">The Soul of Jaipur</h1>
-      <p class="reveal" style="font-size: 1.3rem; max-width: 800px; margin: 0 auto; opacity: 0.9; line-height: 1.6;">Preserving the timeless heritage of Rajasthani craftsmanship through every thread, pattern, and fold.</p>
+    <div class="container" style="position:relative; z-index:2;">
+      <h1 class="reveal" style="font-size: clamp(3rem, 6vw, 4.5rem); font-family: var(--font-display); margin-bottom: 24px; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">The Soul of Jaipur</h1>
+      <p class="reveal" style="font-size: 1.3rem; max-width: 800px; margin: 0 auto; opacity: 0.95; line-height: 1.7; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Preserving the timeless heritage of Rajasthani craftsmanship through every thread, pattern, and fold.</p>
     </div>
   </section>
 
   <!-- OUR STORY -->
-  <section class="section">
+  <section class="section" style="background: linear-gradient(180deg, var(--cream) 0%, #fff 100%);">
     <div class="container">
-      <div class="story-section">
-        <div class="story-text reveal">
-          <span class="heritage-badge">The Pezzava Legacy</span>
+      <div class="story-section about-content">
+        <div class="story-text reveal text">
+          <span class="heritage-badge" style="display:inline-block; padding:8px 20px; background:rgba(201,168,76,0.1); color:var(--primary); font-weight:700; font-size:0.85rem; border-radius:100px; margin-bottom:24px; letter-spacing:2px; text-transform:uppercase;">The Pezzava Legacy</span>
           <h2>Where Tradition Meets Modern Grace</h2>
           <p>Born in the vibrant heart of the Pink City, Pezzava is more than a brand; it is a curated celebration of Jaipur's artisanal spirit. Our journey began with a simple yet profound ambition: to re-envision the timeless cotton wrap-around skirt as a centerpiece of the modern wardrobe, without losing the soul of its Rajasthani origins.</p>
           <p>Each Pezzava creation is an intersection of heritage and high fashion. We work hand-in-hand with master craftsmen who have spent generations perfecting the rhythmic art of block printing and the precision of traditional tailoring. In an age of mass production, we remain committed to the 'slow fashion' philosophy—where quality is measured in heartbeats, not hours.</p>
           <p>We believe that luxury should be felt before it is seen. By utilizing only the most exquisite, breathable Jaipur cotton, we ensure that every Pezzava silhouette offers a level of comfort that is as effortless as its elegance.</p>
+          <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 20px;">
+            <img src="images/logo.png" alt="Pezzava Icon" style="height: 60px; filter: grayscale(1) opacity(0.5);" onerror="this.style.display='none'">
+            <p style="font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--gold); margin:0;">"Crafted with love, from our family to yours."</p>
+          </div>
         </div>
         <div class="reveal">
           <div style="position:relative; padding: 20px;">
@@ -108,6 +112,8 @@
               <span style="font-size:2.5rem; font-weight:800; display:block; line-height:1;">100%</span>
               <p style="font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; margin:5px 0 0; font-weight:600;">Artisan Crafted</p>
             </div>
+            <!-- Decorative border -->
+            <div style="position:absolute; top: -10px; left: -10px; right: 40px; bottom: 40px; border: 2px solid rgba(201,168,76,0.3); border-radius: var(--radius-lg); z-index: -1;"></div>
           </div>
         </div>
       </div>
@@ -115,31 +121,32 @@
   </section>
 
   <!-- THE PROCESS -->
-  <section class="section section-dark">
-    <div class="container">
-      <h2 class="section-title reveal" style="color:white; text-align:center; font-size: 2.5rem;">The Art of Slow Fashion</h2>
-      <p class="section-subtitle reveal" style="text-align:center; max-width: 700px; margin: 0 auto 60px; color: rgba(255,255,255,0.7);">Our process is a labor of love, ensuring that every Pezzava creation reflects the authenticity of its origins.</p>
+  <section class="section section-dark" style="position: relative; overflow: hidden;">
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at center, rgba(201,168,76,0.05) 0%, transparent 70%); pointer-events: none;"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <h2 class="section-title reveal" style="color:white; text-align:center; font-size: 2.8rem;">The Art of Slow Fashion</h2>
+      <p class="section-subtitle reveal" style="text-align:center; max-width: 700px; margin: 0 auto 60px; color: rgba(255,255,255,0.7); font-size: 1.1rem;">Our process is a labor of love, ensuring that every Pezzava creation reflects the authenticity of its origins.</p>
       
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-        <div class="process-step reveal">
-          <div class="step-number">01</div>
+        <div class="process-step reveal" style="display:flex; gap:30px; margin-bottom:50px; padding:40px; background:rgba(255,255,255,0.03); border-radius:var(--radius-lg); transition:transform 0.3s ease; border: 1px solid rgba(255,255,255,0.05);">
+          <div class="step-number" style="font-size:4rem; font-weight:800; color:var(--gold); opacity:0.3; line-height:1; font-family:var(--font-display);">01</div>
           <div class="step-content">
-            <h3 style="color:white;">Ethical Selection</h3>
-            <p style="color: rgba(255,255,255,0.6);">We meticulously source only the finest long-staple cotton directly from sustainable growers, ensuring a touch that is soft on the skin and kind to the earth.</p>
+            <h3 style="color:white; margin-bottom:12px; font-family:var(--font-display); font-size:1.6rem;">Ethical Selection</h3>
+            <p style="color: rgba(255,255,255,0.6); line-height: 1.8;">We meticulously source only the finest long-staple cotton directly from sustainable growers, ensuring a touch that is soft on the skin and kind to the earth.</p>
           </div>
         </div>
-        <div class="process-step reveal">
-          <div class="step-number">02</div>
+        <div class="process-step reveal" style="display:flex; gap:30px; margin-bottom:50px; padding:40px; background:rgba(255,255,255,0.03); border-radius:var(--radius-lg); transition:transform 0.3s ease; border: 1px solid rgba(255,255,255,0.05); transform: translateY(20px);">
+          <div class="step-number" style="font-size:4rem; font-weight:800; color:var(--gold); opacity:0.3; line-height:1; font-family:var(--font-display);">02</div>
           <div class="step-content">
-            <h3 style="color:white;">Artisan Printing</h3>
-            <p style="color: rgba(255,255,255,0.6);">Our patterns are brought to life by master block printers in Jaipur, using techniques perfected over generations to achieve a depth of color that machines cannot replicate.</p>
+            <h3 style="color:white; margin-bottom:12px; font-family:var(--font-display); font-size:1.6rem;">Artisan Printing</h3>
+            <p style="color: rgba(255,255,255,0.6); line-height: 1.8;">Our patterns are brought to life by master block printers in Jaipur, using techniques perfected over generations to achieve a depth of color that machines cannot replicate.</p>
           </div>
         </div>
-        <div class="process-step reveal">
-          <div class="step-number">03</div>
+        <div class="process-step reveal" style="display:flex; gap:30px; margin-bottom:50px; padding:40px; background:rgba(255,255,255,0.03); border-radius:var(--radius-lg); transition:transform 0.3s ease; border: 1px solid rgba(255,255,255,0.05); transform: translateY(40px);">
+          <div class="step-number" style="font-size:4rem; font-weight:800; color:var(--gold); opacity:0.3; line-height:1; font-family:var(--font-display);">03</div>
           <div class="step-content">
-            <h3 style="color:white;">Couture Tailoring</h3>
-            <p style="color: rgba(255,255,255,0.6);">Each wrap-around skirt is precision-cut and finished with reinforced stitching, designed to provide a perfect, adjustable fit that celebrates every woman's form.</p>
+            <h3 style="color:white; margin-bottom:12px; font-family:var(--font-display); font-size:1.6rem;">Couture Tailoring</h3>
+            <p style="color: rgba(255,255,255,0.6); line-height: 1.8;">Each wrap-around skirt is precision-cut and finished with reinforced stitching, designed to provide a perfect, adjustable fit that celebrates every woman's form.</p>
           </div>
         </div>
       </div>
@@ -147,26 +154,27 @@
   </section>
 
   <!-- VALUES -->
-  <section class="section">
+  <section class="section" style="background: var(--cream-dark); padding: 100px 0;">
     <div class="container">
       <div style="text-align:center; margin-bottom: 80px;">
-        <h2 class="reveal" style="font-size: 2.8rem; font-family: var(--font-display);">Built on Excellence</h2>
+        <span class="heritage-badge" style="display:inline-block; padding:8px 20px; background:rgba(201,168,76,0.1); color:var(--primary); font-weight:700; font-size:0.85rem; border-radius:100px; margin-bottom:24px; letter-spacing:2px; text-transform:uppercase;">The Promise</span>
+        <h2 class="reveal" style="font-size: 2.8rem; font-family: var(--font-display); color: var(--charcoal);">Built on Excellence</h2>
         <p class="reveal" style="color:var(--text-light); font-size: 1.1rem;">The pillars that define the Pezzava promise</p>
       </div>
       <div class="values-grid">
-        <div class="value-card reveal" style="padding:50px; text-align: center;">
-          <div style="font-size:4rem; margin-bottom:25px;">🏛️</div>
-          <h3 style="font-size: 1.6rem; margin-bottom: 15px;">Jaipur Heritage</h3>
+        <div class="value-card reveal">
+          <div class="icon">🏛️</div>
+          <h3>Jaipur Heritage</h3>
           <p style="color: var(--text-light); line-height: 1.7;">Every piece is a proud celebration of Rajasthan's artistic soul, handcrafted in the heart of Jaipur to support local artisan communities.</p>
         </div>
-        <div class="value-card reveal" style="padding:50px; text-align: center;">
-          <div style="font-size:4rem; margin-bottom:25px;">🌿</div>
-          <h3 style="font-size: 1.6rem; margin-bottom: 15px;">Pure Comfort</h3>
+        <div class="value-card reveal" style="transition-delay: 0.1s;">
+          <div class="icon">🌿</div>
+          <h3>Pure Comfort</h3>
           <p style="color: var(--text-light); line-height: 1.7;">Breathable, hypoallergenic, and engineered for the tropical climate. We believe that looking beautiful should never come at the cost of feeling free.</p>
         </div>
-        <div class="value-card reveal" style="padding:50px; text-align: center;">
-          <div style="font-size:4rem; margin-bottom:25px;">🛡️</div>
-          <h3 style="font-size: 1.6rem; margin-bottom: 15px;">Modern Quality</h3>
+        <div class="value-card reveal" style="transition-delay: 0.2s;">
+          <div class="icon">🛡️</div>
+          <h3>Modern Quality</h3>
           <p style="color: var(--text-light); line-height: 1.7;">From the selection of the yarn to the final steam press, our multi-stage quality control ensures a product that stands the test of time and fashion.</p>
         </div>
       </div>
@@ -174,10 +182,11 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <div class="container reveal">
-      <h2 style="font-size: 2.5rem; font-family: var(--font-display);">Wear the Legacy</h2>
-      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; opacity: 0.9;">Discover the unmatched grace of handcrafted Rajasthani cotton.</p>
+  <section class="cta-section" style="position: relative; overflow: hidden; padding: 100px 24px;">
+    <div style="position:absolute; inset:0; background: url('images/artisan.png') center/cover; opacity: 0.1; mix-blend-mode: overlay;"></div>
+    <div class="container reveal" style="position: relative; z-index: 2;">
+      <h2 style="font-size: 3rem; font-family: var(--font-display);">Wear the Legacy</h2>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px; opacity: 0.9;">Discover the unmatched grace of handcrafted Rajasthani cotton.</p>
       <a href="products.html" class="btn btn-primary btn-lg" style="padding: 18px 40px; font-size: 1.1rem;">Explore the Collection</a>
     </div>
   </section>
@@ -202,6 +211,7 @@
             <li style="margin-bottom: 12px;"><a href="products.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Shop Collection</a></li>
             <li style="margin-bottom: 12px;"><a href="about.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Our Story</a></li>
             <li style="margin-bottom: 12px;"><a href="contact.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Contact Us</a></li>
+            <li style="margin-bottom: 12px;"><a href="career.html" style="color: inherit; text-decoration: none; opacity: 0.8;">Careers</a></li>
           </ul>
         </div>
         <div>

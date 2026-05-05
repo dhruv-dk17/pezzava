@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PEZZAVA - Shop Skirts</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#c4cd79",
+                      "error-container": "#ffdad6",
+                      "tertiary": "#605f54",
+                      "secondary-container": "#fed65b",
+                      "primary-fixed-dim": "#c4cd79",
+                      "on-surface-variant": "#47483a",
+                      "on-primary": "#ffffff",
+                      "surface": "#faf9f6",
+                      "surface-tint": "#5c631c",
+                      "outline": "#787869",
+                      "on-primary-fixed": "#1a1e00",
+                      "background": "#faf9f6",
+                      "on-primary-container": "#292d00",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "primary-container": "#8f974a",
+                      "on-primary-fixed-variant": "#444b03",
+                      "on-tertiary-fixed-variant": "#48473d",
+                      "secondary-fixed-dim": "#e9c349",
+                      "inverse-surface": "#2f312f",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-background": "#1a1c1a",
+                      "error": "#ba1a1a",
+                      "on-tertiary-container": "#2c2b22",
+                      "surface-container-high": "#e9e8e5",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#faf9f6",
+                      "primary-fixed": "#e0e992",
+                      "on-secondary-container": "#745c00",
+                      "tertiary-fixed-dim": "#cac6b9",
+                      "primary": "#5c631c",
+                      "on-secondary-fixed": "#241a00",
+                      "outline-variant": "#c8c7b6",
+                      "tertiary-container": "#959285",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#e3e2e0",
+                      "secondary": "#735c00",
+                      "surface-dim": "#dbdad7",
+                      "on-tertiary-fixed": "#1d1c13",
+                      "surface-container-low": "#f4f3f1",
+                      "on-surface": "#1a1c1a",
+                      "inverse-on-surface": "#f2f1ee",
+                      "tertiary-fixed": "#e6e2d4",
+                      "surface-container": "#efeeeb",
+                      "secondary-fixed": "#ffe088",
+                      "surface-container-highest": "#e3e2e0"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Noto Serif"
+                      ],
+                      "headline-md": [
+                              "Noto Serif"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "Manrope"
+                      ],
+                      "display-xl": [
+                              "Noto Serif"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased pt-24">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 w-full z-50 bg-white/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-100 dark:border-stone-800">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
+<button class="text-stone-500 dark:text-stone-400 hover:text-[#8F974A] transition-colors duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a class="text-2xl font-bold tracking-[0.2em] text-stone-900 dark:text-stone-50 font-noto-serif uppercase" href="#">
+                PEZZAVA
+            </a>
+<button class="text-stone-500 dark:text-stone-400 hover:text-[#8F974A] transition-colors duration-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Header & Filters -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+<div class="w-full md:w-1/2">
+<h1 class="font-display-xl text-display-xl text-on-surface mb-4">The Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Discover our curated selection of heritage skirts, blending modern silhouettes with traditional craftsmanship.</p>
+</div>
+<div class="w-full md:w-auto flex flex-wrap gap-4 items-center">
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 border border-outline-variant">
+                    Color <span class="material-symbols-outlined align-middle ml-1 text-[16px]">expand_more</span>
+</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 border border-outline-variant">
+                    Style <span class="material-symbols-outlined align-middle ml-1 text-[16px]">expand_more</span>
+</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 border border-outline-variant">
+                    Length <span class="material-symbols-outlined align-middle ml-1 text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Product Grid - Asymmetrical Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter gap-y-24">
+<!-- Product 1: Large Span -->
+<div class="md:col-span-7 flex flex-col group">
+<div class="relative w-full aspect-[0.67] overflow-hidden mb-6 bg-surface-container">
+<img alt="The Marwar Silk Skirt" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A modern editorial fashion shot of a woman wearing a luxurious, flowing skirt. The lighting is soft and natural, emphasizing the texture and drape of the fabric. The setting is minimal, with neutral sandstone tones in the background, keeping the focus entirely on the garment. The overall mood is poised, calm, and high-end, aligning with a sophisticated 'Modern Royal Rajasthan' aesthetic." src="https://lh3.googleusercontent.com/aida/ADBb0ujTMs1mV1X91IlsT97fXx6u9X5ItLJ478nu8ygARKcgAIhY8TdRLPWaVbUnn0k7Uws_tHTer6b7mifugJB6SaAfEYhXg0Vu4rRzeQQpRR3hMvCtoQEZstBriZquxP4oMyG7TmOPdYnEVl57tbUnu8Nm9PJBLfGBjgf0zuFUMpRBR4Cw90kfl6CH8bGzup2bfcFsK1WtTtlQ1AJXZKGojoynpKtYcqwINxHQo58sACGbB9_IEJ9BA_Ydgz_wP4owvfGEiiSkVCE1"/>
+<button class="absolute bottom-6 right-6 bg-primary-container text-on-primary-container p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm hover:bg-primary hover:text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">The Marwar Silk</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Handwoven pure silk</p>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface">₹ 24,500</span>
+</div>
+</div>
+<!-- Empty space for editorial rhythm -->
+<div class="hidden md:block md:col-span-1"></div>
+<!-- Product 2: Smaller Span, offset down -->
+<div class="md:col-span-4 flex flex-col group md:mt-32">
+<div class="relative w-full aspect-[0.67] overflow-hidden mb-6 bg-surface-container">
+<img alt="Amber Palace Pleats" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A striking close-up fashion editorial image focusing on the intricate pleats of a premium skirt. The warm, soft lighting highlights the metallic gold threads woven into the off-white fabric. The background is a stark, clean white to create a modern minimalist vibe. The composition is asymmetrical and highly curated, invoking a sense of quiet luxury and structural elegance." src="https://lh3.googleusercontent.com/aida/ADBb0uh3JQeSzQ3ilifDMtdRDSv5r0CYYPkGZgP35uP0vYrIj8ujj_w3D8x0-Hv1GiHFkFiVhEWfs8ocWU6mtJFafunz_WusLhmeDkO9-cUEwNNRpXse2JnfY6H0bDxy0gJmW8uLlk1cOUQlKARQ-Wbnt7VWpMzrd-WbYZlmImrFnP8XIu6Lob4pp5ebjJ8SSI3GmvDe7W7TBVpxJCxb5PEPVDLxvsjICfqrfMP9sMTkZbz4-nenTbOKWdDFpyRKnWDR8LrLpd0YVq8h_Q"/>
+<button class="absolute bottom-6 right-6 bg-primary-container text-on-primary-container p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm hover:bg-primary hover:text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 text-2xl">Amber Palace Pleats</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Structured cotton blend</p>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface">₹ 18,200</span>
+</div>
+</div>
+<!-- Product 3: Medium Span -->
+<div class="md:col-span-5 flex flex-col group md:-mt-16">
+<div class="relative w-full aspect-[0.67] overflow-hidden mb-6 bg-surface-container">
+<img alt="Udaipur Flare Skirt" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A full-body editorial shot of a model walking in a voluminous, beautifully patterned skirt. The movement is captured perfectly, showing the skirt's wide flare. The lighting mimics late afternoon golden hour, casting long, soft shadows. The overall aesthetic is 'Modern Royal Rajasthan', featuring a muted, sophisticated palette with subtle olive and gold accents against a minimalist stone background." src="https://lh3.googleusercontent.com/aida/ADBb0ug1IkGnh88ZVwL--deu_SfzBty5ndLEE7tZ7xiomN9jtjVr5sGGfTYE3IAoR_Gt1lIeMp1E3TL774tY6GlYuHlyroJTWgDRSb73_uGxUYgvutdx_JUVeDsDBUHhVddVCxyt2NJxTg8zfwowQ2ZIAmfBlFLpjKM_hwhqKqua_l-4K0dOvudVTMwBV5iC0cwNx_0ZhBOgkUVjDIRPABclq2wqOtrcUpa7zOQ2zow_lNY6p0yaV7iykXvA7Uz0MjMsIQe7sIiN93yp_A"/>
+<button class="absolute bottom-6 right-6 bg-primary-container text-on-primary-container p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm hover:bg-primary hover:text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 text-2xl">Udaipur Flare</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Block-printed linen</p>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface">₹ 21,000</span>
+</div>
+</div>
+<!-- Decorative / Abstract element in grid -->
+<div class="md:col-span-7 flex items-center justify-center p-12 bg-surface-container-low border border-outline-variant/30">
+<div class="text-center max-w-md">
+<p class="font-headline-md text-headline-md text-on-surface mb-6 italic">"A bridge between the ornate architectural history of Northern India and the restrained clarity of modern high-fashion editorial."</p>
+<img alt="Texture detail" class="w-32 h-auto mx-auto grayscale opacity-80" data-alt="A small, abstract detail shot of textured fabric lying against rough sandstone. The lighting is harsh and direct, creating strong shadows that emphasize the tactile quality of the materials. The color palette is strictly neutral off-whites, warm sand tones, and deep charcoal shadows, reinforcing a minimal, high-end editorial aesthetic." src="https://lh3.googleusercontent.com/aida/ADBb0ui8rx8w0mzBGHNAI83yBqFKImaG1bgAqBrjc_5NtI58DlYozDazaokwW3T7OOlqXkRadQvxUsYaBetMJTsd1rGl0dhyfpf-RMZiCvEEW3imH-nSS2prKv4FoxLS9en_Sos1RKSM3zjKYC8rFaRvOdrXTaf9XrgZlxWXCVYhPTEwSJzPO2ccuEK1cNN0EXsT11JJc4-PahyBBmKwCGn5DgxvAEFHWaV139-DIDJ8_qApfctPPQ-CpfKEm83D_DI3nvLYsG0ZfWDg"/>
+</div>
+</div>
+</div>
+<div class="mt-section-gap text-center">
+<button class="border border-[#D4AF37] text-on-surface px-12 py-4 font-label-caps text-label-caps uppercase hover:bg-[#D4AF37] hover:text-white transition-colors duration-300">
+                Load More
+            </button>
+</div>
+</main>
+<!-- Footer from JSON -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900 mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-16 py-20 max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="text-lg font-semibold tracking-widest text-stone-800 dark:text-stone-100 font-noto-serif uppercase mb-6">
+                    PEZZAVA
+                </div>
+<p class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400">
+                    © 2024 PEZZAVA. Crafted in Jaipur.
+                </p>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-all" href="#">Instagram</a>
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-all" href="#">Facebook</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-all" href="#">Store Locator</a>
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-all" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pezzava - Modern Royal Rajasthan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#cac6b9",
+                        "surface-container-high": "#e9e8e5",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#c4cd79",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#ffe088",
+                        "on-surface": "#1a1c1a",
+                        "surface-container-highest": "#e3e2e0",
+                        "outline-variant": "#c8c7b6",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-container-low": "#f4f3f1",
+                        "surface-container": "#efeeeb",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#e0e992",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed": "#1a1e00",
+                        "primary-fixed-dim": "#c4cd79",
+                        "on-background": "#1a1c1a",
+                        "outline": "#787869",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#605f54",
+                        "on-tertiary-fixed-variant": "#48473d",
+                        "surface-bright": "#faf9f6",
+                        "on-tertiary-fixed": "#1d1c13",
+                        "on-tertiary-container": "#2c2b22",
+                        "secondary-container": "#fed65b",
+                        "secondary": "#735c00",
+                        "on-primary-container": "#292d00",
+                        "primary": "#5c631c",
+                        "on-secondary-container": "#745c00",
+                        "surface": "#faf9f6",
+                        "background": "#faf9f6",
+                        "primary-container": "#8f974a",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#444b03",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#47483a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e6e2d4",
+                        "surface-dim": "#dbdad7",
+                        "tertiary-container": "#959285",
+                        "surface-tint": "#5c631c",
+                        "surface-variant": "#e3e2e0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["notoSerif"],
+                        "label-caps": ["manrope"],
+                        "headline-lg": ["notoSerif"],
+                        "body-lg": ["manrope"],
+                        "body-md": ["manrope"],
+                        "display-xl": ["notoSerif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .font-noto-serif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-100 dark:border-stone-800">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
+<button class="text-[#8F974A] dark:text-[#A4AC63] hover:text-[#8F974A] transition-colors duration-300 opacity-70 hover:opacity-100 focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<h1 class="font-noto-serif tracking-[0.2em] uppercase text-2xl font-bold text-stone-900 dark:text-stone-50">PEZZAVA</h1>
+<button class="text-[#8F974A] dark:text-[#A4AC63] hover:text-[#8F974A] transition-colors duration-300 opacity-70 hover:opacity-100 focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-[96px]">
+<!-- Hero Section -->
+<section class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover object-center opacity-90" data-alt="A cinematic, wide-angle editorial photograph of a stunning, minimal high-fashion skirt in a sunlit, contemporary gallery space with subtle architectural arches in the background. The lighting is soft and natural, emphasizing the rich, textured fabric and the structured silhouette. The overall aesthetic is 'Modern Royal Rajasthan', balancing ornate heritage with quiet, restrained minimalism. The color palette features elegant off-whites, sandstone neutrals, and refined olive accents." src="https://lh3.googleusercontent.com/aida/ADBb0ui8rx8w0mzBGHNAI83yBqFKImaG1bgAqBrjc_5NtI58DlYozDazaokwW3T7OOlqXkRadQvxUsYaBetMJTsd1rGl0dhyfpf-RMZiCvEEW3imH-nSS2prKv4FoxLS9en_Sos1RKSM3zjKYC8rFaRvOdrXTaf9XrgZlxWXCVYhPTEwSJzPO2ccuEK1cNN0EXsT11JJc4-PahyBBmKwCGn5DgxvAEFHWaV139-DIDJ8_qApfctPPQ-CpfKEm83D_DI3nvLYsG0ZfWDg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center max-w-4xl px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display-xl text-display-xl text-on-surface mb-6 drop-shadow-sm">Modern Royal Rajasthan</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">A curated collection bridging the ornate architectural history of Northern India and the restrained clarity of modern high-fashion editorial.</p>
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-caps text-label-caps px-8 py-4 rounded hover:bg-primary transition-colors duration-300 tracking-widest uppercase" href="#">
+                    Shop Collection
+                </a>
+</div>
+</section>
+<!-- The Heritage Section (Asymmetrical Bento) -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-2 flex flex-col items-start pr-8">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest mb-4">The Heritage</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6">Crafted Structure.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        Our silhouettes are born from the intersection of tradition and modernity. Each piece is an architectural marvel, designed to frame the form with the quiet dignity of a curated gallery space. We strip away the unnecessary, leaving only the essential lines and profound textures.
+                    </p>
+<a class="inline-flex items-center text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-surface-tint transition-colors group" href="#">
+                        Discover Our Story
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-5 md:col-start-8 relative mt-12 md:mt-0">
+<div class="relative aspect-[0.67] w-full max-w-[525px] mx-auto">
+<div class="absolute inset-0 bg-surface-container-high rounded translate-x-4 translate-y-4 -z-10 shadow-[0_4px_24px_rgba(143,151,74,0.08)]"></div>
+<img alt="" class="w-full h-full object-cover rounded shadow-sm" data-alt="A high-fashion editorial close-up of a meticulously tailored skirt, showcasing structural elegance and minimal lines. The skirt is draped on a quiet, poised model standing against a textured sandstone wall. Soft, diffused lighting highlights the premium fabric's weave and the garment's subtle asymmetric folds. The mood is calm luxury, emphasizing craftsmanship without aggressive shadows or heavy contrast." src="https://lh3.googleusercontent.com/aida/ADBb0ujTMs1mV1X91IlsT97fXx6u9X5ItLJ478nu8ygARKcgAIhY8TdRLPWaVbUnn0k7Uws_tHTer6b7mifugJB6SaAfEYhXg0Vu4rRzeQQpRR3hMvCtoQEZstBriZquxP4oMyG7TmOPdYnEVl57tbUnu8Nm9PJBLfGBjgf0zuFUMpRBR4Cw90kfl6CH8bGzup2bfcFsK1WtTtlQ1AJXZKGojoynpKtYcqwINxHQo58sACGbB9_IEJ9BA_Ydgz_wP4owvfGEiiSkVCE1"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Silhouettes (Horizontal Carousel/Grid) -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap bg-surface-container-low border-y border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Curated Silhouettes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Explore the defining pieces of the current season.</p>
+</div>
+<div class="flex gap-4 mt-6 md:mt-0 hidden md:flex">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<a class="group block cursor-pointer" href="#">
+<div class="relative aspect-[0.67] mb-6 overflow-hidden bg-surface-container">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimal, elegant photograph of 'The Jaipur Arch Skirt'. The skirt features a precise, structural cut reminiscent of Rajasthani archways, rendered in a soft, muted olive tone. The lighting is editorial and airy, focusing entirely on the silhouette and the impeccable drape of the fabric. The background is a stark, clean off-white canvas, allowing the piece to stand out as a primary artifact." src="https://lh3.googleusercontent.com/aida/ADBb0uh3JQeSzQ3ilifDMtdRDSv5r0CYYPkGZgP35uP0vYrIj8ujj_w3D8x0-Hv1GiHFkFiVhEWfs8ocWU6mtJFafunz_WusLhmeDkO9-cUEwNNRpXse2JnfY6H0bDxy0gJmW8uLlk1cOUQlKARQ-Wbnt7VWpMzrd-WbYZlmImrFnP8XIu6Lob4pp5ebjJ8SSI3GmvDe7W7TBVpxJCxb5PEPVDLxvsjICfqrfMP9sMTkZbz4-nenTbOKWdDFpyRKnWDR8LrLpd0YVq8h_Q"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h4 class="font-headline-md text-headline-md text-on-surface text-[24px] leading-tight mb-2">The Jaipur Arch Skirt</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$480</p>
+</div>
+</a>
+<!-- Product 2 -->
+<a class="group block cursor-pointer" href="#">
+<div class="relative aspect-[0.67] mb-6 overflow-hidden bg-surface-container">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An editorial product shot of 'The Amber Pleat' skirt. The garment displays intricate, crisp pleating cascading gracefully to the hem, styled in a refined neutral sandstone hue. The setting is minimal and serene, devoid of harsh shadows. The lighting is bright and diffuse, capturing the tactile depth of the pleats and the sophisticated, poised nature of the brand's aesthetic." src="https://lh3.googleusercontent.com/aida/ADBb0ug1IkGnh88ZVwL--deu_SfzBty5ndLEE7tZ7xiomN9jtjVr5sGGfTYE3IAoR_Gt1lIeMp1E3TL774tY6GlYuHlyroJTWgDRSb73_uGxUYgvutdx_JUVeDsDBUHhVddVCxyt2NJxTg8zfwowQ2ZIAmfBlFLpjKM_hwhqKqua_l-4K0dOvudVTMwBV5iC0cwNx_0ZhBOgkUVjDIRPABclq2wqOtrcUpa7zOQ2zow_lNY6p0yaV7iykXvA7Uz0MjMsIQe7sIiN93yp_A"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h4 class="font-headline-md text-headline-md text-on-surface text-[24px] leading-tight mb-2">The Amber Pleat</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$520</p>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-16 py-20 max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-2">
+<p class="font-noto-serif text-sm tracking-tight text-[#8F974A] dark:text-[#A4AC63] mb-4">© 2024 PEZZAVA. Crafted in Jaipur.</p>
+<div class="text-lg font-semibold tracking-widest text-stone-800 dark:text-stone-100 uppercase">PEZZAVA</div>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="#">Instagram</a>
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="#">Facebook</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="#">Store Locator</a>
+<a class="font-noto-serif text-sm tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

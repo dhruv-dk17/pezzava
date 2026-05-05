@@ -3,208 +3,350 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pezzava — Cotton Wrap Around Skirts | Crafted in Jaipur</title>
-  <meta name="description" content="Pezzava — Premium cotton wrap around skirts for women crafted in Jaipur, Rajasthan. Shop our collection on Amazon &amp; Flipkart.">
-  <meta name="keywords" content="Pezzava, cotton skirt, wrap around skirt, women skirt, Jaipur, Rajasthan, ethnic wear">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>👗</text></svg>">
+  <title>Pezzava — Modern Royal Rajasthan</title>
+  <meta name="description" content="Pezzava — Premium cotton wrap around skirts for women crafted in Jaipur, Rajasthan. Shop our collection on Amazon & Flipkart.">
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>✿</text></svg>">
+  
+  <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#cac6b9",
+                        "surface-container-high": "#e9e8e5",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#c4cd79",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#ffe088",
+                        "on-surface": "#1a1c1a",
+                        "surface-container-highest": "#e3e2e0",
+                        "outline-variant": "#c8c7b6",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-container-low": "#f4f3f1",
+                        "surface-container": "#efeeeb",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#e0e992",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed": "#1a1e00",
+                        "primary-fixed-dim": "#c4cd79",
+                        "on-background": "#1a1c1a",
+                        "outline": "#787869",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#605f54",
+                        "on-tertiary-fixed-variant": "#48473d",
+                        "surface-bright": "#faf9f6",
+                        "on-tertiary-fixed": "#1d1c13",
+                        "on-tertiary-container": "#2c2b22",
+                        "secondary-container": "#fed65b",
+                        "secondary": "#735c00",
+                        "on-primary-container": "#292d00",
+                        "primary": "#5c631c",
+                        "on-secondary-container": "#745c00",
+                        "surface": "#faf9f6",
+                        "background": "#faf9f6",
+                        "primary-container": "#8f974a",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#444b03",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#47483a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e6e2d4",
+                        "surface-dim": "#dbdad7",
+                        "tertiary-container": "#959285",
+                        "surface-tint": "#5c631c",
+                        "surface-variant": "#e3e2e0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif", "serif"],
+                        "label-caps": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Noto Serif", "serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "display-xl": ["Noto Serif", "serif"],
+                        "noto-serif": ["Noto Serif", "serif"],
+                        "manrope": ["Manrope", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+  </script>
+  <style>
+    .hero-image-overlay {
+      background: linear-gradient(to top, rgba(250, 249, 246, 0.8), transparent);
+    }
+    .reveal-fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+    .reveal-fade.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
-<body>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary">
 
   <!-- HEADER -->
-  <header class="header" id="header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-text">✿ Pezzava</span>
-      </a>
-      <nav class="nav-links" id="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="products.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+  <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-100">
+    <div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
+      <a href="index.html" class="font-noto-serif tracking-[0.2em] uppercase text-2xl font-bold text-stone-900">PEZZAVA</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex gap-8 items-center">
+        <a href="index.html" class="font-label-caps text-label-caps uppercase tracking-widest text-primary border-b border-primary pb-1">Home</a>
+        <a href="products.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Shop</a>
+        <a href="about.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Heritage</a>
+        <a href="contact.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Contact</a>
+        <a href="career.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Careers</a>
       </nav>
-      <div class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-[#8F974A] hover:text-[#8F974A] transition-colors duration-300 opacity-70 hover:opacity-100 focus:outline-none" id="mobile-menu-btn">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+      </button>
+    </div>
+    
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-100 px-8 py-4">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Home</a>
+        <a href="products.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Shop</a>
+        <a href="about.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Heritage</a>
+        <a href="contact.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Contact</a>
+        <a href="career.html" class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Careers</a>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-particles" aria-hidden="true"></div>
-    <div class="hero-content">
-      <span class="hero-badge reveal">✦ Handcrafted in Rajasthan</span>
-      <h1 class="reveal">Comfortable Cotton Wrap Skirts, Crafted in Jaipur</h1>
-      <p class="reveal">Discover our beautiful collection of 100% cotton wrap around skirts — designed for comfort, crafted with love, and available on your favorite marketplaces.</p>
-      <div class="hero-cta reveal">
-        <a href="products.html" class="btn btn-primary">Shop Collection →</a>
-        <a href="about.html" class="btn btn-outline">Our Story</a>
+  <main class="pt-[96px]">
+    <!-- Hero Section -->
+    <section class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden bg-surface-container">
+      <div class="absolute inset-0 z-0">
+        <img alt="Pezzava Skirt Hero" class="w-full h-full object-cover object-center opacity-90" src="images/products/p16.1.jpeg"/>
+        <div class="absolute inset-0 hero-image-overlay mix-blend-multiply"></div>
       </div>
-    </div>
-    <!-- Floating decorative elements -->
-    <div style="position:absolute;top:15%;left:8%;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.08),transparent);animation:float 6s ease-in-out infinite;" aria-hidden="true"></div>
-    <div style="position:absolute;bottom:20%;right:10%;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(107,122,47,0.06),transparent);animation:float 8s ease-in-out infinite reverse;" aria-hidden="true"></div>
-    <style>@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}</style>
-  </section>
-
-  <!-- WHY PEZZAVA -->
-  <section class="section" id="features">
-    <div class="container">
-      <h2 class="section-title reveal">Why Pezzava?</h2>
-      <p class="section-subtitle reveal">Three things that make our skirts special</p>
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon">🌿</div>
-          <h3>100% Pure Cotton</h3>
-          <p>Breathable, soft, and skin-friendly fabric perfect for Indian weather. Every skirt is made with premium cotton.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">🎨</div>
-          <h3>Rajasthani Prints</h3>
-          <p>Vibrant traditional prints inspired by the rich heritage of Rajasthan. Each pattern tells a story of craftsmanship.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">👗</div>
-          <h3>Perfect Fit</h3>
-          <p>Adjustable wrap-around design fits all body types comfortably. Available in free size for effortless styling.</p>
-        </div>
+      <div class="relative z-10 text-center flex flex-col items-center max-w-4xl px-margin-mobile md:px-margin-desktop reveal-fade">
+        <h2 class="font-display-xl text-display-xl text-on-surface mb-6 drop-shadow-sm">Modern Royal Rajasthan</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 text-stone-800">A curated collection bridging the ornate architectural history of Northern India and the restrained clarity of modern high-fashion editorial.</p>
+        <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-caps text-label-caps px-8 py-4 rounded hover:bg-primary transition-colors duration-300 tracking-widest uppercase" href="products.html">
+            Shop Collection
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FEATURED PRODUCTS -->
-  <section class="section section-dark" id="featured">
-    <div class="container">
-      <h2 class="section-title reveal" style="color:#F5F0E8">Our Collection</h2>
-      <p class="section-subtitle reveal">Handpicked favorites from our catalog</p>
-      <div class="products-grid" id="featured-products">
-        <div class="loading-spinner">
-          <div class="spinner"></div>
-          <p>Curating our finest pieces...</p>
+    <!-- The Heritage Section -->
+    <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+        <div class="md:col-span-5 md:col-start-2 flex flex-col items-start pr-8 reveal-fade">
+          <span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest mb-4">The Heritage</span>
+          <h3 class="font-headline-lg text-headline-lg text-on-surface mb-6">Crafted Structure.</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+              Our silhouettes are born from the intersection of tradition and modernity. Each piece is an architectural marvel, designed to frame the form with the quiet dignity of a curated gallery space. We strip away the unnecessary, leaving only the essential lines and profound textures of 100% pure cotton.
+          </p>
+          <a class="inline-flex items-center text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-surface-tint transition-colors group" href="about.html">
+              Discover Our Story
+              <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" style="font-size: 16px;">arrow_forward</span>
+          </a>
         </div>
-      </div>
-      <div style="text-align:center;margin-top:40px;" class="reveal">
-        <a href="products.html" class="btn btn-outline">View All Products →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST BAR -->
-  <section class="trust-bar">
-    <div class="container">
-      <div class="trust-content">
-        <div class="trust-item"><span class="trust-icon">🟠</span> Available on Amazon</div>
-        <div class="trust-item"><span class="trust-icon">🔵</span> Available on Flipkart</div>
-        <div class="trust-item"><span class="trust-icon">🏭</span> Made in Jaipur</div>
-        <div class="trust-item"><span class="trust-icon">🧵</span> 100% Cotton</div>
-        <div class="trust-item"><span class="trust-icon">📦</span> Free Size</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section" id="testimonials">
-    <div class="container">
-      <h2 class="section-title reveal">What Our Customers Say</h2>
-      <p class="section-subtitle reveal">Real reviews from happy customers</p>
-      <div class="testimonials-slider">
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Loved the quality of the cotton! The print is so vibrant and the skirt fits perfectly. Will definitely buy more."</p>
-          <div class="testimonial-author">— Priya S., Mumbai</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Very comfortable for daily wear. The wrap-around design is so convenient. Great value for the price."</p>
-          <div class="testimonial-author">— Anita R., Delhi</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★☆</div>
-          <p>"Beautiful Rajasthani prints! I get compliments every time I wear this skirt. The fabric is breathable and soft."</p>
-          <div class="testimonial-author">— Kavitha M., Bangalore</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Perfect for summers. Light, airy, and the colors don't fade after washing. Highly recommend Pezzava!"</p>
-          <div class="testimonial-author">— Sneha K., Jaipur</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container reveal">
-      <h2>Ready to Find Your Perfect Skirt?</h2>
-      <p>Browse our full collection and shop on Amazon or Flipkart with secure checkout and fast delivery.</p>
-      <a href="products.html" class="btn btn-primary" style="margin-top:8px;">Explore Collection →</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="logo-text" style="font-size:1.4rem;">✿ Pezzava</span>
-          <p>Comfortable cotton wrap around skirts crafted in Jaipur, Rajasthan. Bringing traditional craftsmanship to modern wardrobes.</p>
-          <div class="footer-social">
-            <a href="#" target="_blank" rel="noopener" aria-label="Facebook" onclick="event.preventDefault(); alert('Social links coming soon!')">📘</a>
-            <a href="#" target="_blank" rel="noopener" aria-label="Instagram" onclick="event.preventDefault(); alert('Social links coming soon!')">📸</a>
-            <a href="mailto:pezzava@gmail.com" aria-label="Email">✉️</a>
+        <div class="md:col-span-5 md:col-start-8 relative mt-12 md:mt-0 reveal-fade" style="transition-delay: 0.2s;">
+          <div class="relative aspect-[0.67] w-full max-w-[525px] mx-auto">
+            <div class="absolute inset-0 bg-surface-container-high rounded translate-x-4 translate-y-4 -z-10 shadow-[0_4px_24px_rgba(143,151,74,0.08)]"></div>
+            <img alt="Pezzava Detail" class="w-full h-full object-cover rounded shadow-sm" src="images/products/p16.2.jpeg"/>
           </div>
         </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Shop</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- Curated Silhouettes (Featured Items injected by JS) -->
+    <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap bg-surface-container-low border-y border-outline-variant/30">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div class="reveal-fade">
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Curated Silhouettes</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">Explore the defining pieces of the current season.</p>
         </div>
-        <div>
-          <h4>Categories</h4>
-          <ul>
-            <li><a href="products.html">Mini Skirts</a></li>
-            <li><a href="products.html">Knee Length</a></li>
-            <li><a href="products.html">Calf Length</a></li>
-            <li><a href="products.html">Long / Maxi</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li>📍 P.N. 7-b Brij Vihar, Badarama Kalwar Road, Govindpura, Jaipur, Rajasthan, 302012</li>
-            <li>📞 <a href="tel:+918209199603">+91 820 919 9603</a></li>
-            <li>✉️ <a href="mailto:pezzava@gmail.com">pezzava@gmail.com</a></li>
-          </ul>
+        <div class="mt-6 md:mt-0 reveal-fade" style="transition-delay: 0.1s;">
+          <a class="inline-flex items-center text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-surface-tint transition-colors group" href="products.html">
+              View All
+              <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" style="font-size: 16px;">arrow_forward</span>
+          </a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2025 Pezzava. All rights reserved.</span>
-        <span>Made with ❤️ in Jaipur, Rajasthan</span>
+      
+      <!-- This will be populated by JS -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter" id="featured-editorial-grid">
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="py-12 border-b border-outline-variant/30 bg-surface">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="flex justify-between items-center flex-wrap gap-8 opacity-80">
+          <div class="flex items-center gap-3 font-label-caps uppercase tracking-widest text-on-surface-variant text-sm"><span class="text-2xl">🛍️</span> Amazon</div>
+          <div class="flex items-center gap-3 font-label-caps uppercase tracking-widest text-on-surface-variant text-sm"><span class="text-2xl">🛒</span> Flipkart</div>
+          <div class="flex items-center gap-3 font-label-caps uppercase tracking-widest text-on-surface-variant text-sm"><span class="text-2xl">🏭</span> Made in Jaipur</div>
+          <div class="flex items-center gap-3 font-label-caps uppercase tracking-widest text-on-surface-variant text-sm"><span class="text-2xl">🧵</span> Pure Cotton</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full border-t border-stone-200 bg-stone-50">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 md:px-16 py-20 max-w-[1440px] mx-auto">
+      <div class="col-span-1 md:col-span-2">
+        <p class="font-noto-serif text-sm tracking-tight text-[#8F974A] mb-4">© 2025 PEZZAVA. Crafted in Jaipur.</p>
+        <div class="text-lg font-semibold tracking-widest text-stone-800 uppercase font-noto-serif">PEZZAVA</div>
+      </div>
+      <div class="col-span-1 flex flex-col gap-4">
+        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="products.html">Shop All</a>
+        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="about.html">Heritage</a>
+      </div>
+      <div class="col-span-1 flex flex-col gap-4">
+        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="contact.html">Contact Us</a>
+        <a class="font-noto-serif text-sm tracking-tight text-stone-500 hover:text-[#8F974A] underline decoration-1 underline-offset-4 transition-colors duration-300" href="career.html">Careers</a>
       </div>
     </div>
   </footer>
 
   <!-- MARKETPLACE MODAL -->
-  <div class="modal-overlay" id="marketplace-modal">
-    <div class="modal">
-      <button class="modal-close" onclick="closeModal()">✕</button>
-      <h3>Buy <span class="modal-product-name"></span></h3>
-      <p>Choose your preferred marketplace to continue shopping:</p>
-      <div class="modal-buttons"></div>
+  <div class="fixed inset-0 z-[100] bg-black/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="marketplace-modal" style="opacity: 0; transition: opacity 0.3s ease;">
+    <div class="bg-surface rounded-lg shadow-xl max-w-md w-full p-8 relative scale-95 transition-transform duration-300" id="marketplace-modal-content">
+      <button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface" onclick="closeModal()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <h3 class="font-headline-md text-2xl text-on-surface mb-2">Buy <span class="modal-product-name text-primary"></span></h3>
+      <p class="font-body-md text-on-surface-variant mb-6">Choose your preferred marketplace to secure your purchase:</p>
+      <div class="modal-buttons flex flex-col gap-4"></div>
     </div>
   </div>
 
-  <script src="js/app.js"></script>
   <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const grid = document.getElementById('featured-products');
-      if (grid) renderFeaturedProducts(grid);
+    // Reveal Animations
+    function initReveals() {
+      const reveals = document.querySelectorAll('.reveal-fade');
+      const windowHeight = window.innerHeight;
+      
+      reveals.forEach(reveal => {
+        const revealTop = reveal.getBoundingClientRect().top;
+        if (revealTop < windowHeight - 50) {
+          reveal.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', initReveals);
+    
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
     });
+
+    // Populate Featured Products
+    document.addEventListener('DOMContentLoaded', () => {
+      initReveals();
+
+      const grid = document.getElementById('featured-editorial-grid');
+      if (grid && typeof products !== 'undefined') {
+        const featured = products.slice(0, 4); 
+        
+        let html = '';
+        featured.forEach((p, index) => {
+          html += `
+            <a class="group block cursor-pointer reveal-fade" href="product.html?id=${p.id}" style="transition-delay: ${index * 0.1}s;">
+              <div class="relative aspect-[0.67] mb-6 overflow-hidden bg-surface-container rounded">
+                <img alt="${p.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="${p.images[0]}"/>
+                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
+              </div>
+              <div class="text-center">
+                <h4 class="font-headline-md text-headline-md text-on-surface text-[20px] leading-tight mb-2">${p.title}</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">₹${p.price}</p>
+              </div>
+            </a>
+          `;
+        });
+        grid.innerHTML = html;
+      }
+    });
+
+    // Modal Logic Overrides
+    window.showMarketplaceModal = function(productName, amazonLink, flipkartLink) {
+      const modal = document.getElementById('marketplace-modal');
+      const content = document.getElementById('marketplace-modal-content');
+      const nameEl = modal.querySelector('.modal-product-name');
+      const buttonsEl = modal.querySelector('.modal-buttons');
+      
+      nameEl.textContent = productName;
+      buttonsEl.innerHTML = '';
+      
+      if (amazonLink && amazonLink !== '#') {
+        buttonsEl.innerHTML += `<a href="${amazonLink}" target="_blank" class="w-full inline-flex items-center justify-center bg-stone-900 text-white font-label-caps px-6 py-4 rounded hover:bg-stone-800 transition-colors uppercase tracking-widest">Buy on Amazon</a>`;
+      }
+      
+      if (flipkartLink && flipkartLink !== '#') {
+        buttonsEl.innerHTML += `<a href="${flipkartLink}" target="_blank" class="w-full inline-flex items-center justify-center border border-stone-900 text-stone-900 font-label-caps px-6 py-4 rounded hover:bg-stone-50 transition-colors uppercase tracking-widest">Buy on Flipkart</a>`;
+      }
+      
+      if (buttonsEl.innerHTML === '') {
+         buttonsEl.innerHTML = '<p class="font-body-md text-primary font-medium text-center">Coming Soon to Marketplaces</p>';
+      }
+      
+      modal.classList.remove('hidden');
+      // small delay for transition
+      setTimeout(() => {
+        modal.style.opacity = '1';
+        content.classList.remove('scale-95');
+        content.classList.add('scale-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeModal = function() {
+      const modal = document.getElementById('marketplace-modal');
+      const content = document.getElementById('marketplace-modal-content');
+      
+      modal.style.opacity = '0';
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+      
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    };
   </script>
 </body>
 </html>
