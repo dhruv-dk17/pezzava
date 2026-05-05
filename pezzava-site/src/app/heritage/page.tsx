@@ -173,6 +173,9 @@ export default function HeritagePage() {
                 "True luxury is the <span className="italic">harmony</span> of absolute comfort and authentic <span className="text-primary">craftsmanship</span>."
               </h2>
               <div className="w-12 h-1px bg-primary mx-auto mb-8" />
+              <div className="relative w-24 h-16 mx-auto mb-4">
+                <Image src="/logo.png" alt="Pezzava" fill className="object-contain" />
+              </div>
               <p className="font-manrope font-bold uppercase tracking-[0.4em] text-sm text-primary">
                 Pezzava Jaipur
               </p>
