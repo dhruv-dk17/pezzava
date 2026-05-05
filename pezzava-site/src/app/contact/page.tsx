@@ -41,7 +41,7 @@ export default function ContactPage() {
       {/* Hero Banner */}
       <section className="relative h-[40vh] md:h-[50vh] overflow-hidden">
         <Image 
-          src="/images/lifestyle-bento.png" 
+          src="/images/contact-hero.png" 
           alt="Pezzava Lifestyle" 
           fill 
           className="object-cover"
