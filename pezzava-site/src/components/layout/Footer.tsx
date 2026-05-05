@@ -43,6 +43,7 @@ const Footer = () => {
         <div className="flex gap-10">
           <a href="https://www.instagram.com/pezzava6828" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Instagram</a>
           <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">Facebook</a>
+          <a href="https://www.linkedin.com/in/pezzava-jaipur-1850415b" target="_blank" rel="noopener noreferrer" className="font-body text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface hover:text-primary transition-colors">LinkedIn</a>
         </div>
         <div className="text-[10px] font-body text-stone-400 uppercase tracking-widest">
             Handcrafted with love in the Pink City

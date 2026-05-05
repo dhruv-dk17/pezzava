@@ -131,6 +131,7 @@ const Header = () => {
               <div className="flex gap-6">
                 <a href="https://www.instagram.com/pezzava6828" target="_blank" rel="noopener noreferrer" className="text-primary font-bold uppercase tracking-widest text-[10px]">Instagram</a>
                 <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" className="text-primary font-bold uppercase tracking-widest text-[10px]">Facebook</a>
+                <a href="https://www.linkedin.com/in/pezzava-jaipur-1850415b" target="_blank" rel="noopener noreferrer" className="text-primary font-bold uppercase tracking-widest text-[10px]">LinkedIn</a>
               </div>
             </div>
           </motion.div>

@@ -20,6 +20,14 @@ const FacebookIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
+const LinkedinIcon = ({ size = 20 }: { size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect x="2" y="9" width="4" height="12"/>
+    <circle cx="4" cy="4" r="2"/>
+  </svg>
+);
+
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -70,7 +78,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-24"
         >
           {/* Phone */}
           <a href="tel:+918209199603" className="group bg-stone-50 border border-stone-100 rounded-2xl p-8 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
@@ -105,6 +113,15 @@ export default function ContactPage() {
               <FacebookIcon size={20} />
             </div>
             <h3 className="font-manrope text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface-variant/50 mb-2">Facebook</h3>
+            <p className="font-manrope text-sm font-semibold text-on-surface flex items-center gap-1">Pezzava <ExternalLink size={12} className="text-primary" /></p>
+          </a>
+
+          {/* LinkedIn */}
+          <a href="https://www.linkedin.com/in/pezzava-jaipur-1850415b" target="_blank" rel="noopener noreferrer" className="group bg-stone-50 border border-stone-100 rounded-2xl p-8 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+              <LinkedinIcon size={20} />
+            </div>
+            <h3 className="font-manrope text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface-variant/50 mb-2">LinkedIn</h3>
             <p className="font-manrope text-sm font-semibold text-on-surface flex items-center gap-1">Pezzava <ExternalLink size={12} className="text-primary" /></p>
           </a>
         </motion.div>
