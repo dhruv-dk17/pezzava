@@ -25,7 +25,7 @@ export default function Hero() {
       >
         <Image
           src="/images/hero-heritage.png"
-          alt="Pezzava Heritage Collection"
+          alt="Pezzava Collection"
           fill
           priority
           className="object-cover object-center"
@@ -47,7 +47,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            Jaipur Heritage &bull; Artisanal Luxury
+            Jaipur's Finest • Artisanal Luxury
           </motion.span>
           
           <h1 className="mb-8 font-noto-serif text-5xl md:text-7xl lg:text-8xl text-white leading-tight">
@@ -68,7 +68,7 @@ export default function Hero() {
               <div className="absolute inset-0 z-0 translate-y-full bg-primary-container transition-transform duration-300 group-hover:translate-y-0" />
             </Link>
             
-            <Link href="/heritage" className="group flex items-center gap-2 font-manrope font-bold text-white uppercase tracking-widest text-sm transition-opacity hover:opacity-80">
+            <Link href="/about" className="group flex items-center gap-2 font-manrope font-bold text-white uppercase tracking-widest text-sm transition-opacity hover:opacity-80">
               Explore Our Story
               <motion.span
                 animate={{ x: [0, 5, 0] }}

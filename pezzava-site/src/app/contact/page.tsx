@@ -82,12 +82,12 @@ export default function ContactPage() {
           </a>
 
           {/* Email */}
-          <a href="mailto:pezzava.jaipur@gmail.com" className="group bg-stone-50 border border-stone-100 rounded-2xl p-8 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+          <a href="mailto:pezzava@gmail.com" className="group bg-stone-50 border border-stone-100 rounded-2xl p-8 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
               <Mail size={20} className="text-primary" />
             </div>
             <h3 className="font-manrope text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface-variant/50 mb-2">Email</h3>
-            <p className="font-manrope text-sm font-semibold text-on-surface">pezzava.jaipur@gmail.com</p>
+            <p className="font-manrope text-sm font-semibold text-on-surface">pezzava@gmail.com</p>
           </a>
 
           {/* Instagram */}

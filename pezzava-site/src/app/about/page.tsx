@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export default function HeritagePage() {
+export default function AboutPage() {
   return (
     <div className="flex flex-col w-full bg-background min-h-screen">
       {/* Hero Section - Editorial Style */}
@@ -37,7 +37,7 @@ export default function HeritagePage() {
              >
                 <Image 
                   src="/images/about-heritage.png" 
-                  alt="Jaipur Heritage" 
+                  alt="About Pezzava" 
                   fill 
                   className="object-cover"
                   priority
@@ -88,7 +88,7 @@ export default function HeritagePage() {
                </motion.div>
 
                <div className="absolute top-0 right-0 font-noto-serif text-[12rem] text-primary/5 leading-none select-none -z-10 italic">
-                 Heritage
+                 About Pezzava
                </div>
             </div>
 

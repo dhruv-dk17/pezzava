@@ -9,7 +9,7 @@ import { Menu, X, ShoppingBag, ArrowRight } from "lucide-react";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Shop", href: "/shop" },
-  { name: "Heritage", href: "/heritage" },
+  { name: "About Us", href: "/about" },
   { name: "Contact", href: "/contact" },
   { name: "Careers", href: "/careers" },
   { name: "Verification", href: "/careers/verification" },
@@ -129,8 +129,8 @@ const Header = () => {
             <div className="mt-auto pt-12 border-t border-stone-100">
               <p className="font-body text-sm text-on-surface-variant mb-4">Crafted in Jaipur, Rajasthan</p>
               <div className="flex gap-6">
-                <Link href="#" className="text-primary font-bold uppercase tracking-widest text-[10px]">Instagram</Link>
-                <Link href="#" className="text-primary font-bold uppercase tracking-widest text-[10px]">Facebook</Link>
+                <a href="https://www.instagram.com/pezzava6828?igsh=NWc5cGp5aHhkbmF2" target="_blank" rel="noopener noreferrer" className="text-primary font-bold uppercase tracking-widest text-[10px]">Instagram</a>
+                <a href="https://www.facebook.com/pezzava/" target="_blank" rel="noopener noreferrer" className="text-primary font-bold uppercase tracking-widest text-[10px]">Facebook</a>
               </div>
             </div>
           </motion.div>

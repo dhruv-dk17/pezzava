@@ -6,11 +6,11 @@ import Link from 'next/link';
 
 const bentoItems = [
   {
-    title: "Artisanal Heritage",
+    title: "Artisanal Story",
     description: "Every skirt tells a story of Jaipur's rich textile history, hand-printed with precision.",
     image: "/images/bento-craft.png",
     size: "large",
-    link: "/heritage"
+    link: "/about"
   },
   {
     title: "100% Pure Cotton",
@@ -28,7 +28,7 @@ const bentoItems = [
   }
 ];
 
-export default function Heritage() {
+export default function AboutSection() {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface text-on-surface">
       <div className="max-w-7xl mx-auto">

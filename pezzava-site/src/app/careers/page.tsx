@@ -104,7 +104,7 @@ const CareersPage = () => {
             We are always looking for passionate individuals to join our Jaipur studio. 
             While we don&apos;t have any active openings at this moment, feel free to share your journey with us.
           </p>
-          <a href="mailto:pezzava.jaipur@gmail.com" className="inline-block bg-primary text-on-primary px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-on-surface transition-all duration-300">
+          <a href="mailto:pezzava@gmail.com" className="inline-block bg-primary text-on-primary px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-on-surface transition-all duration-300">
             Submit Portfolio
           </a>
         </div>

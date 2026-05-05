@@ -14,8 +14,8 @@ export const CursorFollower = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      mouseX.set(e.clientX - 12);
-      mouseY.set(e.clientY - 12);
+      mouseX.set(e.clientX - 8);
+      mouseY.set(e.clientY - 8);
 
       const target = e.target as HTMLElement;
       setIsHovering(
@@ -32,7 +32,7 @@ export const CursorFollower = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-6 h-6 rounded-full border border-primary pointer-events-none z-[9999] hidden lg:block"
+      className="fixed top-0 left-0 w-4 h-4 rounded-full border border-primary pointer-events-none z-[9999] hidden lg:block"
       style={{
         x: cursorX,
         y: cursorY,

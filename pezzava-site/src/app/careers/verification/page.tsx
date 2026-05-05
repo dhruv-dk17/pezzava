@@ -92,7 +92,7 @@ const VerificationPage = () => {
             <div className="bg-stone-50 p-8 text-center border-t border-stone-200">
               <p className="font-body text-sm italic text-on-surface-variant leading-relaxed">
                 This is an electronically generated document. No signature is required for verification. 
-                For further inquiries, please contact our HR department at <span className="font-bold text-primary">pezzava.jaipur@gmail.com</span>.
+                For further inquiries, please contact our HR department at <span className="font-bold text-primary">pezzava@gmail.com</span>.
               </p>
             </div>
           </div>
