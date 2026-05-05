@@ -64,9 +64,9 @@
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-10">
-        <a href="index.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
+        <a href="index.html" class="font-body text-[12px] uppercase tracking-widest text-primary font-bold relative group">
           Home
-          <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+          <span class="absolute -bottom-1 left-0 w-full"></span>
         </a>
         <a href="products.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
           Shop
@@ -112,7 +112,7 @@
       </div>
 
       <nav class="flex flex-col gap-8">
-        <a href="index.html" class="font-display text-4xl text-on-surface hover:text-primary transition-colors flex items-center justify-between group">
+        <a href="index.html" class="font-display text-4xl text-primary transition-colors flex items-center justify-between group">
           Home
           <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all">arrow_right_alt</span>
         </a>
@@ -351,5 +351,19 @@
       }, 300);
     };
   </script>
+
+  <!-- Verification Badge -->
+  <div class="fixed bottom-8 right-8 z-[100] hidden md:block reveal-fade" style="transition-delay: 1s;">
+    <a href="verification.html" class="flex items-center gap-3 bg-white/90 backdrop-blur-md border border-stone-200 py-3 px-5 rounded-full shadow-2xl hover:shadow-primary/20 hover:border-primary/50 transition-all group">
+      <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined" style="font-size: 16px;">verified_user</span>
+      </div>
+      <div class="flex flex-col text-left">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 leading-none mb-1">Official Portal</span>
+        <span class="text-[12px] font-bold text-on-surface leading-none">Verify Internships</span>
+      </div>
+    </a>
+  </div>
+
 </body>
 </html>

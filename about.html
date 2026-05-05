@@ -115,7 +115,7 @@
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary">
   <!-- HEADER -->
-  <header class="fixed top-0 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-sm py-6 md:bg-transparent md:backdrop-blur-none glass-morphism">
+  <header class="fixed top-0 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-sm py-6 md:bg-transparent md:backdrop-blur-none">
     <div class="max-w-[1440px] mx-auto px-8 flex justify-between items-center">
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden text-primary hover:opacity-100 opacity-80 transition-opacity focus:outline-none">
@@ -139,7 +139,7 @@
         </a>
         <a href="about.html" class="font-body text-[12px] uppercase tracking-widest text-primary font-bold relative group">
           About Us
-          <span class="absolute -bottom-1 left-0 w-full h-[1px] bg-primary transition-all duration-300"></span>
+          <span class="absolute -bottom-1 left-0 w-full"></span>
         </a>
         <a href="contact.html" class="font-body text-[12px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors relative group">
           Contact
@@ -367,5 +367,19 @@
 
   <script src="js/app.js"></script>
   <script src="js/modern.js"></script>
+
+  <!-- Verification Badge -->
+  <div class="fixed bottom-8 right-8 z-[100] hidden md:block reveal-fade" style="transition-delay: 1s;">
+    <a href="verification.html" class="flex items-center gap-3 bg-white/90 backdrop-blur-md border border-stone-200 py-3 px-5 rounded-full shadow-2xl hover:shadow-primary/20 hover:border-primary/50 transition-all group">
+      <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined" style="font-size: 16px;">verified_user</span>
+      </div>
+      <div class="flex flex-col text-left">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 leading-none mb-1">Official Portal</span>
+        <span class="text-[12px] font-bold text-on-surface leading-none">Verify Internships</span>
+      </div>
+    </a>
+  </div>
+
 </body>
 </html>
