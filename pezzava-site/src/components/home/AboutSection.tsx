@@ -6,22 +6,22 @@ import Link from 'next/link';
 
 const bentoItems = [
   {
-    title: "Artisanal Story",
-    description: "Every skirt tells a story of Jaipur's rich textile history, hand-printed with precision.",
+    title: "Heritage Craft Story",
+    description: "Every skirt tells a story of Jaipur's rich heritage craft textiles, featuring authentic hand-block printing and Sanganeri print motifs.",
     image: "/images/bento-craft.png",
     size: "large",
     link: "/about"
   },
   {
-    title: "100% Pure Cotton",
-    description: "Breathable, premium fabric sourced directly from local weavers.",
+    title: "Sustainable Jaipuri Cotton",
+    description: "Breathable, premium sustainable textiles sourced directly from local artisans in Rajasthan for ethical comfort.",
     image: "/images/bento-lifestyle.png",
     size: "medium",
     link: "/shop"
   },
   {
-    title: "The Perfect Fit",
-    description: "Adjustable wrap-around design for effortless elegance.",
+    title: "Artisan-Made Fit",
+    description: "Adjustable Rajasthani wrap-around design for effortless elegance and universal artisan-crafted sizing.",
     image: "/images/hero-heritage.png", // Reusing for now
     size: "small",
     link: "/shop"
@@ -42,8 +42,8 @@ export default function AboutSection() {
           >
             <span className="font-manrope text-sm font-bold tracking-widest text-primary uppercase mb-4 block">Our Philosophy</span>
             <h2 className="font-noto-serif text-4xl md:text-5xl lg:text-6xl leading-tight">
-              Honoring Tradition through <br />
-              <span className="italic">Modern Silhouettes</span>
+              Honoring Heritage Arts through <br />
+              <span className="italic">Modern Sustainable Silhouettes</span>
             </h2>
           </motion.div>
           
@@ -54,7 +54,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-manrope text-lg text-on-surface-variant max-w-sm"
           >
-            Pezzava is more than a brand; it is a movement to preserve the vanishing arts of Rajasthan while dressing the modern woman in comfort.
+            Pezzava is more than a brand; it is a movement to preserve the heritage cotton textiles of Jaipur while dressing the modern woman in artisanal comfort.
           </motion.p>
         </div>
 

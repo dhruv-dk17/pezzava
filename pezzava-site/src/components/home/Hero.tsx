@@ -25,7 +25,7 @@ export default function Hero() {
       >
         <Image
           src="/images/hero-heritage.png"
-          alt="Pezzava Collection"
+          alt="Pezzava Collection — Artisanal Jaipur Cotton Wrap Around Skirts"
           fill
           priority
           className="object-contain object-center"
@@ -47,17 +47,17 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            Jaipur's Finest • Artisanal Luxury
+            Jaipur's Finest Sustainable Artisanal Heritage
           </motion.span>
           
           <h1 className="mb-8 font-noto-serif text-5xl md:text-7xl lg:text-8xl text-white leading-tight">
-            The Art of the <br />
-            <span className="italic font-light">Wrap Around</span>
+            Artisanal Cotton <br />
+            <span className="italic font-light text-gold">Wrap Skirts</span>
           </h1>
 
           <p className="mx-auto mb-10 max-w-xl font-manrope text-lg text-white/80 leading-relaxed">
-            Discover a curated collection of premium cotton silhouettes, 
-            where centuries of Rajasthani craftsmanship meet modern editorial elegance.
+            Discover a curated collection of premium slow fashion silhouettes, 
+            where centuries of hand-block print craftsmanship meet modern sustainable elegance.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

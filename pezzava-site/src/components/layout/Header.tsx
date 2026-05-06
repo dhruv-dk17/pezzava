@@ -19,10 +19,12 @@ const navLinks = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
@@ -33,6 +35,8 @@ const Header = () => {
   // On homepage, we use light text over the dark hero when not scrolled.
   // On all other pages, we use dark text for visibility against light backgrounds.
   const isLightHeader = isHome && !scrolled;
+
+  if (!mounted) return null;
 
   return (
     <header

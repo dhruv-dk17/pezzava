@@ -11,8 +11,10 @@ export const CursorFollower = () => {
   const springConfig = { damping: 25, stiffness: 150 };
   const cursorX = useSpring(mouseX, springConfig);
   const cursorY = useSpring(mouseY, springConfig);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX - 6);
       mouseY.set(e.clientY - 6);
@@ -29,6 +31,8 @@ export const CursorFollower = () => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
+
+  if (!mounted) return null;
 
   return (
     <motion.div
