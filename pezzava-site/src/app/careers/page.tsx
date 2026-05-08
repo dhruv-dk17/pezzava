@@ -132,7 +132,7 @@ const CareersPage = () => {
               </div>
             </div>
             <Link 
-              href="/careers/verification" 
+              href="/verification" 
               className="relative z-10 inline-flex items-center gap-3 bg-on-surface text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-primary transition-all duration-300 hover:shadow-2xl group"
             >
               Verify Now <ArrowRight className="group-hover:translate-x-1 transition-transform" />

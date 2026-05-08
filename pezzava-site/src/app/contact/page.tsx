@@ -178,7 +178,7 @@ export default function ContactPage() {
 
             {/* Trust Badge / Verification Link */}
             <Link 
-              href="/careers/verification"
+              href="/verification"
               className="flex items-center gap-4 p-6 bg-primary/5 border border-primary/10 rounded-2xl hover:bg-primary/10 transition-colors group"
             >
               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">

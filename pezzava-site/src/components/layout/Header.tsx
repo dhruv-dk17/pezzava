@@ -13,7 +13,7 @@ const navLinks = [
   { name: "About Us", href: "/about" },
   { name: "Contact", href: "/contact" },
   { name: "Careers", href: "/careers" },
-  { name: "Verification", href: "/careers/verification" },
+  { name: "Verification", href: "/verification" },
 ];
 
 const Header = () => {

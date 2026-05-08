@@ -91,7 +91,7 @@ const jsonLd = {
   "@type": "Organization",
   "name": "Pezzava",
   "url": "https://pezzava.com",
-  "logo": "https://pezzava.com/images/logo.png",
+  "logo": "https://pezzava.com/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+91-XXXXXXXXXX",

@@ -34,7 +34,7 @@ const Footer = () => {
           <Link href="/about" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">About Us</Link>
           <Link href="/contact" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Contact Us</Link>
           <Link href="/careers" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Careers</Link>
-          <Link href="/careers/verification" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Internship Verification</Link>
+          <Link href="/verification" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Internship Verification</Link>
           <Link href="#" className="font-body text-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-1 underline-offset-4">Terms of Service</Link>
         </div>
       </div>

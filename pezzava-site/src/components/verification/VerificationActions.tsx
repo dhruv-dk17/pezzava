@@ -1,79 +1,107 @@
 "use client";
 
-import React from "react";
-import { Printer, Share2 } from "lucide-react";
+import React, { useState } from "react";
+import { Printer, Share2, Copy, CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface VerificationActionsProps {
   internName: string;
+  refId: string;
 }
 
-export const VerificationActions = ({ internName }: VerificationActionsProps) => {
+export const VerificationActions = ({ internName, refId }: VerificationActionsProps) => {
+  const [copied, setCopied] = useState(false);
+
   const handlePrint = () => {
-    if (typeof window !== 'undefined') {
-      window.print();
+    window.print();
+  };
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
     }
   };
 
-  const handleShare = () => {
+  const handleShare = async () => {
     if (typeof navigator !== 'undefined' && navigator.share) {
-      navigator.share({
-        title: `Credential Verification - ${internName}`,
-        url: window.location.href
-      }).catch(err => console.error("Share failed:", err));
-    } else {
-      // Fallback: Copy to clipboard
-      if (typeof navigator !== 'undefined') {
-        navigator.clipboard.writeText(window.location.href);
-        alert("Link copied to clipboard!");
+      try {
+        await navigator.share({
+          title: `Credential: ${internName}`,
+          text: `Official Verification Record for ${internName} (Ref: ${refId}) at Pezzava.`,
+          url: window.location.href,
+        });
+      } catch (err) {
+        // If user cancels or it fails, fallback is fine
       }
+    } else {
+      handleCopyLink();
     }
   };
 
   return (
-    <div className="flex items-center gap-6 print:hidden">
-      <button 
-        type="button"
+    <div className="flex flex-wrap items-center gap-4">
+      <motion.button
+        whileHover={{ y: -1 }}
+        whileTap={{ y: 0 }}
         onClick={handlePrint}
-        className="flex items-center gap-3 bg-zinc-900 border border-zinc-800 text-zinc-100 px-6 py-3 hover:bg-white hover:text-black transition-all text-[10px] uppercase tracking-[0.3em]"
+        className="flex items-center gap-2 px-6 py-2.5 text-[10px] font-black uppercase tracking-[0.2em] text-on-surface bg-white border border-stone-200 rounded-lg hover:bg-stone-50 transition-all shadow-sm group"
       >
-        <Printer size={14} /> Initialize Print
-      </button>
-      
-      {/* This button is specifically for the broadcast/share action at the bottom */}
-      <button 
-        type="button"
+        <Printer className="w-3.5 h-3.5 text-primary group-hover:scale-110 transition-transform" />
+        <span>Generate PDF / Print</span>
+      </motion.button>
+
+      <motion.button
+        whileHover={{ y: -1 }}
+        whileTap={{ y: 0 }}
         onClick={handleShare}
-        id="broadcast-record-btn"
-        className="hidden group items-center gap-3 bg-white text-black px-10 py-4 hover:bg-zinc-200 transition-all text-xs uppercase tracking-[0.3em] font-bold"
+        className="flex items-center gap-2 px-6 py-2.5 text-[10px] font-black uppercase tracking-[0.2em] text-white bg-on-surface rounded-lg hover:bg-zinc-800 transition-all shadow-md group"
       >
-        <Share2 size={16} /> Broadcast Record
-      </button>
+        {copied ? (
+          <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
+        ) : (
+          <Share2 className="w-3.5 h-3.5 group-hover:rotate-12 transition-transform" />
+        )}
+        <span>{copied ? "Link Copied" : "Share Credential"}</span>
+      </motion.button>
     </div>
   );
 };
 
-export const BroadcastButton = ({ internName }: VerificationActionsProps) => {
-  const handleShare = () => {
+export const BroadcastButton = ({ internName, refId }: VerificationActionsProps) => {
+  const handleShare = async () => {
     if (typeof navigator !== 'undefined' && navigator.share) {
-      navigator.share({
-        title: `Credential Verification - ${internName}`,
-        url: window.location.href
-      }).catch(err => console.error("Share failed:", err));
+      try {
+        await navigator.share({
+          title: `Credential: ${internName}`,
+          text: `Official Verification Record for ${internName} (Ref: ${refId}) at Pezzava.`,
+          url: window.location.href,
+        });
+      } catch (err) {
+        // Silently fail if user cancels
+      }
     } else {
-      if (typeof navigator !== 'undefined') {
-        navigator.clipboard.writeText(window.location.href);
+      try {
+        await navigator.clipboard.writeText(window.location.href);
         alert("Link copied to clipboard!");
+      } catch (err) {
+        console.error("Failed to copy:", err);
       }
     }
   };
 
   return (
-    <button 
-      type="button"
+    <motion.button
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       onClick={handleShare}
-      className="group flex items-center gap-3 bg-white text-black px-10 py-4 hover:bg-zinc-200 transition-all text-xs uppercase tracking-[0.3em] font-bold"
+      className="flex items-center gap-3 bg-white text-on-surface px-10 py-4 hover:bg-stone-50 transition-all text-xs uppercase tracking-[0.3em] font-black border border-stone-200 rounded-xl shadow-lg group"
     >
-      <Share2 size={16} /> Broadcast Record
-    </button>
+      <Share2 className="w-5 h-5 text-primary group-hover:rotate-12 transition-transform" />
+      <span>Broadcast Record</span>
+    </motion.button>
   );
 };

@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/careers/verification`,
+      url: `${baseUrl}/verification`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.3,
