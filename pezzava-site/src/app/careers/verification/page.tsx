@@ -3,316 +3,337 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { 
-  ShieldCheck, Calendar, User, Briefcase, Award, 
-  ArrowLeft, Download, GraduationCap, Building2, 
-  UserCheck, Search, AlertCircle, CheckCircle2 
+  ShieldCheck, Calendar, User, Briefcase, Bookmark, 
+  ArrowLeft, GraduationCap, Building2, 
+  UserCheck, Search, AlertCircle, CheckCircle2, ExternalLink,
+  ChevronRight, ArrowRight, Award, History
 } from "lucide-react";
-
-// Data Structure for Interns
-const VERIFIED_INTERNS: Record<string, any> = {
-  "PZV-INT-2026-01": {
-    name: "Simran Kumawat",
-    fatherName: "Hansraj Kumawat",
-    college: "St. Wilfred's PG College",
-    role: "E-Commerce Operations Intern",
-    duration: "01-04-2026 to 30-04-2026",
-    authority: "Khushi Sharma (HR Head)",
-    company: "Pezzava Retail Operations",
-    status: "Completed",
-    ref: "PZV-INT-2026-01"
-  },
-  "PZV-INT-2026-02": {
-    name: "Abhay Singh",
-    fatherName: "Goverdhan Singh",
-    college: "St. Wilfred's PG College",
-    role: "Product listing intern",
-    duration: "01-04-2026 to 30-04-2026",
-    authority: "Khushi Sharma",
-    company: "Pezzava",
-    status: "Completed",
-    ref: "PZV-INT-2026-02"
-  },
-  "PZV-INT-2025-14": {
-    name: "Aarav Sharma",
-    fatherName: "Rajesh Sharma",
-    college: "University Commerce College, Jaipur",
-    role: "Digital Marketing Strategy",
-    duration: "15-12-2024 to 15-01-2025",
-    authority: "Vikram Rathore (HR Manager)",
-    company: "Pezzava Digital Media",
-    status: "Completed",
-    ref: "PZV-INT-2025-14"
-  },
-  "PZV-INT-2025-08": {
-    name: "Ishita Gupta",
-    fatherName: "Sanjay Gupta",
-    college: "Maharani College",
-    role: "Content Writing Intern",
-    duration: "01-06-2024 to 30-06-2024",
-    authority: "Vikram Rathore (HR Manager)",
-    company: "Pezzava Content Lab",
-    status: "Completed",
-    ref: "PZV-INT-2025-08"
-  },
-  "PZV-INT-2024-12": {
-    name: "Rohan Joshi",
-    fatherName: "Sunil Joshi",
-    college: "Rajasthan University, Jaipur",
-    role: "Operations Management",
-    duration: "01-11-2023 to 30-11-2023",
-    authority: "Sanjay Mathur (Operations Lead)",
-    company: "Pezzava Retail Operations",
-    status: "Completed",
-    ref: "PZV-INT-2024-12"
-  },
-  "PZV-INT-2024-05": {
-    name: "Priyanka Verma",
-    fatherName: "M.L. Verma",
-    college: "Kanoria PG Mahila Mahavidyalaya",
-    role: "Fashion Design Intern",
-    duration: "01-02-2024 to 01-03-2024",
-    authority: "Sanjay Mathur (Operations Lead)",
-    company: "Pezzava Design Studio",
-    status: "Completed",
-    ref: "PZV-INT-2024-05"
-  }
-};
+import { supabase } from "@/lib/supabase";
+import { motion, AnimatePresence } from "framer-motion";
 
 const VerificationContent = () => {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [searchId, setSearchId] = useState("");
-  const [currentIntern, setCurrentIntern] = useState<any>(null);
   const [error, setError] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
+  const [directoryInterns, setDirectoryInterns] = useState<any[]>([]);
+  const [isLoadingDirectory, setIsLoadingDirectory] = useState(true);
+  const [totalVerified, setTotalVerified] = useState(0);
 
   useEffect(() => {
+    fetchDirectory();
     const ref = searchParams.get("ref");
     if (ref) {
       handleVerify(ref.toUpperCase());
     }
   }, [searchParams]);
 
-  const handleVerify = (id: string) => {
-    setIsSearching(true);
-    setError(false);
+  const fetchDirectory = async () => {
+    setIsLoadingDirectory(true);
     
-    // Simulate a small delay for "Verification" feel
-    setTimeout(() => {
-      const intern = VERIFIED_INTERNS[id];
-      if (intern) {
-        setCurrentIntern(intern);
-        setSearchId(id);
-      } else {
-        setCurrentIntern(null);
-        setError(true);
-      }
-      setIsSearching(false);
-    }, 600);
-  };
+    try {
+      // 1. Fetch Simran specifically to ensure she's always at the top
+      const { data: simranData } = await supabase
+        .from("intern_records")
+        .select("*")
+        .eq("name", "Simran Kumawat")
+        .maybeSingle();
 
-  const getIcon = (type: string) => {
-    const cls = "text-primary";
-    const sz = 20;
-    switch(type) {
-      case "grad": return <GraduationCap size={sz} className={cls} />;
-      case "building": return <Building2 size={sz} className={cls} />;
-      case "briefcase": return <Briefcase size={sz} className={cls} />;
-      case "calendar": return <Calendar size={sz} className={cls} />;
-      case "authority": return <UserCheck size={sz} className={cls} />;
-      default: return <User size={sz} className={cls} />;
+      // 2. Fetch others (latest to oldest)
+      let query = supabase
+        .from("intern_records")
+        .select("*")
+        .order('created_at', { ascending: false })
+        .limit(50);
+      
+      if (simranData) {
+        query = query.neq("name", "Simran Kumawat");
+      }
+
+      const { data, error } = await query;
+      
+      if (error) throw error;
+
+      if (data) {
+        const combined = simranData ? [simranData, ...data] : data;
+        setDirectoryInterns(combined);
+      }
+
+      // 3. Fetch total count
+      const { count, error: countError } = await supabase
+        .from("intern_records")
+        .select("*", { count: 'exact', head: true });
+      
+      if (!countError && count !== null) {
+        setTotalVerified(count);
+      }
+    } catch (err) {
+      console.error("Error fetching directory:", err);
+    } finally {
+      setIsLoadingDirectory(false);
     }
   };
 
+  const handleVerify = async (id: string) => {
+    if (!id) return;
+    setIsSearching(true);
+    setError(false);
+    
+    const { data, error: supabaseError } = await supabase
+      .from("intern_records")
+      .select("ref")
+      .eq("ref", id.trim().toUpperCase())
+      .single();
+
+    if (!supabaseError && data) {
+      router.push(`/careers/verification/${data.ref}`);
+    } else {
+      setError(true);
+      // Shake animation effect could be added here
+    }
+    setIsSearching(false);
+  };
+
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <div className="max-w-[1440px] mx-auto px-6">
       {/* Back Link */}
-      <Link 
-        href="/careers" 
-        className="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors mb-12 font-body text-sm uppercase tracking-widest"
+      <motion.div 
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
       >
-        <ArrowLeft size={16} /> Back to Careers
-      </Link>
+        <Link 
+          href="/careers" 
+          className="inline-flex items-center gap-2 text-on-surface-variant/60 hover:text-primary transition-all mb-12 font-body text-xs uppercase tracking-[0.3em] group"
+        >
+          <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" /> 
+          <span>Back to Careers</span>
+        </Link>
+      </motion.div>
 
-      {/* Header Section */}
-      <div className="text-center mb-16">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
-          <ShieldCheck size={40} className="text-primary" />
-        </div>
-        <h1 className="font-display text-4xl md:text-6xl font-bold mb-6">Verification Portal</h1>
-        <p className="font-body text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed mb-10">
-          Enter the Reference ID from the internship certificate to verify its authenticity.
-        </p>
-
-        {/* Search Bar */}
-        <div className="max-w-xl mx-auto relative group">
-          <input 
-            type="text" 
-            placeholder="Enter Reference ID (e.g., PZV-INT-2026-01)"
-            value={searchId}
-            onChange={(e) => setSearchId(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && handleVerify(searchId.trim().toUpperCase())}
-            className="w-full bg-white border-2 border-stone-200 rounded-full py-5 px-8 pl-14 font-body text-lg focus:outline-none focus:border-primary transition-all shadow-lg group-hover:shadow-xl"
-          />
-          <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-stone-400 group-focus-within:text-primary transition-colors" size={24} />
-          <button 
-            onClick={() => handleVerify(searchId.trim().toUpperCase())}
-            disabled={isSearching}
-            className="absolute right-3 top-1/2 -translate-y-1/2 bg-on-surface text-white px-6 py-3 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-primary transition-all disabled:opacity-50"
+      {/* Hero Section */}
+      <div className="relative mb-32">
+        {/* Background Decorative Elements */}
+        <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-full h-[500px] bg-[radial-gradient(circle_at_center,rgba(var(--primary-rgb),0.05)_0%,transparent_70%)] pointer-events-none" />
+        
+        <div className="text-center relative z-10">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center justify-center p-1 rounded-full bg-stone-100 border border-stone-200 mb-8"
           >
-            {isSearching ? "Verifying..." : "Verify Now"}
-          </button>
+            <span className="bg-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] text-primary shadow-sm">
+              Authenticity Guaranteed
+            </span>
+          </motion.div>
+
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-display text-5xl md:text-8xl font-bold mb-8 tracking-tight text-on-surface"
+          >
+            Credential <span className="text-primary italic">Verification</span>
+          </motion.h1>
+
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="font-body text-on-surface-variant max-w-2xl mx-auto text-xl leading-relaxed mb-12"
+          >
+            Validate the professional achievements and internship records of Pezzava alumni through our secure global database.
+          </motion.p>
+
+          {/* Search Bar Container */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="max-w-2xl mx-auto"
+          >
+            <div className="relative group">
+              <div className="absolute inset-0 bg-primary/5 blur-3xl group-focus-within:bg-primary/10 transition-all rounded-full" />
+              <div className="relative flex items-center bg-white border border-stone-200 rounded-full p-2 shadow-2xl group-focus-within:border-primary transition-all">
+                <Search className="ml-6 text-stone-400 group-focus-within:text-primary transition-colors" size={24} />
+                <input 
+                  type="text" 
+                  placeholder="Enter Reference ID (PZV-INT-...)"
+                  value={searchId}
+                  onChange={(e) => setSearchId(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleVerify(searchId.trim().toUpperCase())}
+                  className="flex-grow bg-transparent border-none py-4 px-4 font-body text-lg focus:outline-none placeholder:text-stone-300"
+                />
+                <button 
+                  onClick={() => handleVerify(searchId.trim().toUpperCase())}
+                  disabled={isSearching}
+                  className="bg-on-surface text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-primary transition-all disabled:opacity-50 flex items-center gap-2 group/btn shadow-xl shadow-on-surface/10 hover:shadow-primary/20"
+                >
+                  {isSearching ? (
+                    <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  ) : (
+                    <>
+                      <span>Verify</span>
+                      <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* Error Message */}
+            <AnimatePresence>
+              {error && (
+                <motion.div 
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="mt-6 flex items-center justify-center gap-2 text-red-600 font-body text-sm bg-red-50 py-3 px-6 rounded-2xl border border-red-100"
+                >
+                  <AlertCircle size={16} />
+                  <span>Invalid Reference ID. Please check and try again.</span>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         </div>
       </div>
 
-      {/* Error State */}
-      {error && (
-        <div className="max-w-xl mx-auto mb-20 animate-in fade-in slide-in-from-bottom-4 duration-500">
-          <div className="bg-red-50 border border-red-200 p-6 rounded-3xl flex items-center gap-4 text-red-800">
-            <AlertCircle size={24} className="flex-shrink-0" />
-            <div>
-              <p className="font-bold">Invalid Reference ID</p>
-              <p className="text-sm opacity-80">No internship record was found matching this ID. Please check the spelling or contact HR.</p>
+      {/* Directory Section */}
+      <div className="mb-32">
+        <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12 px-2">
+          <div>
+            <div className="flex items-center gap-3 text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-3">
+              <History size={14} />
+              <span>Latest Updates</span>
             </div>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-on-surface">Verified Alumni <span className="text-stone-300">Directory</span></h2>
+          </div>
+          <div className="bg-stone-50 px-6 py-3 rounded-2xl border border-stone-100 flex items-center gap-4">
+            <div className="text-right">
+              <span className="block text-[10px] uppercase tracking-widest text-on-surface-variant opacity-60">Database Status</span>
+              <span className="font-display font-bold text-sm text-on-surface">Online & Secure</span>
+            </div>
+            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
           </div>
         </div>
-      )}
 
-      {/* Verification Card */}
-      {currentIntern && (
-        <div className="max-w-4xl mx-auto mb-20 animate-in fade-in zoom-in-95 duration-700">
-          <div className="bg-white border border-stone-200 rounded-[2rem] shadow-2xl overflow-hidden">
-            {/* Card Header */}
-            <div className="bg-on-surface p-8 text-white flex justify-between items-center border-b border-white/10">
-              <div className="relative w-32 h-16">
-                <Image src="/logo.png" alt="Pezzava" fill className="object-contain brightness-0 invert" />
-              </div>
-              <div className="text-right">
-                <span className="block font-body text-[10px] uppercase tracking-[0.3em] opacity-60 mb-1">Official Verification</span>
-                <span className="font-body font-bold text-warm-gold tracking-widest text-sm">REF: {currentIntern.ref}</span>
-              </div>
-            </div>
+        {/* Directory Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {isLoadingDirectory ? (
+            Array(8).fill(0).map((_, i) => (
+              <div key={i} className="h-[200px] bg-stone-100 animate-pulse rounded-[2rem]" />
+            ))
+          ) : directoryInterns.length > 0 ? (
+            directoryInterns.map((intern, idx) => (
+              <motion.div
+                key={intern.ref}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: idx * 0.05 }}
+                onClick={() => router.push(`/careers/verification/${intern.ref}`)}
+                className={`group cursor-pointer bg-white border ${intern.name === 'Simran Kumawat' ? 'border-gold/30 shadow-xl shadow-gold/5' : 'border-stone-100'} p-8 rounded-[2rem] hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/5 flex flex-col relative overflow-hidden`}
+              >
+                {/* ID Tag */}
+                <div className="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ExternalLink size={16} className="text-primary" />
+                </div>
 
-            {/* Status Badge */}
-            <div className="px-10 md:px-16 pt-10 flex items-center gap-3">
-              <span className="inline-flex items-center gap-2 font-display text-base font-bold text-green-700 bg-green-50 px-5 py-2 rounded-full border border-green-200">
-                <CheckCircle2 size={18} className="text-green-600" />
-                Internship Verified: {currentIntern.status}
-              </span>
-            </div>
-            
-            {/* Details Grid */}
-            <div className="p-10 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                { icon: "user", label: "Intern's Name", value: currentIntern.name },
-                { icon: "user", label: "Father's Name", value: currentIntern.fatherName },
-                { icon: "building", label: "College Name", value: currentIntern.college },
-                { icon: "briefcase", label: "Company", value: currentIntern.company },
-                { icon: "briefcase", label: "Role / Department", value: currentIntern.role },
-                { icon: "calendar", label: "Duration", value: currentIntern.duration },
-                { icon: "authority", label: "HR Issuing Authority", value: currentIntern.authority },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center border border-stone-100 flex-shrink-0">
-                    {getIcon(item.icon)}
+                {intern.name === 'Simran Kumawat' && (
+                  <div className="absolute top-0 left-0 bg-gold/10 text-gold px-4 py-1 rounded-br-2xl text-[8px] uppercase tracking-[0.2em] font-bold border-b border-r border-gold/20">
+                    Lead Verification
                   </div>
-                  <div>
-                    <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant/60 mb-1">{item.label}</span>
-                    <span className="font-display text-lg font-bold text-on-surface leading-snug">{item.value}</span>
+                )}
+                
+                <div className="flex-grow pt-4">
+                  <span className="block font-body text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4">
+                    {intern.ref}
+                  </span>
+                  <h3 className="font-display text-xl font-bold text-on-surface mb-1 group-hover:text-primary transition-colors">
+                    {intern.name}
+                  </h3>
+                  <p className="font-body text-xs text-on-surface-variant/60 uppercase tracking-widest mb-6">
+                    {intern.role}
+                  </p>
+                </div>
+
+                <div className="pt-6 border-t border-stone-50 flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-on-surface-variant/40">
+                    <Calendar size={12} />
+                    <span className="font-body text-[10px] uppercase tracking-widest">
+                      {intern.duration.includes(' to ') ? intern.duration.split(' to ')[1] : intern.duration}
+                    </span>
+                  </div>
+                  <div className={`w-6 h-6 rounded-full ${intern.name === 'Simran Kumawat' ? 'bg-gold/10 text-gold' : 'bg-green-50 text-green-600'} flex items-center justify-center`}>
+                    <CheckCircle2 size={12} />
                   </div>
                 </div>
-              ))}
-            </div>
 
-            <div className="bg-stone-50 p-8 text-center border-t border-stone-200">
-              <p className="font-body text-sm italic text-on-surface-variant leading-relaxed">
-                This is an electronically verified record of Pezzava. Authentication is provided via the official company portal. 
-                For inquiries: <span className="font-bold text-primary">pezzava@gmail.com</span>.
-              </p>
+                {/* Decorative Element */}
+                <div className={`absolute -bottom-10 -right-10 w-24 h-24 ${intern.name === 'Simran Kumawat' ? 'bg-gold/5' : 'bg-primary/5'} rounded-full blur-2xl group-hover:bg-primary/10 transition-all`} />
+              </motion.div>
+            ))
+          ) : (
+            <div className="col-span-full py-32 text-center bg-stone-50 rounded-[3rem] border border-dashed border-stone-200">
+              <p className="font-body text-on-surface-variant italic">No public records found. Use the lookup tool above.</p>
             </div>
-          </div>
+          )}
         </div>
-      )}
+      </div>
 
-      
-      {/* Verified Interns Directory (Always Visible) */}
-      <div className="max-w-5xl mx-auto mb-20">
-        <div className="flex items-center gap-3 mb-8">
-          <Award className="text-primary" size={28} />
-          <h2 className="font-display text-3xl font-bold">Verified Interns Directory</h2>
-        </div>
+      {/* Impact Stats */}
+      <div className="bg-on-surface rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden mb-20">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent pointer-events-none" />
         
-        <div className="bg-white rounded-[2rem] border border-stone-200 shadow-xl overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="bg-stone-50 border-b border-stone-100">
-                  <th className="p-6 font-display text-xs uppercase tracking-[0.2em] text-on-surface-variant/60">ID</th>
-                  <th className="p-6 font-display text-xs uppercase tracking-[0.2em] text-on-surface-variant/60">Intern Name</th>
-                  <th className="p-6 font-display text-xs uppercase tracking-[0.2em] text-on-surface-variant/60">Department</th>
-                  <th className="p-6 font-display text-xs uppercase tracking-[0.2em] text-on-surface-variant/60">Completion Date</th>
-                  <th className="p-6 font-display text-xs uppercase tracking-[0.2em] text-on-surface-variant/60 text-right">Status</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-stone-50">
-                {Object.values(VERIFIED_INTERNS).map((intern) => (
-                  <tr 
-                    key={intern.ref}
-                    className={`hover:bg-primary/5 transition-colors cursor-pointer group ${currentIntern?.ref === intern.ref ? 'bg-primary/10' : ''}`}
-                    onClick={() => handleVerify(intern.ref)}
-                  >
-                    <td className="p-6 font-body text-sm font-bold text-primary">{intern.ref}</td>
-                    <td className="p-6">
-                      <div className="font-display font-bold text-on-surface">{intern.name}</div>
-                      <div className="font-body text-[10px] text-on-surface-variant/60 uppercase tracking-widest">{intern.college}</div>
-                    </td>
-                    <td className="p-6 font-body text-sm text-on-surface-variant">{intern.role}</td>
-                    <td className="p-6 font-body text-sm text-on-surface-variant">{intern.duration.split(' to ')[1]}</td>
-                    <td className="p-6 text-right">
-                      <span className="inline-flex items-center gap-1.5 py-1 px-3 rounded-full bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-wider border border-green-100">
-                        <CheckCircle2 size={12} /> Verified
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+          <div className="text-center md:text-left">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 mb-6 text-primary">
+              <Award size={24} />
+            </div>
+            <div className="text-5xl font-display font-bold mb-2 tracking-tighter">
+              {totalVerified > 0 ? `${totalVerified}+` : "24"}
+            </div>
+            <p className="font-body text-xs uppercase tracking-[0.3em] text-white/40">Talents Verified</p>
           </div>
-          <div className="p-6 bg-stone-50/50 text-center">
-            <p className="font-body text-xs text-on-surface-variant/60">
-              Showing most recent verified certifications. For privacy reasons, full records are only accessible via Reference ID lookup.
-            </p>
+          
+          <div className="text-center md:text-left">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 mb-6 text-primary">
+              <Building2 size={24} />
+            </div>
+            <div className="text-5xl font-display font-bold mb-2 tracking-tighter">15+</div>
+            <p className="font-body text-xs uppercase tracking-[0.3em] text-white/40">Partner Universities</p>
+          </div>
+
+          <div className="text-center md:text-left">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 mb-6 text-primary">
+              <ShieldCheck size={24} />
+            </div>
+            <div className="text-5xl font-display font-bold mb-2 tracking-tighter">100%</div>
+            <p className="font-body text-xs uppercase tracking-[0.3em] text-white/40">Data Integrity</p>
           </div>
         </div>
       </div>
 
-      {/* Program Stats */}
-      <div className="max-w-4xl mx-auto text-center py-20 border-t border-stone-200">
-        <h2 className="font-display text-2xl font-bold mb-6 text-stone-400 uppercase tracking-widest">Global Internship Program</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6">
-            <div className="text-primary font-display text-4xl font-bold mb-2">15+</div>
-            <div className="font-body text-sm text-on-surface-variant uppercase tracking-widest">Total Interns Verified</div>
-          </div>
-          <div className="p-6">
-            <div className="text-primary font-display text-4xl font-bold mb-2">12+</div>
-            <div className="font-body text-sm text-on-surface-variant uppercase tracking-widest">Partner Institutions</div>
-          </div>
-          <div className="p-6">
-            <div className="text-primary font-display text-4xl font-bold mb-2">100%</div>
-            <div className="font-body text-sm text-on-surface-variant uppercase tracking-widest">Authentic Certification</div>
-          </div>
+      <footer className="text-center pb-20">
+        <p className="font-body text-[10px] text-on-surface-variant/40 uppercase tracking-[0.4em] mb-4">Pezzava Certification Protocol v2.1</p>
+        <div className="flex justify-center gap-8 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 hover:text-primary transition-colors cursor-pointer">
+          <span>Terms of Verification</span>
+          <span>Privacy Policy</span>
+          <span>Contact Registrar</span>
         </div>
-      </div>
+      </footer>
     </div>
   );
 };
 
 const VerificationPage = () => {
   return (
-    <main className="min-h-screen bg-surface pt-32 pb-20 px-6">
-      <Suspense fallback={<div className="text-center pt-20">Loading portal...</div>}>
+    <main className="min-h-screen bg-surface pt-32 pb-20 overflow-x-hidden">
+      <Suspense fallback={<div className="text-center pt-20">Initializing Secure Portal...</div>}>
         <VerificationContent />
       </Suspense>
     </main>
@@ -320,4 +341,3 @@ const VerificationPage = () => {
 };
 
 export default VerificationPage;
-
