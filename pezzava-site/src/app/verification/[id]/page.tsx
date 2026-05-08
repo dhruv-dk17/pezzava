@@ -4,7 +4,7 @@ import Link from "next/link";
 import { 
   ShieldCheck, Calendar, User, Briefcase, 
   ArrowLeft, GraduationCap, Building2, 
-  UserCheck, CheckCircle2 
+  UserCheck, CheckCircle2, Clock, Hash, BookOpen
 } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { notFound } from "next/navigation";
@@ -37,6 +37,9 @@ export default async function VerificationDetailPage({
       case "briefcase": return <Briefcase size={sz} className={cls} />;
       case "calendar": return <Calendar size={sz} className={cls} />;
       case "authority": return <UserCheck size={sz} className={cls} />;
+      case "clock": return <Clock size={sz} className={cls} />;
+      case "hash": return <Hash size={sz} className={cls} />;
+      case "book": return <BookOpen size={sz} className={cls} />;
       default: return <User size={sz} className={cls} />;
     }
   };
@@ -80,20 +83,26 @@ export default async function VerificationDetailPage({
                 { icon: "user", label: "Intern's Name", value: student.name },
                 { icon: "user", label: "Father's Name", value: student.father_name },
                 { icon: "building", label: "College Name", value: student.college },
-                { icon: "briefcase", label: "Company", value: student.company },
+                { icon: "book", label: "Course", value: student.course },
+                { icon: "building", label: "Semester", value: student.semester },
+                { icon: "hash", label: "University Roll No.", value: student.university_roll_no },
                 { icon: "briefcase", label: "Role / Department", value: student.role },
                 { icon: "calendar", label: "Duration", value: student.duration },
+                { icon: "clock", label: "Total Hours", value: `${student.hours} Hours` },
+                { icon: "authority", label: "Mentor", value: student.mentor_name },
                 { icon: "authority", label: "HR Issuing Authority", value: student.authority },
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center border border-stone-100 flex-shrink-0">
-                    {getIcon(item.icon)}
+                item.value && (
+                  <div key={i} className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center border border-stone-100 flex-shrink-0">
+                      {getIcon(item.icon)}
+                    </div>
+                    <div>
+                      <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant/60 mb-1">{item.label}</span>
+                      <span className="font-display text-lg font-bold text-on-surface leading-snug">{item.value}</span>
+                    </div>
                   </div>
-                  <div>
-                    <span className="block font-body text-[10px] uppercase tracking-widest text-on-surface-variant/60 mb-1">{item.label}</span>
-                    <span className="font-display text-lg font-bold text-on-surface leading-snug">{item.value}</span>
-                  </div>
-                </div>
+                )
               ))}
             </div>
 

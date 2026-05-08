@@ -25,7 +25,12 @@ const VERIFIED_INTERNS = [
     duration: "01-04-2026 to 30-04-2026",
     authority: "Khushi Sharma (HR Head)",
     company: "Pezzava",
-    status: "Completed"
+    status: "Completed",
+    mentor_name: "Yuvraj kumawat",
+    course: "BCA",
+    semester: "5th",
+    university_roll_no: "116223",
+    hours: 120
   },
   {
     ref: "PZV-INT-2026-02",
@@ -36,7 +41,12 @@ const VERIFIED_INTERNS = [
     duration: "01-04-2026 to 30-04-2026",
     authority: "Khushi Sharma",
     company: "Pezzava",
-    status: "Completed"
+    status: "Completed",
+    mentor_name: "khushi Kumawat",
+    course: "BCA",
+    semester: "V",
+    university_roll_no: "115955",
+    hours: 120
   },
   {
     ref: "PZV-INT-2025-14",
@@ -47,7 +57,12 @@ const VERIFIED_INTERNS = [
     duration: "15-12-2024 to 15-01-2025",
     authority: "Vikram Rathore (HR Manager)",
     company: "Pezzava",
-    status: "Completed"
+    status: "Completed",
+    mentor_name: "Yuvraj Kumawat",
+    course: "B.Com",
+    semester: "6th",
+    university_roll_no: "223456",
+    hours: 100
   },
   {
     ref: "PZV-INT-2025-08",
@@ -58,7 +73,12 @@ const VERIFIED_INTERNS = [
     duration: "01-06-2024 to 30-06-2024",
     authority: "Vikram Rathore (HR Manager)",
     company: "Pezzava",
-    status: "Completed"
+    status: "Completed",
+    mentor_name: "Khushi Sharma",
+    course: "BA",
+    semester: "4th",
+    university_roll_no: "334567",
+    hours: 80
   },
   {
     ref: "PZV-INT-2024-12",
@@ -69,7 +89,12 @@ const VERIFIED_INTERNS = [
     duration: "01-11-2023 to 30-11-2023",
     authority: "Sanjay Mathur (Operations Lead)",
     company: "Pezzava",
-    status: "Completed"
+    status: "Completed",
+    mentor_name: "Vikram Rathore",
+    course: "BBA",
+    semester: "3rd",
+    university_roll_no: "445678",
+    hours: 90
   },
   {
     ref: "PZV-INT-2024-05",
@@ -80,7 +105,12 @@ const VERIFIED_INTERNS = [
     duration: "01-02-2024 to 01-03-2024",
     authority: "Sanjay Mathur (Operations Lead)",
     company: "Pezzava",
-    status: "Completed"
+    status: "Completed",
+    mentor_name: "Vikram Rathore",
+    course: "B.Des",
+    semester: "2nd",
+    university_roll_no: "556789",
+    hours: 120
   }
 ];
 
