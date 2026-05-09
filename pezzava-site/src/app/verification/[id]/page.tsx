@@ -6,6 +6,7 @@ import {
   ArrowLeft, GraduationCap, Building2, 
   UserCheck, CheckCircle2, Clock, Hash, BookOpen
 } from "lucide-react";
+import { calculateVerificationDate } from "@/lib/utils";
 import { supabase } from "@/lib/supabase";
 import { notFound } from "next/navigation";
 import { headers } from "next/headers";
@@ -121,7 +122,7 @@ export default async function VerificationDetailPage({
                   <div className="px-4 py-2 rounded-lg bg-white border border-stone-200 shadow-sm">
                     <span className="text-[10px] font-body uppercase tracking-tighter text-stone-400 block mb-0.5 text-center">Verified On</span>
                     <span className="text-sm font-bold text-stone-700 font-display">
-                      {new Date(student.created_at).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}
+                      {calculateVerificationDate(student.duration, student.created_at).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}
                     </span>
                   </div>
                 </div>

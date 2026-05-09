@@ -11,6 +11,7 @@ import {
   ExternalLink, QrCode
 } from "lucide-react";
 
+import { calculateVerificationDate } from "@/lib/utils";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import QRCodeDisplay from "@/components/QRCodeDisplay";
@@ -260,7 +261,7 @@ const VerificationContent = () => {
                       </td>
                       <td className="p-8">
                         <div className="font-body text-sm text-stone-500">
-                          {new Date(intern.created_at).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}
+                          {calculateVerificationDate(intern.duration, intern.created_at).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}
                         </div>
                       </td>
                       <td className="p-8 text-right">
