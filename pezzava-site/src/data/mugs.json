@@ -1,0 +1,279 @@
+[
+  {
+    "id": "pz-mug-001",
+    "name": "Jaipur Sanganeri Hand-Block Print Ceramic Coffee Mug (350ml)",
+    "shortName": "Sanganeri Indigo Floral Mug",
+    "theme": "Heritage Blockprint",
+    "price": 299,
+    "originalPrice": 599,
+    "discount": "50% off",
+    "capacity": "350 ml (12 oz)",
+    "material": "Grade-A Premium Ceramic",
+    "finish": "Glossy Vitrified Glaze",
+    "color": "Indigo & Ivory",
+    "category": "blockprint",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM01",
+      "flipkart": "https://www.flipkart.com/pezzava-sanganeri-mug/p/itm1a2b3c4d5e6f1"
+    },
+    "rating": 4.9,
+    "reviews": 142,
+    "featured": true,
+    "description": "Crafted with authentic Jaipur Sanganeri floral blockprint motifs in deep vegetable indigo and warm alabaster ivory. Each mug undergoes a 1200°C vitrification kiln firing for enduring color brilliance, scratch resistance, and chip-proof durability.",
+    "features": [
+      "Microwave & Dishwasher Safe (tested 500+ cycles)",
+      "High-Definition 300+ DPI Sublimation Infusion",
+      "Lead-Free, Food-Grade Non-Toxic Ceramic",
+      "Comfort-Grip Ergonomic C-Handle",
+      "Chip-Resistant Rim and Weighted Base"
+    ],
+    "images": [
+      "/images/mugs/mug-sanganeri.webp",
+      "/images/mugs/mug-sanganeri-2.webp",
+      "/images/mugs/mug-sanganeri-detail.webp"
+    ],
+    "tags": ["Bestseller", "Jaipur Floral", "Amazon Choice", "Microwave Safe"]
+  },
+  {
+    "id": "pz-mug-002",
+    "name": "Royal Jaipur Blue Pottery Motif Coffee & Tea Mug (350ml)",
+    "shortName": "Cobalt Blue Pottery Mug",
+    "theme": "Blue Pottery",
+    "price": 349,
+    "originalPrice": 699,
+    "discount": "50% off",
+    "capacity": "350 ml (12 oz)",
+    "material": "Heavyweight Porcelain Ceramic",
+    "finish": "Lustrous Enamel Glaze",
+    "color": "Cobalt Blue & Turquoise",
+    "category": "heritage",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM02",
+      "flipkart": "https://www.flipkart.com/pezzava-blue-pottery-mug/p/itm1a2b3c4d5e6f2"
+    },
+    "rating": 4.8,
+    "reviews": 98,
+    "featured": true,
+    "description": "Inspired by the famed 17th-century Jaipur Blue Pottery craft, this design pairs traditional Persian cobalt motifs with bright turquoise accents on a pristine white ceramic body.",
+    "features": [
+      "Vibrant Blue Pottery Floral Geometric Artwork",
+      "Non-Fading Sublimation Printing Technology",
+      "100% Food-Grade Ceramic with No Heavy Metals",
+      "Microwave & Dishwasher Compatible",
+      "Thermal Insulation Retains Heat Longer"
+    ],
+    "images": [
+      "/images/mugs/mug-blue-pottery.webp",
+      "/images/mugs/mug-blue-pottery-2.webp"
+    ],
+    "tags": ["Royal Collection", "Jaipur Blue Pottery", "Flipkart Assured"]
+  },
+  {
+    "id": "pz-mug-003",
+    "name": "Rajasthani Terracotta Mandala Artisan Ceramic Mug (325ml)",
+    "shortName": "Terracotta Mandala Mug",
+    "theme": "Mandala Art",
+    "price": 319,
+    "originalPrice": 649,
+    "discount": "51% off",
+    "capacity": "325 ml (11 oz)",
+    "material": "Dual-Tone Matte-Gloss Ceramic",
+    "finish": "Earthy Satin Exterior / Gloss Interior",
+    "color": "Warm Terracotta & Ochre",
+    "category": "mandala",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM03",
+      "flipkart": "https://www.flipkart.com/pezzava-mandala-mug/p/itm1a2b3c4d5e6f3"
+    },
+    "rating": 4.9,
+    "reviews": 114,
+    "featured": true,
+    "description": "A sacred geometry mandala illustration echoing the grand courtyard arches of Jaipur palaces. Earthy terracotta tones evoke Rajasthan's sunbaked desert clay.",
+    "features": [
+      "Complex High-Resolution Sacred Geometry",
+      "Scratch-Resistant Surface Coating",
+      "Ergonomic Finger-Molded Handle",
+      "Safe for Hot Brews, Iced Lattes & Chai",
+      "Dishwasher and Microwave Safe"
+    ],
+    "images": [
+      "/images/mugs/mug-terracotta.webp",
+      "/images/mugs/mug-terracotta-2.webp"
+    ],
+    "tags": ["Artisan Choice", "Terracotta Tone", "Trending"]
+  },
+  {
+    "id": "pz-mug-004",
+    "name": "Custom Personalized Photo & Name Print Ceramic Mug (325ml)",
+    "shortName": "Bespoke Custom Print Mug",
+    "theme": "Custom Studio",
+    "price": 279,
+    "originalPrice": 599,
+    "discount": "53% off",
+    "capacity": "325 ml (11 oz)",
+    "material": "Super White High-Gloss Ceramic",
+    "finish": "Mirror Gloss Ceramic",
+    "color": "White / Full Wrap Custom",
+    "category": "custom",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM04",
+      "flipkart": "https://www.flipkart.com/pezzava-custom-photo-mug/p/itm1a2b3c4d5e6f4"
+    },
+    "rating": 4.9,
+    "reviews": 236,
+    "featured": true,
+    "description": "Pezzava's flagship custom mug printing service. Send your personal photo, custom name, company logo, or bespoke couple artwork. Printed with ultra-vibrant sublimation inks that never peel or wash off.",
+    "features": [
+      "Edge-to-Edge Panoramic Sublimation Wrap",
+      "300+ DPI Crystal-Sharp Image Reproduction",
+      "Free Custom Digital Preview Before Printing",
+      "Ideal for Birthdays, Corporate Gifting & Anniversaries",
+      "Microwave Safe & Fade-Proof"
+    ],
+    "images": [
+      "/images/mugs/mug-custom.webp",
+      "/images/mugs/mug-custom-2.webp"
+    ],
+    "tags": ["Most Popular Gift", "Custom Printing", "Corporate Choice"]
+  },
+  {
+    "id": "pz-mug-005",
+    "name": "Royal 24K Gold Rim Artisan Botanical Ceramic Mug (350ml)",
+    "shortName": "Royal Gold Rim Botanical Mug",
+    "theme": "Luxury Gold",
+    "price": 399,
+    "originalPrice": 799,
+    "discount": "50% off",
+    "capacity": "350 ml (12 oz)",
+    "material": "Fine Bone China Blend Ceramic",
+    "finish": "Satin White with Genuine Gold Foil Luster",
+    "color": "Alabaster White & Metallic Gold",
+    "category": "luxury",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM05",
+      "flipkart": "https://www.flipkart.com/pezzava-gold-rim-mug/p/itm1a2b3c4d5e6f5"
+    },
+    "rating": 4.9,
+    "reviews": 87,
+    "featured": false,
+    "description": "Opulence in everyday ritual. Adorned with delicate 24K gold foil hand-painted rim detailing and botanical Jaipur floral filigree on an alabaster china body.",
+    "features": [
+      "Hand-Applied Metallic Gold Rim Accent",
+      "Featherlight yet Resilient Ceramic Porcelain",
+      "Velvety Matte-Touch Exterior Texture",
+      "Handwash Recommended to Preserve Luster",
+      "Packaged in Luxury Pezzava Gift Box"
+    ],
+    "images": [
+      "/images/mugs/mug-gold-rim.webp"
+    ],
+    "tags": ["Luxury Edition", "Gift Boxed", "Limited Edition"]
+  },
+  {
+    "id": "pz-mug-006",
+    "name": "Hawa Mahal Architectural Line Art Mug (350ml)",
+    "shortName": "Hawa Mahal Heritage Mug",
+    "theme": "Jaipur Heritage",
+    "price": 329,
+    "originalPrice": 649,
+    "discount": "49% off",
+    "capacity": "350 ml (12 oz)",
+    "material": "Vitrified High-Grade Ceramic",
+    "finish": "Silky Matte Black & Gold",
+    "color": "Obsidian & Gold",
+    "category": "heritage",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM06",
+      "flipkart": "https://www.flipkart.com/pezzava-hawa-mahal-mug/p/itm1a2b3c4d5e6f6"
+    },
+    "rating": 4.8,
+    "reviews": 76,
+    "featured": false,
+    "description": "An exquisite single-line architectural illustration of Jaipur's iconic Palace of Winds (Hawa Mahal). Rendered in fine metallic gold contour over an obsidian ceramic finish.",
+    "features": [
+      "Minimalist Architectural Line Illustration",
+      "Scratch-Resistant Matte Charcoal Exterior",
+      "Heavyweight Ceramic Feel with Heat Retention",
+      "Microwave and Dishwasher Safe",
+      "Authentic Pink City Collectible"
+    ],
+    "images": [
+      "/images/mugs/mug-hawa-mahal.webp"
+    ],
+    "tags": ["Architectural", "Pink City Souvenir", "Amazon Choice"]
+  },
+  {
+    "id": "pz-mug-007",
+    "name": "Marwar Crimson & Olive Pezzava Chai Mug (380ml Large)",
+    "shortName": "Marwar Crimson Chai Mug",
+    "theme": "Heritage Blockprint",
+    "price": 319,
+    "originalPrice": 629,
+    "discount": "49% off",
+    "capacity": "380 ml (13 oz)",
+    "material": "High-Grade Stoneware Ceramic",
+    "finish": "Gloss Ceramic",
+    "color": "Crimson Red & Olive Green",
+    "category": "blockprint",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM07",
+      "flipkart": "https://www.flipkart.com/pezzava-marwar-chai-mug/p/itm1a2b3c4d5e6f7"
+    },
+    "rating": 4.7,
+    "reviews": 64,
+    "featured": false,
+    "description": "Generous capacity for traditional Indian Kadak Chai or large Americano. Decked with Marwar botanical creeper patterns in rich crimson red and muted forest olive.",
+    "features": [
+      "Large 380ml Volume Perfect for Chai Lovers",
+      "Thick Stoneware Wall for Superior Thermal Holding",
+      "Dishwasher and Microwave Tested",
+      "Eco-Friendly Natural Mineral Sublimation",
+      "Wide Base Prevents Tipping"
+    ],
+    "images": [
+      "/images/mugs/mug-marwar.webp"
+    ],
+    "tags": ["Chai Lover", "Extra Large", "Flipkart Assured"]
+  },
+  {
+    "id": "pz-mug-008",
+    "name": "Corporate & Bulk Branded Custom Mug (Pack of 10 / Bulk Inquiries)",
+    "shortName": "Corporate Brand Print Mug",
+    "theme": "Custom Studio",
+    "price": 249,
+    "originalPrice": 499,
+    "discount": "50% off",
+    "capacity": "325 ml (11 oz)",
+    "material": "Commercial Grade Durable Ceramic",
+    "finish": "Semi-Gloss Smooth Vitrified",
+    "color": "Custom Brand Colors",
+    "category": "custom",
+    "storeAvailability": ["amazon", "flipkart"],
+    "marketplace": {
+      "amazon": "https://www.amazon.in/dp/B0D1PZVM08",
+      "flipkart": "https://www.flipkart.com/pezzava-corporate-bulk-mugs/p/itm1a2b3c4d5e6f8"
+    },
+    "rating": 4.9,
+    "reviews": 189,
+    "featured": true,
+    "description": "Tailored for startup teams, corporate gifting, university alumni, and special events. Includes Pantone color matching, vectorized brand logo imprint, and custom individual packaging options.",
+    "features": [
+      "Tiered Bulk Discount Pricing Available",
+      "Exact Pantone Color Calibration",
+      "Individual Custom Packaging with Company Branding",
+      "Breakage-Free Foam Encased Courier Shipping",
+      "Express 48-Hour Bulk Production Turnaround"
+    ],
+    "images": [
+      "/images/mugs/mug-corporate.webp"
+    ],
+    "tags": ["Bulk Orders", "Startup Gifting", "Custom Logo"]
+  }
+]

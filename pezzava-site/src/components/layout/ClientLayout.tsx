@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 
 const Header = dynamic(() => import("@/components/layout/Header"), { ssr: false });
 const PageWrapper = dynamic(() => import("@/components/layout/PageWrapper"), { ssr: false });
@@ -9,7 +10,7 @@ const CursorFollower = dynamic(() => import("@/components/ui/CursorFollower").th
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <SmoothScroll>
       <CursorFollower />
       <Header />
       <main className="flex-1 flex flex-col">
@@ -17,6 +18,6 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           {children}
         </PageWrapper>
       </main>
-    </>
+    </SmoothScroll>
   );
 }
