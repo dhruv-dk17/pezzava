@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const host = request.headers.get('host') || '';
   const url = request.nextUrl.clone();
   const pathname = url.pathname;
@@ -47,6 +47,9 @@ export function middleware(request: NextRequest) {
 
   return NextResponse.next();
 }
+
+// Fallback alias for compatibility
+export const middleware = proxy;
 
 export const config = {
   matcher: [
