@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, ExternalLink, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
+import { trackOutboundClick } from '@/lib/analytics';
 
 interface MugProductCardProps {
   mug: MugProduct;
@@ -168,6 +169,13 @@ export default function MugProductCard({ mug, index }: MugProductCardProps) {
                 href={mug.marketplace.amazon}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackOutboundClick(
+                    { id: mug.id, name: mug.name, price: mug.price },
+                    'amazon',
+                    mug.marketplace.amazon!
+                  )
+                }
                 className="flex-1 bg-[#232F3E] hover:bg-[#131921] text-white py-2 px-3 rounded-lg text-[11px] font-manrope font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
               >
                 <span className="text-[#FF9900] font-black text-xs">a</span>
@@ -181,6 +189,13 @@ export default function MugProductCard({ mug, index }: MugProductCardProps) {
                 href={mug.marketplace.flipkart}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackOutboundClick(
+                    { id: mug.id, name: mug.name, price: mug.price },
+                    'flipkart',
+                    mug.marketplace.flipkart!
+                  )
+                }
                 className="flex-1 bg-[#2874F0] hover:bg-[#1258ca] text-white py-2 px-3 rounded-lg text-[11px] font-manrope font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
               >
                 <span className="font-black text-xs text-[#FFE500]">F</span>

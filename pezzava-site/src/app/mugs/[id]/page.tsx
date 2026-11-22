@@ -1,16 +1,28 @@
 'use client';
 
-import { use } from 'react';
+import { use, useEffect } from 'react';
 import { getMugById, mugCatalog } from '@/data/mugs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Star, ShieldCheck, Flame, Coffee, Package, Check, ExternalLink, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import ProductImageCarousel from '@/components/ui/ProductImageCarousel';
+import { trackProductView, trackOutboundClick } from '@/lib/analytics';
 
 export default function MugDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
   const mug = getMugById(resolvedParams.id);
+
+  useEffect(() => {
+    if (mug) {
+      trackProductView({
+        id: mug.id,
+        name: mug.name,
+        category: mug.category,
+        price: mug.price,
+      });
+    }
+  }, [mug]);
 
   if (!mug) {
     notFound();
@@ -120,6 +132,13 @@ export default function MugDetailPage({ params }: { params: Promise<{ id: string
                     href={mug.marketplace.amazon}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() =>
+                      trackOutboundClick(
+                        { id: mug.id, name: mug.name, price: mug.price },
+                        'amazon',
+                        mug.marketplace.amazon!
+                      )
+                    }
                     className="w-full bg-[#232F3E] hover:bg-[#131921] text-white py-3.5 px-6 rounded-xl font-manrope font-bold text-sm flex items-center justify-between transition-all shadow-md group"
                   >
                     <div className="flex items-center gap-3">
@@ -135,6 +154,13 @@ export default function MugDetailPage({ params }: { params: Promise<{ id: string
                     href={mug.marketplace.flipkart}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() =>
+                      trackOutboundClick(
+                        { id: mug.id, name: mug.name, price: mug.price },
+                        'flipkart',
+                        mug.marketplace.flipkart!
+                      )
+                    }
                     className="w-full bg-[#2874F0] hover:bg-[#1258ca] text-white py-3.5 px-6 rounded-xl font-manrope font-bold text-sm flex items-center justify-between transition-all shadow-md group"
                   >
                     <div className="flex items-center gap-3">

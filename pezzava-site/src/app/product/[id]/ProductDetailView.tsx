@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +9,7 @@ import { Product } from '@/data/products';
 import ProductCard from '@/components/ui/ProductCard';
 import RedirectModal from '@/components/ui/RedirectModal';
 import { normalizeImageSrc } from '@/lib/utils';
+import { trackProductView, trackOutboundClick } from '@/lib/analytics';
 
 interface ProductDetailViewProps {
   product: Product;
@@ -28,7 +29,23 @@ export default function ProductDetailView({ product, relatedProducts }: ProductD
     marketplace: 'Amazon'
   });
 
+  useEffect(() => {
+    if (product) {
+      trackProductView({
+        id: product.id,
+        name: product.displayName,
+        category: product.category,
+        price: product.price,
+      });
+    }
+  }, [product]);
+
   const openRedirectModal = (url: string, marketplace: "Amazon" | "Flipkart") => {
+    trackOutboundClick(
+      { id: product.id, name: product.displayName, price: product.price },
+      marketplace.toLowerCase() as 'amazon' | 'flipkart',
+      url
+    );
     setModalConfig({
       isOpen: true,
       url,

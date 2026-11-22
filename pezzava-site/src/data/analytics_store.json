@@ -1,0 +1,49 @@
+{
+  "totalPageViews": 4,
+  "uniqueSessions": [
+    "pz_ky5rcqujmwrmiuf2",
+    "test_sess_01"
+  ],
+  "pageViews": {
+    "/": 2,
+    "/mugs": 1,
+    "/admin/analytics": 1
+  },
+  "referrers": {
+    "localhost": 2,
+    "google.com": 1,
+    "Direct / Bookmark": 1
+  },
+  "products": {
+    "pm1": {
+      "id": "pm1",
+      "name": "Camel Animal Love Set of 2 Coffee Mugs",
+      "category": "mugs",
+      "views": 1,
+      "amazonClicks": 1,
+      "flipkartClicks": 0,
+      "totalClicks": 1,
+      "lastActive": 1774300000000
+    }
+  },
+  "daily": {
+    "2026-11-22": {
+      "views": 4,
+      "clicks": 0
+    },
+    "2026-03-23": {
+      "views": 0,
+      "clicks": 1
+    }
+  },
+  "recentActivity": [
+    {
+      "id": "0zddm7z",
+      "timestamp": 1774300000000,
+      "type": "Outbound Purchase Intent",
+      "details": "Camel Animal Love Set of 2 Coffee Mugs -> AMAZON",
+      "marketplace": "amazon"
+    }
+  ],
+  "lastUpdated": 1795340155852
+}
