@@ -2,11 +2,11 @@
 
 import { use } from 'react';
 import { getMugById, mugCatalog } from '@/data/mugs';
-import Mug3DViewer from '@/components/mugs/Mug3DViewer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Star, ShieldCheck, Flame, Coffee, Package, Check, ExternalLink, ArrowLeft } from 'lucide-react';
+import { Star, ShieldCheck, Flame, Coffee, Package, Check, ExternalLink, ArrowLeft, CheckCircle2 } from 'lucide-react';
+import ProductImageCarousel from '@/components/ui/ProductImageCarousel';
 
 export default function MugDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -36,33 +36,42 @@ export default function MugDetailPage({ params }: { params: Promise<{ id: string
         {/* Main Product Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20">
           
-          {/* Left Column: Visuals & 3D Interactive Model */}
+          {/* Left Column: Visuals & Interactive Image Carousel */}
           <div className="lg:col-span-7 space-y-6">
-            {/* Primary Hero Image */}
-            <div className="relative aspect-square w-full rounded-3xl overflow-hidden bg-white border border-stone-200/80 shadow-md">
-              <Image
-                src={mug.images[0] || '/images/mugs/mug-sanganeri.webp'}
-                alt={mug.name}
-                fill
-                priority
-                className="object-cover"
-              />
-              <div className="absolute top-4 left-4 flex flex-col gap-2">
-                <span className="bg-[#5C631C] text-white text-xs font-manrope font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-                  {mug.theme}
-                </span>
-                <span className="bg-white/90 backdrop-blur-sm text-stone-800 text-xs font-manrope font-semibold px-3 py-1 rounded-full border border-stone-200 shadow-sm">
-                  {mug.capacity}
-                </span>
-              </div>
-            </div>
+            <ProductImageCarousel
+              images={mug.images}
+              productName={mug.name}
+              themeBadge={mug.theme}
+              capacityBadge={mug.capacity}
+              aspectRatio="square"
+            />
 
-            {/* Interactive 3D Model View */}
-            <div className="mt-8">
-              <h3 className="font-noto-serif text-xl text-stone-900 mb-3 flex items-center gap-2">
-                <span>Interactive 3D Ceramic Model</span>
+            {/* Plain Ceramic Mug Print Craftsmanship Guarantee */}
+            <div className="mt-8 bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+              <h3 className="font-display text-xl text-stone-900">
+                Printed on Premium Plain White Ceramic
               </h3>
-              <Mug3DViewer showCustomizer={false} />
+              <p className="font-manrope text-xs text-stone-600 leading-relaxed">
+                We take standard high-density plain white ceramic mugs and infuse permanent, high-resolution 300+ DPI sublimation artwork. Safe for daily coffee, tea, microwave heating, and dishwasher cycles.
+              </p>
+              <div className="grid grid-cols-2 gap-3 pt-2">
+                <div className="flex items-center gap-2 text-xs font-manrope text-stone-700">
+                  <CheckCircle2 size={16} className="text-[#5C631C] shrink-0" />
+                  <span>325 ml Classic Size</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-manrope text-stone-700">
+                  <CheckCircle2 size={16} className="text-[#5C631C] shrink-0" />
+                  <span>Microwave Safe</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-manrope text-stone-700">
+                  <CheckCircle2 size={16} className="text-[#5C631C] shrink-0" />
+                  <span>Fade-Proof Print</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-manrope text-stone-700">
+                  <CheckCircle2 size={16} className="text-[#5C631C] shrink-0" />
+                  <span>Safe Thermocol Box</span>
+                </div>
+              </div>
             </div>
           </div>
 

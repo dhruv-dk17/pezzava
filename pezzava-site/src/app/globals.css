@@ -13,7 +13,9 @@
   --color-warm-gold: #C9A84C;
   --color-olive-gold: #8B9B3E;
   --color-gold: #C9A84C;
-  
+  --color-cream: #F5F0E8;
+  --color-ink: #1a1a18;
+  --color-muted: #8a8a7a;
   
   --radius-xs: 0.125rem;
   --radius-sm: 0.25rem;
@@ -22,18 +24,37 @@
   --radius-full: 9999px;
 
   --spacing-gutter: 24px;
-  --spacing-container-max: 1280px;
+  --spacing-container-max: 1440px;
   --spacing-margin-mobile: 20px;
   --spacing-margin-desktop: 64px;
   --spacing-section-gap: 120px;
 
-  --font-display: "Noto Serif", serif;
-  --font-body: "Manrope", sans-serif;
+  --font-display: var(--font-instrument-serif), "Noto Serif", serif;
+  --font-body: var(--font-manrope), sans-serif;
 }
 
 :root {
   --background: #faf9f6;
   --foreground: #1a1c1a;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(92, 99, 28, 0.22);
+  color: #1a1c1a;
+}
+
+/* Emil Kowalski Button Press & Interaction Physics */
+.btn-press {
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), background-color 200ms ease-out, border-color 200ms ease-out, box-shadow 200ms ease-out;
+}
+
+.btn-press:active {
+  transform: scale(0.97);
 }
 
 body {
@@ -47,36 +68,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
 }
 
-.hero-image-overlay {
-  background: linear-gradient(to top, rgba(250, 249, 246, 0.8), transparent);
-}
-
-.glass-morphism {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Custom Scrollbar */
+/* Premium Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5c631c;
+  background: #5c631c40;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4a4f16;
+  background: #5c631c80;
 }
 
-/* Lenis Smooth Scroll Recommended Rules */
+/* Lenis Smooth Scroll */
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -97,13 +107,59 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-.page-transition-enter {
-  opacity: 0;
-  transform: translateY(10px);
+/* 3D Perspective Scene Container */
+.scene-3d-perspective {
+  perspective: 1400px;
+  transform-style: preserve-3d;
 }
 
-.page-transition-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 500ms, transform 500ms;
+.card-3d-tilt {
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+/* Magnetic button base */
+.magnetic-wrap {
+  display: inline-flex;
+  position: relative;
+}
+
+/* Horizontal scroll section */
+.horizontal-scroll-container {
+  display: flex;
+  gap: 2rem;
+  will-change: transform;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: fit-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Word scrub — initial state */
+.word-scrub span {
+  opacity: 0.12;
+  transition: opacity 0.1s;
+}
+
+/* Image reveal clip */
+.img-reveal {
+  clip-path: inset(100% 0 0 0);
+}
+
+.img-reveal.revealed {
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 1.2s cubic-bezier(0.76, 0, 0.24, 1);
 }

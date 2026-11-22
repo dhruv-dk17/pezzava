@@ -1,127 +1,138 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { catalog } from '@/data/products';
-import { mugCatalog } from '@/data/mugs';
-import ProductCard from '@/components/ui/ProductCard';
-import MugProductCard from '@/components/ui/MugProductCard';
-import Mug3DViewer from '@/components/mugs/Mug3DViewer';
 import { getPortalUrl } from '@/lib/domain';
-import { Feather, Coffee, ArrowRight, Sparkles } from 'lucide-react';
+import { Feather, ArrowRight } from 'lucide-react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function DualShowcase() {
-  const [activeTab, setActiveTab] = useState<'skirts' | 'mugs'>('skirts');
-
-  const featuredSkirts = catalog.slice(0, 4);
-  const featuredMugs = mugCatalog.slice(0, 4);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const skirtsUrl = getPortalUrl('skirts');
-  const mugsUrl = getPortalUrl('mugs');
+  const topSkirts = catalog.slice(0, 3);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.utils.toArray<HTMLElement>('.product-reveal').forEach((el, i) => {
+        gsap.from(el, {
+          y: 50,
+          opacity: 0,
+          duration: 0.9,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 85%',
+          },
+          delay: i * 0.08,
+        });
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-20 bg-[#FAF8F5]">
-      <div className="max-w-7xl mx-auto">
-        
-        {/* Section Heading & Interactive Tab Selector */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 pb-8 border-b border-stone-200">
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="h-[1px] w-6 bg-[#5C631C]"></span>
-              <span className="font-manrope text-xs font-bold tracking-[0.3em] text-[#5C631C] uppercase">
-                Curated Jaipur Collections
-              </span>
-            </div>
-            <h2 className="font-noto-serif text-3xl sm:text-5xl text-stone-900 leading-tight">
-              Featured <span className="italic font-light">Craftsmanship</span>
-            </h2>
-          </div>
+    <section ref={sectionRef} className="py-24 md:py-36 px-6 md:px-12 lg:px-20 bg-[#FAF8F5]">
+      <div className="max-w-[1440px] mx-auto">
 
-          {/* Dual Pill Tab Selector */}
-          <div className="flex items-center bg-stone-200/70 p-1.5 rounded-full shadow-inner self-start md:self-auto">
-            <button
-              onClick={() => setActiveTab('skirts')}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-manrope font-bold transition-all ${
-                activeTab === 'skirts'
-                  ? 'bg-white text-stone-900 shadow-md'
-                  : 'text-stone-600 hover:text-stone-900'
-              }`}
+        {/* ─── HAND-BLOCK WRAP SKIRTS ATELIER ─── */}
+        <div>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-6 border-b border-stone-200">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <Feather size={16} className="text-[#5C631C]" />
+                <span className="font-manrope text-[11px] font-bold tracking-[0.3em] text-[#5C631C] uppercase">
+                  Pezzava Skirts Atelier · skirts.pezzava.in
+                </span>
+              </div>
+              <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl text-stone-900 leading-[1.08] tracking-tight">
+                Breathable Cotton <br />
+                <span className="italic font-light text-[#5C631C]">Wrap Around Skirts</span>
+              </h2>
+              <p className="mt-3 font-manrope text-sm sm:text-base text-stone-600 max-w-xl">
+                Centuries-old Bagru and Sanganeri woodblock prints hand-stamped on pure 100% Rajasthani cotton. Features a universally adjustable wrap fit that flatters every silhouette.
+              </p>
+            </div>
+
+            <Link
+              href={skirtsUrl}
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-[#5C631C] hover:bg-[#474e14] text-white rounded-full font-manrope text-xs font-bold uppercase tracking-wider transition-all shadow-md shrink-0 self-start md:self-auto"
             >
-              <Feather size={14} className={activeTab === 'skirts' ? 'text-[#5C631C]' : ''} />
-              <span>Artisanal Skirts</span>
-            </button>
-
-            <button
-              onClick={() => setActiveTab('mugs')}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-manrope font-bold transition-all ${
-                activeTab === 'mugs'
-                  ? 'bg-white text-stone-900 shadow-md'
-                  : 'text-stone-600 hover:text-stone-900'
-              }`}
-            >
-              <Coffee size={14} className={activeTab === 'mugs' ? 'text-[#C9A84C]' : ''} />
-              <span>Ceramic Mugs</span>
-            </button>
+              <span>Explore All Skirts</span>
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
-        </div>
 
-        {/* Tab 1: Skirts Content */}
-        {activeTab === 'skirts' && (
-          <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {featuredSkirts.map((product, index) => (
-                <ProductCard key={product.id} product={product} index={index} />
-              ))}
-            </div>
-
-            <div className="text-center pt-6">
-              <Link
-                href={skirtsUrl}
-                className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#5C631C] hover:bg-[#4a5016] text-white rounded-full font-manrope font-bold text-xs uppercase tracking-widest shadow-lg transition-transform hover:scale-105"
+          {/* Skirt Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {topSkirts.map((skirt) => (
+              <div
+                key={skirt.id}
+                className="product-reveal group bg-white rounded-2xl p-5 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
-                <span>Explore Full Skirts Gallery on skirts.pezzava.in</span>
-                <ArrowRight size={14} />
-              </Link>
-            </div>
+                <div>
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-stone-100 mb-4">
+                    <Image
+                      src={skirt.images?.[0] || '/images/products/p1.webp'}
+                      alt={skirt.displayName}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-manrope font-bold text-stone-800">
+                      100% Pure Cotton
+                    </div>
+                  </div>
+
+                  <span className="text-[10px] font-manrope font-bold text-[#5C631C] uppercase tracking-wider block mb-1">
+                    {skirt.category} Length · Free Size
+                  </span>
+                  <h3 className="font-display text-xl text-stone-900 group-hover:text-[#5C631C] transition-colors mb-2">
+                    {skirt.displayName}
+                  </h3>
+                  <p className="font-manrope text-xs text-stone-500 line-clamp-2 mb-4">
+                    {skirt.description}
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-stone-100 flex items-center justify-between">
+                  <div>
+                    <span className="font-display text-xl font-bold text-stone-900">₹{skirt.price}</span>
+                    <span className="text-xs text-stone-400 line-through ml-2">₹{skirt.originalPrice}</span>
+                  </div>
+
+                  <div className="flex gap-2">
+                    {skirt.marketplace.amazon && (
+                      <a
+                        href={skirt.marketplace.amazon}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1.5 bg-[#FF9900]/10 hover:bg-[#FF9900]/20 text-[#D47900] text-[10px] font-manrope font-bold rounded-lg transition-colors"
+                      >
+                        Amazon
+                      </a>
+                    )}
+                    {skirt.marketplace.flipkart && (
+                      <a
+                        href={skirt.marketplace.flipkart}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1.5 bg-[#2874F0]/10 hover:bg-[#2874F0]/20 text-[#1C5BBD] text-[10px] font-manrope font-bold rounded-lg transition-colors"
+                      >
+                        Flipkart
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        )}
-
-        {/* Tab 2: Mugs Content */}
-        {activeTab === 'mugs' && (
-          <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {featuredMugs.map((mug, index) => (
-                <MugProductCard key={mug.id} mug={mug} index={index} />
-              ))}
-            </div>
-
-            <div className="text-center pt-6">
-              <Link
-                href={mugsUrl}
-                className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#8B6B22] hover:bg-[#725719] text-white rounded-full font-manrope font-bold text-xs uppercase tracking-widest shadow-lg transition-transform hover:scale-105"
-              >
-                <span>Explore Ceramic Studio & Custom Printing on mugs.pezzava.in</span>
-                <ArrowRight size={14} />
-              </Link>
-            </div>
-          </div>
-        )}
-
-        {/* Interactive 3D Teaser Box */}
-        <div className="mt-24 pt-16 border-t border-stone-200">
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="font-manrope text-xs font-bold tracking-[0.25em] text-[#5C631C] uppercase block mb-2">
-              Cutting-Edge 3D Preview
-            </span>
-            <h3 className="font-noto-serif text-3xl sm:text-4xl text-stone-900 mb-3">
-              Try the 3D Ceramic Customizer
-            </h3>
-            <p className="font-manrope text-sm text-stone-600">
-              Personalize mugs in real time. Rotate, switch glazes, and preview your custom text directly in WebGL 3D before ordering on Amazon or Flipkart.
-            </p>
-          </div>
-
-          <Mug3DViewer showCustomizer={true} />
         </div>
 
       </div>

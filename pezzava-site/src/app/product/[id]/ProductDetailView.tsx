@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight, Star, ShieldCheck, Truck, RefreshCcw, ChevronDown } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Star, ShieldCheck, Truck, RefreshCcw, ChevronDown } from 'lucide-react';
 import { Product } from '@/data/products';
 import ProductCard from '@/components/ui/ProductCard';
 import RedirectModal from '@/components/ui/RedirectModal';
@@ -87,7 +87,7 @@ export default function ProductDetailView({ product, relatedProducts }: ProductD
                ))}
             </div>
 
-            {/* Main Image */}
+            {/* Main Image with Carousel Controls */}
             <div className="flex-1 relative aspect-[3/4] bg-surface-variant rounded-2xl overflow-hidden group">
                <AnimatePresence mode='wait'>
                  <motion.div
@@ -95,8 +95,18 @@ export default function ProductDetailView({ product, relatedProducts }: ProductD
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="absolute inset-0"
+                  transition={{ duration: 0.35 }}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  onDragEnd={(_, { offset, velocity }) => {
+                    const swipe = Math.abs(offset.x) * velocity.x;
+                    if (swipe < -100 || offset.x < -60) {
+                      setActiveImage((prev) => (prev + 1) % product.images.length);
+                    } else if (swipe > 100 || offset.x > 60) {
+                      setActiveImage((prev) => (prev - 1 + product.images.length) % product.images.length);
+                    }
+                  }}
+                  className="absolute inset-0 cursor-grab active:cursor-grabbing"
                  >
                      <Image 
                        src={normalizeImageSrc(product.images[activeImage])} 
@@ -111,6 +121,31 @@ export default function ProductDetailView({ product, relatedProducts }: ProductD
                      />
                  </motion.div>
                </AnimatePresence>
+
+               {/* Carousel Navigation Arrows */}
+               {product.images.length > 1 && (
+                 <>
+                   <button
+                     onClick={() => setActiveImage((prev) => (prev - 1 + product.images.length) % product.images.length)}
+                     aria-label="Previous image"
+                     className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-stone-800 flex items-center justify-center shadow-lg backdrop-blur-md opacity-90 md:opacity-0 md:group-hover:opacity-100 transition-all hover:scale-105 active:scale-95"
+                   >
+                     <ChevronLeft size={20} />
+                   </button>
+                   <button
+                     onClick={() => setActiveImage((prev) => (prev + 1) % product.images.length)}
+                     aria-label="Next image"
+                     className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-stone-800 flex items-center justify-center shadow-lg backdrop-blur-md opacity-90 md:opacity-0 md:group-hover:opacity-100 transition-all hover:scale-105 active:scale-95"
+                   >
+                     <ChevronRight size={20} />
+                   </button>
+
+                   {/* Image Index Pill */}
+                   <div className="absolute top-4 right-4 z-20 bg-stone-900/70 backdrop-blur-md text-white text-xs font-manrope font-semibold px-3 py-1 rounded-full shadow-sm">
+                     {activeImage + 1} / {product.images.length}
+                   </div>
+                 </>
+               )}
             </div>
           </div>
 

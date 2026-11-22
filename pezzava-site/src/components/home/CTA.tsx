@@ -1,70 +1,74 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { getPortalUrl } from '@/lib/domain';
-import { Feather, Coffee, ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function CTA() {
+  const sectionRef = useRef<HTMLElement>(null);
+
   const skirtsUrl = getPortalUrl('skirts');
   const mugsUrl = getPortalUrl('mugs');
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from('.cta-reveal', {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.12,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+          once: true,
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#141613] text-white overflow-hidden relative">
-      {/* Abstract Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#5C631C]/15 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#C9A84C]/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
+    <section
+      ref={sectionRef}
+      className="relative py-32 md:py-48 px-6 md:px-12 lg:px-20 bg-[#161514] text-white overflow-hidden"
+    >
+      {/* Subtle ambient luxury light */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-r from-[#5C631C]/15 via-[#C9A84C]/10 to-transparent rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto text-center relative z-10">
-        <span className="font-manrope text-xs font-bold tracking-[0.3em] text-[#C9A84C] uppercase block mb-4">
-          Direct From The Artisans of Jaipur
-        </span>
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="font-noto-serif text-4xl md:text-6xl mb-6 leading-tight"
-        >
-          Discover Pure Cotton Silhouettes & <br />
-          <span className="italic font-light text-[#C9A84C]">Vitrified Ceramic Prints</span>
-        </motion.h2>
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+        <h2 className="cta-reveal font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.04] tracking-tight max-w-4xl mx-auto mb-6">
+          Find your piece of <br className="hidden sm:block" />
+          <span className="italic font-light text-[#C9A84C]">Jaipur craftsmanship.</span>
+        </h2>
 
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-manrope text-base sm:text-lg text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed"
-        >
-          Explore the dedicated Skirts Atelier and Ceramic Mug Studio. Order with one-click convenience on Amazon or Flipkart with verified express delivery across India.
-        </motion.p>
+        <p className="cta-reveal font-manrope text-base sm:text-lg text-stone-300 max-w-xl mx-auto leading-relaxed mb-12">
+          Discover hand-printed 100% cotton wrap-around skirts, or collaborate with our bespoke ceramic mug print studio. Delivered nationwide across India.
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-5"
-        >
-          <Link 
-            href={skirtsUrl} 
-            className="w-full sm:w-auto px-8 py-4 bg-[#5C631C] hover:bg-[#4a5016] text-white rounded-full font-manrope font-bold text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl flex items-center justify-center gap-2"
+        <div className="cta-reveal flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link
+            href={skirtsUrl}
+            className="btn-press group px-8 py-4 bg-white text-stone-900 rounded-full font-manrope text-xs font-bold uppercase tracking-wider hover:bg-[#C9A84C] hover:text-stone-900 transition-all duration-300 flex items-center gap-2.5 shadow-lg w-full sm:w-auto justify-center"
           >
-            <Feather size={14} />
-            <span>Shop Skirts (skirts.pezzava.in)</span>
-            <ArrowRight size={14} />
+            <span>Explore Wrap Skirts</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
 
-          <Link 
-            href={mugsUrl} 
-            className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-full font-manrope font-bold text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl flex items-center justify-center gap-2"
+          <Link
+            href={mugsUrl}
+            className="btn-press group px-8 py-4 border border-stone-700 bg-stone-900/60 backdrop-blur-sm text-stone-200 rounded-full font-manrope text-xs font-bold uppercase tracking-wider hover:bg-white/10 hover:border-stone-500 transition-all duration-300 flex items-center gap-2.5 w-full sm:w-auto justify-center"
           >
-            <Coffee size={14} className="text-[#C9A84C]" />
-            <span>Mug Studio (mugs.pezzava.in)</span>
-            <ArrowRight size={14} />
+            <span>Visit Print Studio</span>
+            <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

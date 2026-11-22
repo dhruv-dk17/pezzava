@@ -1,19 +1,27 @@
 import AtelierHero from '@/components/home/AtelierHero';
+import Marquee from '@/components/home/Marquee';
+import SkirtsLookbook from '@/components/home/SkirtsLookbook';
+import ScrollQuote from '@/components/home/ScrollQuote';
 import AboutSection from '@/components/home/AboutSection';
-import DualShowcase from '@/components/home/DualShowcase';
 import Testimonials from '@/components/home/Testimonials';
 import CTA from '@/components/home/CTA';
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full bg-[#FAF8F5]">
-      {/* Editorial Dual-Pillar Hero (Skirts + Mugs with Three.js & GSAP) */}
+      {/* Editorial Dual-Portal Hero: The House of Pezzava with 3D Ambient Fabric Canvas */}
       <AtelierHero />
 
-      {/* Dual Craftsmanship Showcase with Live 3D Ceramic Customizer */}
-      <DualShowcase />
+      {/* Kinetic Marquee Ribbon */}
+      <Marquee />
 
-      {/* Heritage Craft Story Bento */}
+      {/* Asymmetric Editorial Skirts Lookbook Showcase */}
+      <SkirtsLookbook />
+
+      {/* GSAP Scroll Scrub Word Reveal Quote: The Pezzava Philosophy */}
+      <ScrollQuote />
+
+      {/* Heritage Craft Story Bento & Atelier Numbers */}
       <AboutSection />
 
       {/* Community Testimonials & Marketplace Trust */}
