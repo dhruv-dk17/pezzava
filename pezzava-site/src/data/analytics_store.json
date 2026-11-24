@@ -1,18 +1,29 @@
 {
-  "totalPageViews": 4,
+  "totalPageViews": 20,
   "uniqueSessions": [
     "pz_ky5rcqujmwrmiuf2",
-    "test_sess_01"
+    "test_sess_01",
+    "pz_gf1j699gmwrniw5i",
+    "pz_9pc180xhmwrnqyfe",
+    "pz_3nh7d7mamwroky3f",
+    "pz_5t37jccnmwrpl6g8",
+    "pz_ritbkr2pmwrrigyk"
   ],
   "pageViews": {
-    "/": 2,
-    "/mugs": 1,
-    "/admin/analytics": 1
+    "/": 8,
+    "/mugs": 3,
+    "/admin/analytics": 1,
+    "/skirts": 1,
+    "/about": 1,
+    "/contact": 1,
+    "/careers": 5
   },
   "referrers": {
-    "localhost": 2,
+    "localhost": 6,
     "google.com": 1,
-    "Direct / Bookmark": 1
+    "Direct / Bookmark": 9,
+    "global.rel.tunnels.api.visualstudio.com": 1,
+    "harbour-possibly-diet-cocktail.trycloudflare.com": 3
   },
   "products": {
     "pm1": {
@@ -28,7 +39,7 @@
   },
   "daily": {
     "2026-11-22": {
-      "views": 4,
+      "views": 20,
       "clicks": 0
     },
     "2026-03-23": {
@@ -45,5 +56,5 @@
       "marketplace": "amazon"
     }
   ],
-  "lastUpdated": 1795340155852
+  "lastUpdated": 1795347560361
 }

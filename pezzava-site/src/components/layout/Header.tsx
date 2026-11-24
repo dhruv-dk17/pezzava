@@ -11,18 +11,14 @@ import { getPortalUrl } from '@/lib/domain';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    setMounted(true);
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  if (!mounted) return null;
 
   const skirtsUrl = getPortalUrl('skirts');
   const mugsUrl = getPortalUrl('mugs');
